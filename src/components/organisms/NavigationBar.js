@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import {
 	MDBNavbar,
 	MDBNavbarBrand,
@@ -29,7 +31,7 @@ const NavigationBar = () => {
 						<MDBNavbarItem className="text-center mx-2 mx-lg-1">
 							<MDBNavbarLink aria-current="page" href="/">
 								<div>
-									<i className="fas fa-home fa-lg mb-1" />
+									<i className="fa fa-home fa-lg mb-1" />
 								</div>
 								Home
 							</MDBNavbarLink>

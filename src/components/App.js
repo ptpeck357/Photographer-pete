@@ -1,17 +1,24 @@
 import './App.css';
-import { Switch, Routes, Route, Link } from 'react-router-dom';
 
-import AboutMe from "./pages/AboutMe";
-import Home from "./pages/Home";
+// import NavigationBar from './NavigationBar';
+import Routes from './Routes'
+import FooterPage from './organisms/Footer.js';
+
+// eslint-disable-next-line
+import Headroom from 'react-headroom'
+
+// eslint-disable-next-line
+import ReactGA from 'react-ga';
+
+// ReactGA.initialize('');
+// ReactGA.pageview(window.location.href);
 
 const App = () => {
 	return (
-		<div className="App">
-			<Routes>
-				<Route exact path="/" element={<Home />} />
-				<Route path="about" element={<AboutMe />} />
-			</Routes>
-		</div>
+		<>
+			<Routes />
+			<FooterPage />
+		</>
 	);
 }
 

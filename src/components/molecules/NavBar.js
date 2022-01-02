@@ -4,7 +4,7 @@ import NavBarLink from '../atoms/NavBarLink';
 import NavBarItem from '../atoms/NavBarItem';
 import HOME_PAGE_LINKS from '../../utils/constants/HomePageLinks'
 
-const NavBarNav = ({ classes }) => {
+const NavBar = ({ classes }) => {
 	return (
 		<MDBNavbarNav className={"me-auto d-flex flex-row mt-3 mt-lg-0 " + classes}>
 			{
@@ -23,12 +23,12 @@ const NavBarNav = ({ classes }) => {
 	)
 }
 
-NavBarNav.propTypes = {
+NavBar.propTypes = {
 	classes: PropTypes.string
 }
 
-NavBarNav.defaultProps = {
+NavBar.defaultProps = {
 	classes: '',
 }
 
-export default NavBarNav;
+export default NavBar;

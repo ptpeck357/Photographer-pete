@@ -6,7 +6,7 @@ import {
 }
 from 'mdb-react-ui-kit';
 
-import NavBarNav from '../molecules/NavBarNav';
+import NavBar from '../molecules/NavBar';
 
 const NavigationBar = () => {
 	return (
@@ -25,7 +25,7 @@ const NavigationBar = () => {
 					<i className="fas fa-bars text-light" />
 				</button> */}
 				<div id="navbarSupportedContent" className="collapse navbar-collapse">
-					<NavBarNav />
+					<NavBar />
 				</div>
 			</MDBContainer>
 		</MDBNavbar>

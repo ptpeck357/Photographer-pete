@@ -5,6 +5,7 @@ import { SOCIAL_MIDEA_LINKS } from '../../utils/constants/SocialMediaLinksObj'
 const Footer = () => {
 	const SocialMediaLinks = SOCIAL_MIDEA_LINKS.map(obj =>
 		<ActionLink
+			key={obj.href}
 			href={obj.href}
 			target="_blank"
 		>
@@ -46,9 +47,9 @@ const Footer = () => {
 								Aerial/Drone
 							</p>
 						</div>
-						<div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+						<div id="contact" className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 							<h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-							<p style={{fontSize: `10px`}}>
+							<p>
 								<i className="fa fa-home me-3" /> Moscow, ID 83843
 							</p>
 							<p>

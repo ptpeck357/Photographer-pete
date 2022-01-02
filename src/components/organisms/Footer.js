@@ -1,6 +1,6 @@
-import { MDBFooter} from 'mdb-react-ui-kit';
+import { MDBFooter } from 'mdb-react-ui-kit';
 
-const FooterPage  = () => {
+const Footer = () => {
 	return (
 		<MDBFooter className="text-center text-lg-start bg-light text-muted">
 			<section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -10,13 +10,14 @@ const FooterPage  = () => {
 				<div>
 					<a
 						href='https://www.facebook.com/PortraitPete'
-						target="_blank" rel="noopener noreferrer"
-						 className="me-4 text-reset"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="me-4 text-reset"
 					>
 						<i className="fab fa-facebook-f" />
 					</a>
 					<a
-						href='https://www.instagram.com/portrat.pete/'
+						href='https://www.instagram.com/portrait.pete/'
 						target="_blank"
 						rel="noopener noreferrer"
 						className="me-4 text-reset"
@@ -63,6 +64,14 @@ const FooterPage  = () => {
 						<i className="fab fa-pinterest" />
 					</a>
 					<a
+						href='https://www.instagram.com/the_dude_named_pete/'
+						target="_blank"
+						rel="noopener noreferrer"
+						className="me-4 text-reset"
+					>
+						<i className="fab fa-instagram" />
+					</a>
+					<a
 						href='https://gurushots.com/peter_peck_landscape/photos'
 						target="_blank"
 						rel="noopener noreferrer"
@@ -77,13 +86,12 @@ const FooterPage  = () => {
 					<div className="row mt-3">
 						<div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 							<h6 className="text-uppercase fw-bold mb-4">
-								<i className="fas fa-gem me-3" />Peter Peck Photography
+								<i className="fas fa-gem me-3" /> Peter Peck Photography
 							</h6>
-							<p>
-								Be sure to reach out to me if you have any requests or inquiries! If you don't, at least follow me on my social meda accounts up above.
-							</p>
+							<p>Please reach out to me if you have any requests or inquiries on prices!</p>
+							<p>Be sure to check and follow me on my social meda accounts up above!</p>
 						</div>
-						<div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+						<div className="col-md-2 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 							<h6 className="text-uppercase fw-bold mb-4">
 								Services
 							</h6>
@@ -91,13 +99,10 @@ const FooterPage  = () => {
 								Portraits
 							</p>
 							<p>
-								Landscape
+								Landscape/Nightscape
 							</p>
 							<p>
 								Aerial/Drone
-							</p>
-							<p>
-								Nightscape
 							</p>
 						</div>
 						{/* <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -118,15 +123,16 @@ const FooterPage  = () => {
 							</p>
 						</div> */}
 						<div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-							<h6 className="text-uppercase fw-bold mb-4">
-								Contact
-							</h6>
-							<p><i className="fas fa-home me-3" /> Moscow, ID 83843</p>
+							<h6 className="text-uppercase fw-bold mb-4">Contact</h6>
 							<p>
-								<i className="fas fa-envelope me-3" />
-								petertpeck@gmail.com
+								<i className="fas fa-home me-3" /> Moscow, ID 83843
 							</p>
-							<p><i className="fas fa-phone me-3" /> + 1 406 925 9137</p>
+							<p>
+								<i className="fas fa-envelope me-3" />petertpeck@gmail.com
+							</p>
+							<p>
+								<i className="fas fa-phone me-3" /> + 1 406 925 9137
+							</p>
 						</div>
 					</div>
 				</div>
@@ -138,4 +144,4 @@ const FooterPage  = () => {
 	);
 }
 
-export default FooterPage;
+export default Footer;

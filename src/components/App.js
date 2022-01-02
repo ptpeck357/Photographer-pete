@@ -1,10 +1,10 @@
 import './App.css';
 
-// import NavigationBar from './NavigationBar';
 import Routes from './Routes'
-import FooterPage from './organisms/Footer.js';
 
-// eslint-disable-next-line
+import Footer from './organisms/Footer';
+import NavigationBar from './organisms/NavigationBar';
+
 import Headroom from 'react-headroom'
 
 // eslint-disable-next-line
@@ -16,8 +16,11 @@ import ReactGA from 'react-ga';
 const App = () => {
 	return (
 		<>
+			<Headroom>
+				<NavigationBar />
+			</Headroom>
 			<Routes />
-			<FooterPage />
+			<Footer />
 		</>
 	);
 }

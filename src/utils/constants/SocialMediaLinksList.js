@@ -1,4 +1,4 @@
-export const SOCIAL_MIDEA_LINKS = [
+const SOCIAL_MEDIA_LIST = [
 	{
 		href: 'https://www.facebook.com/PortraitPete',
 		fa_class: 'fab fa-facebook-f'
@@ -34,5 +34,11 @@ export const SOCIAL_MIDEA_LINKS = [
 	{
 		href: 'https://gurushots.com/peter_peck_landscape/photos',
 		fa_class: 'fa fa-camera-retro'
+	},
+	{
+		href: 'https://500px.com/p/petertpeck',
+		fa_class: 'fab fa-500px'
 	}
 ];
+
+export default SOCIAL_MEDIA_LIST;

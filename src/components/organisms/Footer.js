@@ -1,18 +1,7 @@
 import { MDBFooter } from 'mdb-react-ui-kit';
-import ActionLink from '../atoms/ActionLink'
-import { SOCIAL_MIDEA_LINKS } from '../../utils/constants/SocialMediaLinksObj'
+import FooterLinksComponent from '../molecules/FooterLinksComponent';
 
 const Footer = () => {
-	const SocialMediaLinks = SOCIAL_MIDEA_LINKS.map(obj =>
-		<ActionLink
-			key={obj.href}
-			href={obj.href}
-			target="_blank"
-		>
-			<i className={obj.fa_class} />
-		</ActionLink>
-	)
-
 	return (
 		<MDBFooter className="text-center text-lg-start bg-light text-muted">
 			<section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -20,7 +9,7 @@ const Footer = () => {
 					<span>Get connected on social media:</span>
 				</div>
 				<div>
-					{SocialMediaLinks}
+					{FooterLinksComponent}
 				</div>
 			</section>
 			<section>

@@ -6,7 +6,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import './index.css';
 import 'animate.css';
-
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 ReactDOM.render(

@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
+
+import HOME_PAGE_LINKS from '../../utils/constants/HomePageLinks'
+
 import { MDBNavbarNav } from 'mdb-react-ui-kit';
 import NavBarLink from '../atoms/NavBarLink';
 import NavBarItem from '../atoms/NavBarItem';
-import HOME_PAGE_LINKS from '../../utils/constants/HomePageLinks'
 
 const NavBar = ({ classes }) => {
 	return (
@@ -12,7 +14,7 @@ const NavBar = ({ classes }) => {
 					<NavBarItem>
 						<NavBarLink ariaCurrent="page" href={obj.href}>
 							<div>
-								<i className={"fa-lg mb-1 ", obj.fa_class} />
+								<i className={"fa-lg mb-1 " + obj.fa_class} />
 							</div>
 							{obj.text}
 						</NavBarLink>
@@ -28,7 +30,7 @@ NavBar.propTypes = {
 }
 
 NavBar.defaultProps = {
-	classes: '',
+	classes: ''
 }
 
 export default NavBar;

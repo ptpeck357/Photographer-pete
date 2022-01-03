@@ -11,8 +11,10 @@ const NavBar = ({ classes }) => {
 	return (
 		<MDBNavbarNav className={"me-auto d-flex flex-row mt-3 mt-lg-0 " + classes}>
 			{
-				HOME_PAGE_LINKS.map(obj =>
-					<NavBarItem>
+				HOME_PAGE_LINKS.map((obj, index) =>
+					<NavBarItem
+						key={index}
+					>
 						<Link to={obj.href}>
 							<NavBarLink ariaCurrent="page" >
 								<div>

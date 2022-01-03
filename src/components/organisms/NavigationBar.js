@@ -15,7 +15,6 @@ const NavigationBar = () => {
 			<MDBContainer fluid>
 				<MDBNavbarBrand href="/">Peter Peck | Photography</MDBNavbarBrand>
 				<MDBNavbarToggler
-					className="navbar-toggler"
 					data-bs-toggle="collapse"
 					data-bs-target="#hamburgerMenu"
 					aria-controls="hamburgerMenu"

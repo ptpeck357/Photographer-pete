@@ -7,7 +7,6 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "mdb-react-ui-kit": "^2.2.0",
-    "mdbreact": "^5.2.0",
     "prop-types": "^15.8.0",
     "react": "^17.0.2",
     "react-animate-on-scroll": "^2.1.5",

@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
+import { Parallax } from "react-parallax";
 import PropTypes from 'prop-types';
+
 // eslint-disable-next-line
 import { MDBCard, MDBCardBody } from 'mdb-react-ui-kit';
-import { Parallax } from "react-parallax";
 
 const ProjectHeader = ({ bgImage, title, date, desc, style }) => {
 	const [bgImage, setBgImage] = useState('');
@@ -28,7 +29,7 @@ const ProjectHeader = ({ bgImage, title, date, desc, style }) => {
 			<div id="headerbox" className="rounded z-depth-2">
 				<MDBCardBody body className="text-center Card">
 					<h1 className="headerTitle display-4" ><strong>{title}</strong></h1>
-					<p className="grey-text headerDesc"> {desc}</p>
+					<p className="grey-text headerDesc">{desc}</p>
 				</MDBCardBody>
 			</div>
 		</>

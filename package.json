@@ -5,9 +5,6 @@
   "homepage": "https://github.com/ptpeck357/Photographer-pete",
   "author": "Peter Peck",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "animate.css": "^4.1.1",
     "mdb-react-ui-kit": "^2.2.0",
     "prop-types": "^15.8.0",
@@ -17,8 +14,7 @@
     "react-ga": "^3.3.0",
     "react-headroom": "^3.2.0",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "react-scripts": "4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -2,6 +2,7 @@ import {
 	MDBNavbar,
 	MDBNavbarBrand,
 	MDBContainer,
+	MDBCollapse,
 	MDBNavbarToggler
 }
 from 'mdb-react-ui-kit';
@@ -14,7 +15,7 @@ const NavigationBar = () => {
 			<MDBContainer fluid>
 				<MDBNavbarBrand href="/">Peter Peck | Photography</MDBNavbarBrand>
 				<MDBNavbarToggler
-					className="navbar-toggler test"
+					className="navbar-toggler"
 					data-bs-toggle="collapse"
 					data-bs-target="#hamburgerMenu"
 					aria-controls="hamburgerMenu"
@@ -22,9 +23,9 @@ const NavigationBar = () => {
 				>
 					<i className="fas fa-bars text-light" />
 				</MDBNavbarToggler>
-				<div id="hamburgerMenu" className="collapse navbar-collapse">
+				<MDBCollapse id="hamburgerMenu" navbar={true}>
 						<NavBar classes={"me-auto d-flex flex-row mt-3 mt-lg-0"}/>
-				</div>
+				</MDBCollapse>
 			</MDBContainer>
 		</MDBNavbar>
 	)

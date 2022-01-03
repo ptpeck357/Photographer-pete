@@ -1,28 +1,22 @@
-import { Link } from 'react-router-dom';
-import { MDBNavbarNav } from 'mdb-react-ui-kit';
 import PropTypes from 'prop-types';
+import { MDBNavbarNav } from 'mdb-react-ui-kit';
 
 import NavBarLink from '../atoms/NavBarLink';
 import NavBarItem from '../atoms/NavBarItem';
-
 import HOME_PAGE_LINKS from '../../utils/constants/HomePageLinks'
 
 const NavBar = ({ classes }) => {
 	return (
-		<MDBNavbarNav className={"me-auto d-flex flex-row mt-3 mt-lg-0 " + classes}>
+		<MDBNavbarNav className={classes}>
 			{
 				HOME_PAGE_LINKS.map((obj, index) =>
-					<NavBarItem
-						key={index}
-					>
-						<Link to={obj.href}>
-							<NavBarLink ariaCurrent="page" >
-								<div>
-									<i className={"fa-lg mb-1 " + obj.fa_class} />
-								</div>
-								{obj.text}
-							</NavBarLink>
-						</Link>
+					<NavBarItem classes={"text-center mx-2 mx-lg-1"} key={index}>
+						<NavBarLink classes='nav-bar-link' link={obj.link} >
+							<div>
+								<i className={"fa-lg mb-1 " + obj.fa_class} />
+							</div>
+							{obj.text}
+						</NavBarLink>
 					</NavBarItem>
 				)
 			}

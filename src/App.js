@@ -1,9 +1,7 @@
-import './App.css';
+import Routes from './components/Routes'
 
-import Routes from './Routes'
-
-import Footer from './organisms/Footer';
-import NavigationBar from './organisms/NavigationBar';
+import Footer from './components/organisms/Footer';
+import NavigationBar from './components/organisms/NavigationBar';
 
 import Headroom from 'react-headroom'
 
@@ -12,6 +10,7 @@ import ReactGA from 'react-ga';
 
 // ReactGA.initialize('');
 // ReactGA.pageview(window.location.href);
+import './App.css';
 
 const App = () => {
 	return (

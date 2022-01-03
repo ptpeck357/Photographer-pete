@@ -1,22 +1,22 @@
 const HOME_PAGE_LINKS = [
 	{
 		text: 'Home',
-		href: '/',
+		link: '/',
 		fa_class: 'fa fa-home'
 	},
 	{
 		text: 'Portfolio',
-		href: '#portfolio',
+		link: '#portfolio',
 		fa_class: 'fa fa-folder'
 	},
 	{
 		text: 'About Me',
-		href: '/about',
+		link: '/about',
 		fa_class: 'fa fa-address-card'
 	},
 	{
 		text: 'Resume',
-		href: '/resume',
+		link: '/resume',
 		fa_class: 'fas fa-file-alt'
 	}
 ];

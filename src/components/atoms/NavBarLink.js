@@ -1,19 +1,19 @@
 import PropTypes from 'prop-types';
-import { MDBNavbarLink } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
-const NavBarLink = ({ ariaCurrent, classes, children }) => {
+const NavBarLink = ({ link, classes, children }) => {
 	return (
-		<MDBNavbarLink
-			aria-current={ariaCurrent}
-			className={classes || ''}
+		<Link
+			className={classes}
+			to={link}
 		>
 			{children}
-		</MDBNavbarLink>
+		</Link>
 	)
 }
 
 NavBarLink.propTypes = {
-	ariaCurrent: PropTypes.string,
+	link: PropTypes.string.isRequired,
 	classes: PropTypes.string,
 	children: PropTypes.oneOfType([
 		PropTypes.arrayOf(PropTypes.node),
@@ -21,8 +21,8 @@ NavBarLink.propTypes = {
 	]).isRequired
 }
 
-NavBarLink.defaultProps = {
-	ariaCurrent: ''
+NavBarLink.defaultProp = {
+	classes: '',
 }
 
 export default NavBarLink;

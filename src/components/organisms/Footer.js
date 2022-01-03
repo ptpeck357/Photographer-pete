@@ -1,5 +1,5 @@
 import { MDBFooter } from 'mdb-react-ui-kit';
-import FooterLinksComponent from '../molecules/FooterLinksComponent';
+import SocialMediaLinks from '../molecules/SocialMediaLinks';
 
 const Footer = () => {
 	return (
@@ -9,7 +9,7 @@ const Footer = () => {
 					<span>Get connected on social media:</span>
 				</div>
 				<div>
-					{FooterLinksComponent}
+					{SocialMediaLinks}
 				</div>
 			</section>
 			<section>
@@ -17,7 +17,7 @@ const Footer = () => {
 					<div className="row mt-3">
 						<div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 							<h6 className="text-uppercase fw-bold mb-4">
-								<i className="fa fa-gem me-3" /> Peter Peck Photography
+								<i className="fa fa-gem me-3"/> Peter Peck Photography
 							</h6>
 							<p>Please reach out to me if you have any requests or inquiries on prices!</p>
 							<p>Be sure to check and follow me on my social meda accounts up above!</p>
@@ -39,13 +39,13 @@ const Footer = () => {
 						<div id="contact" className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 							<h6 className="text-uppercase fw-bold mb-4">Contact</h6>
 							<p>
-								<i className="fa fa-home me-3" /> Moscow, ID 83843
+								<i className="fa fa-home me-3"/> Moscow, ID 83843
 							</p>
 							<p>
-								<i className="fa fa-envelope me-3" />petertpeck@gmail.com
+								<i className="fa fa-envelope me-3"/>petertpeck@gmail.com
 							</p>
 							<p>
-								<i className="fa fa-phone me-3" /> + 1 406 925 9137
+								<i className="fa fa-phone me-3"/> + 1 406 925 9137
 							</p>
 						</div>
 					</div>

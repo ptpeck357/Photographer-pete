@@ -23,7 +23,7 @@ const NavigationBar = () => {
 					<i className="fas fa-bars text-light" />
 				</MDBNavbarToggler>
 				<div id="hamburgerMenu" className="collapse navbar-collapse">
-					<NavBar />
+						<NavBar classes={"me-auto d-flex flex-row mt-3 mt-lg-0"}/>
 				</div>
 			</MDBContainer>
 		</MDBNavbar>

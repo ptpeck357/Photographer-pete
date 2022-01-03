@@ -4,7 +4,7 @@ import { MDBNavbarItem } from 'mdb-react-ui-kit';
 const NavBarItem = ({ classes, children }) => {
 	return (
 		<MDBNavbarItem
-			className={"text-center mx-2 mx-lg-1 " + classes}
+			className={classes}
 		>
 			{children}
 		</MDBNavbarItem>

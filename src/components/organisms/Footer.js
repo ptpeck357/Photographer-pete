@@ -51,7 +51,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</section>
-			<div className="text-center p-4" style={{ backgroundColor: '#323741', color: '#FFFFFA' }}>
+			<div className="text-center p-4 rounded" style={{ backgroundColor: '#323741', color: '#FFFFFA' }}>
 				<small>Peter Peck Photography &copy; {(new Date().getFullYear())}</small>
 			</div>
 		</MDBFooter>

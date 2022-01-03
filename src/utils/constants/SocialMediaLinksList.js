@@ -37,7 +37,7 @@ const SOCIAL_MEDIA_LIST = [
 	},
 	{
 		href: 'https://500px.com/p/petertpeck',
-		fa_class: 'fab fa-500px'
+		fa_class: 'fab fa-500px',
 	}
 ];
 

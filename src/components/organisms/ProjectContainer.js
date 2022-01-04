@@ -5,17 +5,35 @@ import ProjectHeader from './ProjectHeader';
 import AboutPage from '../templates/AboutPage';
 
 const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, showFilterProp, styleProp }) => {
-	const [headerInfo, setHeaderInfo] = useState(headerInfoProp);
-	const [imageArray, setImageArray] = useState(imageArrayProp);
-	const [renderType, setRenderType] = useState(renderTypeProp);
-	const [showFilter, setShowFilter] = useState(showFilterProp);
-	const [style, setStyle] = useState(styleProp);
+	const [headerInfo, setHeaderInfo] = useState('');// eslint-disable-next-line
+	const [imageArray, setImageArray] = useState([]);// eslint-disable-next-line
+	const [renderType, setRenderType] = useState('');// eslint-disable-next-line
+	const [showFilter, setShowFilter] = useState(false);// eslint-disable-next-line
+	const [style, setStyle] = useState('');// eslint-disable-next-line
+
+	useEffect(() => {
+		setHeaderInfo(headerInfoProp);
+		setImageArray(imageArrayProp);
+		setRenderType(renderTypeProp);
+		setShowFilter(showFilterProp);
+		setStyle(styleProp);
+	}, [headerInfoProp, imageArrayProp]);
+
+	const renderComponent = (renderType) => {
+		switch (renderType){
+			case 'aboutme':
+				return <AboutPage />
+			default:
+				return <span>No Pictures</span>
+		}
+	};
 
 	return (
 		<div id="projectContainer">
 			<ProjectHeader
 				{...headerInfo}
 			/>
+			{renderComponent(renderType)}
 		</div>
 	);
 };
@@ -24,15 +42,8 @@ ProjectHeader.propTypes = {
 	headerInfoProp: PropTypes.string.isRequired,
 	imageArrayProp: PropTypes.array,
 	renderTypeProp: PropTypes.string,
-	showFilterProp: PropTypes.string,
+	showFilterProp: PropTypes.bool,
 	styleProp: PropTypes.string
-}
-
-ProjectHeader.defaultProps = {
-	headerInfoProp: '',
-	imageArrayProp: [],
-	showFilterProp: '',
-	styleProp: ''
-}
+};
 
 export default ProjectContainer;

@@ -9,11 +9,16 @@ import ReactGA from 'react-ga';
 
 const AboutPage = () => {
 	return (
+		<>
+		About me is render
+		{/*
 		<ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={true}>
 			<MDBContainer id="aboutpage" className="mt-3 mask">
-				Yes
+				Yesasdf asdf asdf
 			</MDBContainer>
-		</ScrollAnimation>
+		// /* </ScrollAnimation> */}
+		</>
+
 	);
 };
 

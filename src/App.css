@@ -18,6 +18,10 @@
 	Navigation Bar
 ==============================*/
 
+.nav-bar {
+	font-size: 12px;
+}
+
 .nav-bar-link {
 	color: #757575;
 }

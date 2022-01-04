@@ -5,25 +5,18 @@ import PropTypes from 'prop-types';
 // eslint-disable-next-line
 import { MDBCard, MDBCardBody } from 'mdb-react-ui-kit';
 
-const ProjectHeader = ({ bgImage, title, date, desc, style }) => {
-	const [bgImage, setBgImage] = useState('');
-	const [title, setTitle] = useState('');
-	const [date, setDate] = useState('');
-	const [desc, setDesc] = useState('');
-	const [style, setStyle] = useState('');
-
-	useEffect(() => {
-		setBgImage(bgImage);
-		setTitle(title);
-		setDate(date);
-		setDesc(desc);
-		setStyle(style);
-	}, []);
+const ProjectHeader = ({ bgImageProp, titleProp, dateProp, descProp, styleProp }) => {
+	const [bgImage, setBgImage] = useState(bgImageProp);
+	const [title, setTitle] = useState(titleProp);
+	const [date, setDate] = useState(dateProp);
+	const [desc, setDesc] = useState(descProp);
+	const [style, setStyle] = useState(styleProp);
 
 	return (
 		<>
 			<Parallax bgImage={bgImage} strength={1000} className={"parallax-mobile-view " + style}>
 				<div className="headerbg">
+					akjsdfhlaksdjf
 				</div>
 			</Parallax>
 			<div id="headerbox" className="rounded z-depth-2">
@@ -37,21 +30,21 @@ const ProjectHeader = ({ bgImage, title, date, desc, style }) => {
 }
 
 ProjectHeader.propTypes = {
-	bgImage: PropTypes.string.isRequired,
-	title: PropTypes.string,
-	date: PropTypes.string,
-	desc: PropTypes.string,
-	style: PropTypes.oneOfType([
+	bgImageProp: PropTypes.string.isRequired,
+	titleProp: PropTypes.string,
+	dateProp: PropTypes.string,
+	descProp: PropTypes.string,
+	styleProp: PropTypes.oneOfType([
 		PropTypes.array,
 		PropTypes.string
 	])
 }
 
 ProjectHeader.defaultProps = {
-	bgImage: PropTypes.string,
-	title: PropTypes.string,
-	date: PropTypes.string,
-	style: PropTypes.string
+	titleProp: '',
+	dateProp: '',
+	descProp: '',
+	styleProp: ''
 }
 
 export default ProjectHeader;

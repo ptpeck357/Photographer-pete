@@ -1,5 +1,5 @@
 import ActionLink from '../atoms/ActionLink';
-import SOCIAL_MEDIA_LIST from '../../utils/constants/SocialMediaLinksList';
+import SOCIAL_MEDIA_LIST from '../../utils/constants/SOCIAL_MEDIA_LINKS';
 
 const SocialMediaLinks = SOCIAL_MEDIA_LIST.map(obj =>
 	<ActionLink

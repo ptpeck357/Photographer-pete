@@ -13,11 +13,6 @@ const HOME_PAGE_LINKS = [
 		text: 'About Me',
 		link: '/aboutme',
 		fa_class: 'fa fa-address-card'
-	},
-	{
-		text: 'Resume',
-		link: '/resume',
-		fa_class: 'fas fa-file-alt'
 	}
 ];
 

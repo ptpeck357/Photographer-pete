@@ -14,24 +14,24 @@ const AboutPage = () => {
 	});
 
 	return (
-		<ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={true}>
-			<MDBContainer id="aboutpage" className="mt-3">
+		// <ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={true}>
+		<div id="aboutpage" className=" container mt-3">
 				<p className="text-center w-responsive mx-auto ">
 					Welcome to my portfolio!
 					<br />
 					I'm a photographersoftware engineer.
 					I was born in the Cambodia and raised in montana
+					<hr style={{ width: "50%" }} />
 				</p>
-				<hr style={{ width: "50%" }} />
-			</MDBContainer>
-			<MDBRow className="border-bottom">
+
+			<MDBRow className=" border-bottom">
 				<MDBCol lg="5">
 					<div className="rounded z-depth-4 mb-lg-0 mb-4 ">
 						<img className="img-fluid" src={"src/images/profile_image.jpg"} alt="Sample image" />
 						{/* <a><Mask overlay="white-slight" /></a> */}
 					</div>
 				</MDBCol>
-				<MDBCol lg="7">
+				<MDBCol lg="7" className=''>
 					<h2 className="font-weight-bold mb-3 p-0">
 						<li icon="image" className="pr-2 fa fa-camera-retro"></li>
 					<strong>Photographer</strong></h2>
@@ -51,7 +51,8 @@ const AboutPage = () => {
 
 				</MDBCol>
 			</MDBRow>
-		</ScrollAnimation>
+		</div>
+		// </ScrollAnimation>
 
 	);
 };

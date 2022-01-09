@@ -1,6 +1,8 @@
 import { MDBFooter, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import SocialMediaLinks from '../molecules/SocialMediaLinks';
 
+import CONTACT_INFO from '../../utils/config/CONTACT_INFO';
+
 const Footer = () => {
 	return (
 		<MDBFooter className="text-center text-lg-start bg-light text-muted">
@@ -39,14 +41,16 @@ const Footer = () => {
 						<MDBCol id="contact" md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
 							<h6 className="text-uppercase fw-bold mb-4">Contact</h6>
 							<p>
-								<i className="fa fa-home me-3"/> Moscow, ID 83843
+								<i className="fa fa-home me-3"/> {CONTACT_INFO.location}
 							</p>
 							<p>
-								<i className="fa fa-envelope me-3"/>petertpeck@gmail.com
+								<i className="fa fa-envelope me-3"/>{CONTACT_INFO.email}
 							</p>
-							<p>
-								<i className="fa fa-phone me-3"/> + 1 406 925 9137
-							</p>
+							{CONTACT_INFO.phone &&
+								<p>
+									<i className="fa fa-phone me-3" /> + 1 406 925 9137
+								</p>
+							}
 						</MDBCol>
 					</MDBRow>
 				</MDBContainer>

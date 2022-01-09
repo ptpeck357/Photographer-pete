@@ -18,7 +18,7 @@ const ProjectHeader = ({ bgImageProp, titleProp, dateProp, descProp, styleProp }
 		setDate(dateProp);
 		setDesc(descProp);
 		setStyle(styleProp);
-	}, [bgImageProp, titleProp]);
+	}, [bgImageProp, titleProp, dateProp, descProp, styleProp]);
 
 	return (
 		<>

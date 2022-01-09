@@ -3,7 +3,7 @@ import { MDBNavbarNav } from 'mdb-react-ui-kit';
 
 import NavBarLink from '../atoms/NavBarLink';
 import NavBarItem from '../atoms/NavBarItem';
-import HOME_PAGE_LINKS from '../../utils/constants/HOME_PAGE_LINKS';
+import HOME_PAGE_LINKS from '../../utils/config/HOME_PAGE_LINKS';
 
 const NavBar = ({ classes }) => {
 	return (

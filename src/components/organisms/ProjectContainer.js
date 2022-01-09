@@ -17,7 +17,7 @@ const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, show
 		setRenderType(renderTypeProp);
 		setShowFilter(showFilterProp);
 		setStyle(styleProp);
-	}, [headerInfoProp, imageArrayProp]);
+	}, [headerInfoProp, imageArrayProp, renderTypeProp, showFilterProp, styleProp]);
 
 	const renderComponent = (renderType) => {
 		switch (renderType){

@@ -3,7 +3,7 @@ import { Routes as Switch, Route } from 'react-router-dom';
 import Home from "./templates/Home";
 import Resume from "./templates/Resume";
 import ProjectContainer from './organisms/ProjectContainer';
-import ABOUT_ME_CONFIG from '../utils/constants/ABOUT_ME_CONFIG';
+import ABOUT_ME from '../utils/config/ABOUT_ME';
 
 const Routes = () => {
 	return (
@@ -14,8 +14,8 @@ const Routes = () => {
 				path="aboutme"
 				element={
 					<ProjectContainer
-						imageArrayProp={ABOUT_ME_CONFIG.imageArray}
-						headerInfoProp={ABOUT_ME_CONFIG.projectHeader}
+						imageArrayProp={ABOUT_ME.imageArray}
+						headerInfoProp={ABOUT_ME.projectHeader}
 						renderTypeProp="aboutme"
 					/>
 				}

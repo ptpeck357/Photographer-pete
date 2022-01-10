@@ -1,5 +1,7 @@
+import BackgroundImage from '../../images/about_me_cover.jpg'
+
 const headerData = {
-	bgImage: require('../../images/profile_image.jpg'),
+	bgImage: {BackgroundImage},
 	title: 'About Me',
 	date: '',
 	desc: ''

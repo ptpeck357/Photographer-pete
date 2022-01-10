@@ -10,7 +10,7 @@ const ActionLink = ({ href, classes, target, children }) => {
 			href={href}
 			target={target}
 			rel={rel}
-			className={"me-4 text-reset " + classes}
+			className={classes || "me-4 text-reset"}
 		>
 			{children}
 		</a>

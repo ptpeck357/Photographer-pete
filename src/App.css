@@ -14,6 +14,16 @@
 	color: white;
 }
 
+.mr-2 {
+	margin-right: 0.5rem;
+}
+
+.container.stripe.light div p {
+	color: #424242;
+	font-family: "Helvetica Neue", Helvetica, Sans-serif;
+	font-size: 1.5em;
+}
+
 /* ===========================
 	Navigation Bar
 ==============================*/
@@ -29,7 +39,9 @@
 .nav-bar-link:hover {
 	color: #C9C9C9;
 }
-
+/* .container p {
+	text-indent: 3em;
+} */
 /* .social-media-links {
 	display: inline-block;
 	vertical-align: middle;
@@ -52,29 +64,24 @@
   All Projects Cards
 ==============================*/
 
-.tech-info {
-	font-size: 1.875rem;
-	border-bottom: 1px solid rgba(0, 0, 0, .1);
-	padding-bottom: 8px;
-	letter-spacing: -0.8px;
-	letter-spacing: -.05rem;
+.unorder-list {
+	line-height: 120%;
 }
 
-.tech-info-list {
-	font-size: 1.25em;
-	color: #cb3837;
-	text-decoration: none;
-	font-weight: 400;
-	line-height: 1.4;
+.tech-info {
+	font-size: 1.25rem;
+	margin-bottom: 5px;
+	letter-spacing: -.05rem;
 }
 
 .tech-info .margin-left-1 {
 	margin-left: 1em;
 }
 
-.camera-info-list {
+.camera-info-list .software-info-list .languages-info-list li {
 	font-size: 1.25em;
-	font-weight: 400;
+	padding-bottom: 8px;
+	letter-spacing: -.05rem;
 }
 
 .border-bottom {
@@ -95,10 +102,14 @@
 
 /* Large Display */
 
-@media only screen and (min-width: 1600px) {}
+@media only screen and (min-width: 1600px) {
+	span {
+		word-spacing: 2px;
+	}
+}
 
 @media only screen and (min-width: 1477px) and (max-width: 1599px) {}
-
+/*
 @media only screen and (min-width: 1400px) and (max-width: 1476px) {
 	html {
 		font-size: 80%;
@@ -113,7 +124,7 @@
 	.view .stripe div p {
 		font-size: 1.25em !important;
 	}
-	/* Parallax Header Image  */
+	Parallax Header Image
 	.parallax-mobile-view img {
 		top: 9em;
 		height: 77em !important;
@@ -130,9 +141,9 @@
 	.headerbg-contact {
 		height: 47em !important;
 	}
-}
+} */
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+/* @media only screen and (min-width: 1200px) and (max-width: 1399px) {
 	html {
 		font-size: 80%;
 	}
@@ -151,7 +162,7 @@
 	.view .mb-intro {
 		margin-bottom: 10em !important;
 	}
-	/* Parallax Header Image  */
+	Parallax Header Image
 	.parallax-mobile-view img {
 		top: 14em !important;
 		height: 70em !important;
@@ -159,7 +170,7 @@
 	.headerbg-contact {
 		height: 43em;
 	}
-}
+} */
 
 /* Medium screen : 992px. Ipad Pro */
 

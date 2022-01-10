@@ -5,7 +5,7 @@ import CONTACT_INFO from '../../utils/config/CONTACT_INFO';
 
 const Footer = () => {
 	return (
-		<MDBFooter className="text-center text-lg-start bg-light text-muted">
+		<MDBFooter className="text-center text-lg-start bg-white rounded text-muted">
 			<section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
 				<div className="me-5 d-none d-lg-block">
 					<span>Get connected on social media:</span>
@@ -21,8 +21,8 @@ const Footer = () => {
 							<h6 className="text-uppercase fw-bold mb-4">
 								<i className="fa fa-gem me-3"/> Peter Peck Photography
 							</h6>
-							<p>Please reach out to me if you have any requests or inquiries on prices!</p>
-							<p>Be sure to check and follow me on my social meda accounts up above!</p>
+							<p>Please reach out to me if you have any requests or inquiries!</p>
+							<p>Be sure to check and follow me on my social media accounts up above!</p>
 						</MDBCol>
 						<MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
 							<h6 className="text-uppercase fw-bold mb-4">

@@ -5,7 +5,7 @@ import App from './App';
 
 import './App.css';
 import './index.css';
-import 'animate.css';
+import './lib/animate.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 ReactDOM.render(

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Parallax } from "react-parallax";
+import { Parallax } from 'react-parallax';
 import PropTypes from 'prop-types';
 
 // eslint-disable-next-line

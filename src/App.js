@@ -18,6 +18,7 @@ const App = () => {
 			<Headroom>
 				<NavigationBar />
 			</Headroom>
+
 			<Routes />
 			<Footer />
 		</>

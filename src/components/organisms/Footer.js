@@ -48,7 +48,7 @@ const Footer = () => {
 							</p>
 							{CONTACT_INFO.phone &&
 								<p>
-									<i className="fa fa-phone me-3" /> + 1 406 925 9137
+									<i className="fa fa-phone me-3" /> + {CONTACT_INFO.phone}
 								</p>
 							}
 						</MDBCol>

@@ -49,6 +49,47 @@
 } */
 
 /* ===========================
+  All Projects Cards
+==============================*/
+
+.tech-info {
+	font-size: 1.875rem;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	padding-bottom: 8px;
+	letter-spacing: -0.8px;
+	letter-spacing: -.05rem;
+}
+
+.tech-info-list {
+	font-size: 1.25em;
+	color: #cb3837;
+	text-decoration: none;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+.tech-info .margin-left-1 {
+	margin-left: 1em;
+}
+
+.camera-info-list {
+	font-size: 1.25em;
+	font-weight: 400;
+}
+
+.border-bottom {
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	margin: 2em 1em 2em 1em;
+	padding: 2em 1em 2em 1em;
+}
+
+.border-bottom-tech {
+	/* border-bottom: 1px solid rgba(0, 0, 0, .1); */
+	margin: 2em 1em 0 1em;
+	padding: 2em 1em 0 1em;
+}
+
+/* ===========================
 	Responsive
 ==============================*/
 

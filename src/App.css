@@ -14,15 +14,50 @@
 	color: white;
 }
 
+/* ===========================
+	Layouts
+==============================*/
+
+.unorder-list {
+	line-height: 120%;
+}
+
 .mr-2 {
 	margin-right: 0.5rem;
 }
 
-.container.stripe.light div p {
+p, h3 {
+	letter-spacing: 1px;
+}
+
+.container p {
+	text-indent: 2em;
+}
+
+.no-indentation {
+	text-indent: 0em !important;
+}
+
+.bottom-right {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.overlay-text {
+	color: white;
+	font: bold 24px Helvetica, Sans-Serif;
+	letter-spacing: -1px;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 3px;
+	max-width:100%;
+}
+
+/* .container.stripe.light div p {
 	color: #424242;
 	font-family: "Helvetica Neue", Helvetica, Sans-serif;
 	font-size: 1.5em;
-}
+} */
 
 /* ===========================
 	Navigation Bar
@@ -63,10 +98,6 @@
 /* ===========================
   All Projects Cards
 ==============================*/
-
-.unorder-list {
-	line-height: 120%;
-}
 
 .tech-info {
 	font-size: 1.25rem;
@@ -182,11 +213,25 @@
 
 /* Large Mobile :480px. */
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+	.container p {
+		text-indent: 0em;
+	}
+}
+
 /* Iphone X */
 
 @media only screen and (max-width: 375px) and (max-height: 812px) {}
 
 /* small mobile :320px. */
 
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+	.bottom-right {
+		position: absolute;
+		bottom: 0px;
+	}
+
+	.overlay-text {
+		font: bold 1.0rem Helvetica, Sans-Serif;
+	}
+}

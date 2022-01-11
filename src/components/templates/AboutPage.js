@@ -35,34 +35,43 @@ const AboutPage = () => {
 					<br />
 					I'm a photographer, adventurer, and a software engineer.
 					I was born in Cambodia and was adopted at age 1. I've spent most of my
-					growing up days on a ranch in Montana. I love to travel, meet people, and explore the outdoors and... rest to be continued!
+					growing up days on a small ranch in Montana. I love to travel, meet people, and explore the outdoors... rest to be continued!
+
+
 				</p>
 				<StyledHr />
 				{/* Photographer Section */}
 				<MDBRow className="border-bottom mb-5 mt-3">
-					<MDBCol lg="1"/>
-					<MDBCol lg="4">
+					{/* <MDBCol lg="1"/> */}
+					<MDBCol lg="5">
 						<div className="rounded z-depth-4 mb-lg-0 mb-4">
 							<MDBRipple className="hover-overlay" rippleColor="white">
 								<img className="img-fluid shadow-3-strong" src={PhotographerPic} alt="Photographer"/>
+								<div class="bottom-right overlay-text">Photo credit: Adrianna Keeney</div>
 								<a>
-									<div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}/>
+									<div className="mask" style={{backgroundColor: 'rgba(251, 251, 251, 0.2)'}}/>
 								</a>
 							</MDBRipple>
 						</div>
 					</MDBCol>
-					<MDBCol lg="6">
-						<h2 className="mb-3 p-0 text-dark">
+					<MDBCol lg="7">
+						<h2 className="mb-2 p-0 text-dark">
 							<li className="mr-2 fa fa-camera-retro"/>
 							<strong>Photographer</strong>
 						</h2>
 						<p>
-							What kind of photography do I do? Well, I do all types varying from landscape, nightscape, portraits, engagement sessions, graduation shoots, to aerial shots! I got into photography when I received a digital Kodak camera for my 12th birthday and been doing it ever since.
+							What kind of photography do I do? Well, I do all types varying from landscape, nightscape, portraits, engagement sessions, graduation shoots, to aerial shots! I also dabble in videography and the editing software Davinci Resolve 17.
 						</p>
 						<p>
-							I love to travel
+							I first got into photography when I received a digital Kodak camera for my 12th birthday and been enjoying it ever since! Over the years, I've been slowly adding the different niches of photography to my skillset. Here's the run down.
 						</p>
-						<MDBRow>
+						<p>
+							June 2010 is when I first picked up a camera and started going landscape. August 2016, I started dabbling in astrophotography. July 2020, I started doing more portrait and engagement shoots. Lastly, my latest interest has been flying my drone capturing aerial shots since July 2021.
+						</p>
+						<p>
+							Even though I've been doing photography for 12 plus years, there's always something new and exciting to learn! Usually how life works.
+						</p>
+						<MDBRow className="">
 							<MDBCol lg="6">
 								<h6 className="tech-info text-dark">My Camera Gear</h6>
 								<ul className="unorder-list">
@@ -73,10 +82,10 @@ const AboutPage = () => {
 									<li className="camera-info-list">DJI Air 2s Drone</li>
 									<li className="camera-info-list">GoPro Hero8 Black</li>
 								</ul>
-								<br />
+								<br/>
 							</MDBCol>
 							<MDBCol lg="6">
-								<h4 className="tech-info text-dark">Editing Software I Use</h4>
+								<h4 className="tech-info text-dark">Editing Software</h4>
 								<ul className="unorder-list">
 									<li className="software-info-list">Adobe Lightroom Classic</li>
 									<li className="software-info-list">Adobe Lightroom</li>
@@ -89,7 +98,6 @@ const AboutPage = () => {
 							</MDBCol>
 						</MDBRow>
 					</MDBCol>
-					<MDBCol lg="1" />
 				</MDBRow>
 
 				{/* Software Engineering Section */}
@@ -97,7 +105,7 @@ const AboutPage = () => {
 					<MDBCol lg="1"/>
 
 					<MDBCol lg="6">
-						<h2 className="mb-3 p-0 text-dark">
+						<h2 className="mb-2 p-0 text-dark">
 							<i className="mr-2 fas fa-laptop-code"/>
 							<strong>Software Engineer</strong>
 						</h2>
@@ -105,13 +113,11 @@ const AboutPage = () => {
 							I'm a Full-Stack Software Engineer with 3 years of experience in the industry. I currently work at {<ActionLink href="https://www.economicmodeling.com/" classes="blue" target="_blank">Emsi Burning Glass</ActionLink>} located in Moscow, Idaho.
 						</p>
 						<p>
-							Since I was about 8 years old, I had dreams of becoming an engineer. As a kid, I always loved solving problems and brain teaser puzzles. And of course, math being my favorite subject throughout school. Ironically, I rarely use math at my current job 😂.
+							Since I was about 8 years old, I had the dream of becoming an engineer. As a kid, I loved solving problems, brain teaser puzzles, creating things with my hands, and of course math being my favorite subject in school. Ironically, I rarely use math at my current job 😂.
 						</p>
 						<p>
-							I went into software engineering for the creativity, the critical thinking, and the fact you can build anything with the tips of your fingure and have that instantaneous feedback.
-							I wanted to practice my front-end programming skills in React.js plus to have a portfolio website. Hence, why I built this website.
+							The things I like about software engineering, however, is the creativity, the critical thinking, and the fact you can build anything! With me being a visual person in general, having that instantaneous feedback is my cup of tea.
 						</p>
-
 						<h4 className="tech-info text-dark">Programming Languages</h4>
 						<ul className="unorder-list">
 							<li className="languages-info-list">HTML/CSS/SASS</li>
@@ -127,7 +133,7 @@ const AboutPage = () => {
 							<MDBRipple className="hover-overlay" rippleColor="white">
 								<img className="img-fluid shadow-3-strong" src={LinkedinPic} alt="Software Engineering"/>
 								<a>
-									<div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}/>
+									<div className="mask" style={{backgroundColor: 'rgba(251, 251, 251, 0.2)'}}/>
 								</a>
 							</MDBRipple>
 						</div><MDBCol lg="1" />
@@ -138,35 +144,36 @@ const AboutPage = () => {
 
 				{/* Everyday Life Section */}
 				<MDBRow className="border-bottom mb-5">
-					<MDBCol lg="1" />
+					<MDBCol lg="1"/>
 					<MDBCol lg="4">
 						<div className="rounded z-depth-4 mb-lg-0 mb-4 ">
 							<MDBRipple className="hover-overlay" rippleColor="white">
 								<img className="img-fluid shadow-3-strong" src={EverydayLifePic} alt="Life"/>
 								<a>
-									<div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}/>
+									<div className="mask" style={{backgroundColor: 'rgba(251, 251, 251, 0.2)'}}/>
 								</a>
 							</MDBRipple>
 						</div>
 					</MDBCol>
 					<MDBCol lg="6">
-						<h2 className="mb-3 p-0 text-dark">
-							<i class="fas fa-mountain"/>
-							<strong>Personal Life</strong>
+						<h2 className="mb-2 p-0 text-dark">
+							<i class="mr-2 fas fa-mountain"/>
+							<strong>Life</strong>
 						</h2>
 						<p>
-							Outside of work and photography, I love learning new things and going out of my comfort zone which brought me to have a lot of different hobbies and interests! Basically, I enjoy anything that involves the outdoors (surpise surprise).
+							My name is Peter and I like to party.
+							Outside of work and photography, I love learning new things and going out of my comfort zone which caused me to have a lot of different hobbies and interests. Basically, I enjoy anything that involves the outdoors!
 						</p>
 						<p>
-							Since I grew up in Montana, some of my hobbies/interests include hunting, fishing, hiking, camping, shooting guns, skiing, or dirtbiking. I also enjoy playing sports (for fun) such as ultimate frisbee, spikeball, volleyball, soccer, disc golf, and martial arts.
+							Since I grew up in Montana, some of my hobbies/interests include hunting, fishing, hiking, camping, shooting guns, skiing, dirtbiking, or playing with can of gasoline and matches... I also enjoy playing sports (for fun) such as ultimate frisbee, spikeball, volleyball, soccer, or disc golf.
 						</p>
 						<p>
-							The thing I enjoy the most about learning, however, is getting to know people and exchanging ideas. So if you ever want to chat and get coffee, hit me up!
+							The thing I learning the most, however, is getting to know people and exchanging ideas and jokes. So if you ever want to chat and get coffee, hit me up!
 						</p>
 						<p>
-							Each and everyday, I'm thankful to God for the talents and abilities I have and to my lovely parents for supporting and pushing me in life #bless.
+							To end, I just want to give credit to God and giving thanks for Him giving me talents and abilities I have. And of course, very thankful for my parents for being there for me, supporting, encouarging, and pushing me in life. It hasn't been easy but who said the Christian faith was suppose to be easy?
 						</p>
-						<p>
+						<p className="no-indentation">
 							"For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast."
 							<br/>
 							- Ephesians 2:8-9

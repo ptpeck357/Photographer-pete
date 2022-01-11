@@ -55,8 +55,11 @@ const Footer = () => {
 					</MDBRow>
 				</MDBContainer>
 			</section>
-			<div className="text-center p-4 rounded" style={{ backgroundColor: '#323741', color: '#FFFFFA' }}>
+			<div className="text-center p-4" style={{ backgroundColor: '#3E4551', color: '#FFFFF4' }}>
 				<small>Peter Peck Photography &copy; {(new Date().getFullYear())}</small>
+			</div>
+			<div className="footer-copyright text-center pt-1 pb-1" style={{ backgroundColor: '#323741', color: '#ADAFB3' }}>
+				<small> Built with React.js</small>
 			</div>
 		</MDBFooter>
 	);

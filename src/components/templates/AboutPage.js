@@ -22,10 +22,10 @@ const StyledHr = styled.hr`
 `;
 
 const AboutPage = () => {
-	window.scroll({
-		top: 0,
-		behavior: 'smooth'
-	});
+	// window.scroll({
+	// 	top: 0,
+	// 	behavior: 'smooth'
+	// });
 
 	return (
 		<ScrollAnimation delay={400} animateIn="fadeIn" animateOnce={false}>
@@ -49,7 +49,7 @@ const AboutPage = () => {
 								<img className="img-fluid shadow-3-strong" src={PhotographerPic} alt="Photographer"/>
 								<div class="bottom-right overlay-text">Photo credit: Adrianna Keeney</div>
 								<a>
-									<div className="mask" style={{backgroundColor: 'rgba(251, 251, 251, 0.2)'}}/>
+									<div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}/>
 								</a>
 							</MDBRipple>
 						</div>
@@ -63,10 +63,10 @@ const AboutPage = () => {
 							What kind of photography do I do? Well, I do all types varying from landscape, nightscape, portraits, engagement sessions, graduation shoots, to aerial shots! I also dabble in videography and the editing software Davinci Resolve 17.
 						</p>
 						<p>
-							I first got into photography when I received a digital Kodak camera for my 12th birthday and been enjoying it ever since! Over the years, I've been slowly adding the different niches of photography to my skillset. Here's the run down.
+							I first got into photography when I received a digital Kodak camera for my 12th birthday and been enjoying it ever since! Over the years, I've been slowly adding the different niches of photography to my skillset.
 						</p>
 						<p>
-							June 2010 is when I first picked up a camera and started going landscape. August 2016, I started dabbling in astrophotography. July 2020, I started doing more portrait and engagement shoots. Lastly, my latest interest has been flying my drone capturing aerial shots since July 2021.
+							June 2010 is when I first picked up a camera and started doing landscape. August 2016, I started dabbling in astrophotography (probably my favorite). July 2020, I started doing more portrait and engagement shoots. My latest interest  since July 2021 has been flying my drone videoing and capturing photos from up above.
 						</p>
 						<p>
 							Even though I've been doing photography for 12 plus years, there's always something new and exciting to learn! Usually how life works.
@@ -103,7 +103,6 @@ const AboutPage = () => {
 				{/* Software Engineering Section */}
 				<MDBRow className="border-bottom mb-5">
 					<MDBCol lg="1"/>
-
 					<MDBCol lg="6">
 						<h2 className="mb-2 p-0 text-dark">
 							<i className="mr-2 fas fa-laptop-code"/>
@@ -116,7 +115,7 @@ const AboutPage = () => {
 							Since I was about 8 years old, I had the dream of becoming an engineer. As a kid, I loved solving problems, brain teaser puzzles, creating things with my hands, and of course math being my favorite subject in school. Ironically, I rarely use math at my current job 😂.
 						</p>
 						<p>
-							The things I like about software engineering, however, is the creativity, the critical thinking, and the fact you can build anything! With me being a visual person in general, having that instantaneous feedback is my cup of tea.
+							The things I like about software engineering is the creativity it brings, the critical thinking, and the fact you can build anything at the tips of your fingertips! With me being a visual person in general, having that instantaneous feedback is my cup of tea.
 						</p>
 						<h4 className="tech-info text-dark">Programming Languages</h4>
 						<ul className="unorder-list">
@@ -133,29 +132,27 @@ const AboutPage = () => {
 							<MDBRipple className="hover-overlay" rippleColor="white">
 								<img className="img-fluid shadow-3-strong" src={LinkedinPic} alt="Software Engineering"/>
 								<a>
-									<div className="mask" style={{backgroundColor: 'rgba(251, 251, 251, 0.2)'}}/>
+									<div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}/>
 								</a>
 							</MDBRipple>
 						</div><MDBCol lg="1" />
 					</MDBCol>
 					<MDBCol lg="1" />
-
 				</MDBRow>
 
 				{/* Everyday Life Section */}
 				<MDBRow className="border-bottom mb-5">
-					<MDBCol lg="1"/>
-					<MDBCol lg="4">
+					<MDBCol lg="5">
 						<div className="rounded z-depth-4 mb-lg-0 mb-4 ">
 							<MDBRipple className="hover-overlay" rippleColor="white">
 								<img className="img-fluid shadow-3-strong" src={EverydayLifePic} alt="Life"/>
 								<a>
-									<div className="mask" style={{backgroundColor: 'rgba(251, 251, 251, 0.2)'}}/>
+									<div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}/>
 								</a>
 							</MDBRipple>
 						</div>
 					</MDBCol>
-					<MDBCol lg="6">
+					<MDBCol lg="7" className="mt-1">
 						<h2 className="mb-2 p-0 text-dark">
 							<i class="mr-2 fas fa-mountain"/>
 							<strong>Life</strong>
@@ -165,21 +162,21 @@ const AboutPage = () => {
 							Outside of work and photography, I love learning new things and going out of my comfort zone which caused me to have a lot of different hobbies and interests. Basically, I enjoy anything that involves the outdoors!
 						</p>
 						<p>
-							Since I grew up in Montana, some of my hobbies/interests include hunting, fishing, hiking, camping, shooting guns, skiing, dirtbiking, or playing with can of gasoline and matches... I also enjoy playing sports (for fun) such as ultimate frisbee, spikeball, volleyball, soccer, or disc golf.
+							Since I grew up in Montana, some of my hobbies/interests include hunting and fishing, hiking and camping (aka feeding the Mosquitoes), shooting guns and archery, skiing, dirtbiking, or playing with a can of gasoline and matches... because that's how you entertain country kids... Anyways moving on, I also enjoy playing casual sports such as ultimate frisbee, spikeball, volleyball, soccer, disc golf, and martial arts.
 						</p>
 						<p>
-							The thing I learning the most, however, is getting to know people and exchanging ideas and jokes. So if you ever want to chat and get coffee, hit me up!
+							The thing I learning the most, however, is learning more about God and the people He placed in my life. Soooo if you ever want to chat and get coffee to exchange ideas and jokes, hit me up!
 						</p>
 						<p>
 							To end, I just want to give credit to God and giving thanks for Him giving me talents and abilities I have. And of course, very thankful for my parents for being there for me, supporting, encouarging, and pushing me in life. It hasn't been easy but who said the Christian faith was suppose to be easy?
 						</p>
-						<p className="no-indentation">
+						<p className="mt-3 no-indentation">
 							"For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast."
-							<br/>
+							<br />
 							- Ephesians 2:8-9
 						</p>
 					</MDBCol>
-					<MDBCol lg="1"/>
+
 				</MDBRow>
 			</MDBContainer>
 		</ScrollAnimation>

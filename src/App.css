@@ -45,8 +45,8 @@ p, h3 {
 }
 
 .overlay-text {
-	color: white;
-	font: bold 24px Helvetica, Sans-Serif;
+	color: whitesmoke;
+	font: bold 20px Helvetica, Sans-Serif;
 	letter-spacing: -1px;
 	background: rgba(0, 0, 0, 0.4);
 	padding: 3px;

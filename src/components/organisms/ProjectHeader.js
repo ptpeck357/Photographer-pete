@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Parallax } from 'react-parallax';
 import PropTypes from 'prop-types';
 
-// eslint-disable-next-line
 import { MDBCard, MDBCardBody } from 'mdb-react-ui-kit';
 
 const ProjectHeader = ({ bgImageProp, titleProp, dateProp, descProp, styleProp }) => {
@@ -22,9 +21,8 @@ const ProjectHeader = ({ bgImageProp, titleProp, dateProp, descProp, styleProp }
 
 	return (
 		<>
-			<Parallax bgImage={bgImage} strength={1000} className={"parallax-mobile-view " + style}>
+			{/* <Parallax bgImage={"/ptpeck357/Photographer-pete/static/media/about_me_cover.50805b12.jpg"} strength={1000} className={"parallax-mobile-view " + style}>
 				<div className="headerbg">
-					Project Header
 				</div>
 			</Parallax>
 			<div id="headerbox" className="rounded z-depth-2">
@@ -32,6 +30,19 @@ const ProjectHeader = ({ bgImageProp, titleProp, dateProp, descProp, styleProp }
 					<h1 className="headerTitle display-4" ><strong>{title}</strong></h1>
 					<p className="grey-text headerDesc">{desc}</p>
 				</MDBCardBody>
+			</div> */}
+
+			<div>
+				<Parallax bgImage={"/ptpeck357/Photographer-pete/static/media/about_me_cover.50805b12.jpg"} strength={1000} className={"parallax-mobile-view " + style}>
+					<div className="headerbg"/>
+				</Parallax>
+				<MDBCard id="headerbox" className="rounded z-depth-2">
+					<MDBCardBody className="text-center Card">
+						<h1 className="headerTitle display-4" ><strong>About me</strong></h1>
+						<h5 className="blue-text headerDate">{date} </h5>
+						<p className="grey-text headerDesc"> {desc}</p>
+					</MDBCardBody>
+				</MDBCard>
 			</div>
 		</>
 	);

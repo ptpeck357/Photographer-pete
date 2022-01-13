@@ -17,7 +17,7 @@ yarn-error.log*
 dist
 
 # images
-/src/images/
+# /src/images/
 
 # misc
 .DS_Store

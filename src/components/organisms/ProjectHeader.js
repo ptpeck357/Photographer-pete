@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Parallax } from 'react-parallax';
 import PropTypes from 'prop-types';
+import ScrollAnimation from 'react-animate-on-scroll';
 
-import { MDBCard, MDBCardBody } from 'mdb-react-ui-kit';
+import { MDBCard, MDBCardBody, MDBCardTitle } from 'mdb-react-ui-kit';
+import { Jumbotron, Card, Button, CardTitle, CardText } from 'reactstrap';
 
 const ProjectHeader = ({ bgImageProp, titleProp, dateProp, descProp, styleProp }) => {
 	const [bgImage, setBgImage] = useState('');
@@ -33,15 +35,17 @@ const ProjectHeader = ({ bgImageProp, titleProp, dateProp, descProp, styleProp }
 			</div> */}
 
 			<div>
-				<Parallax bgImage={"/ptpeck357/Photographer-pete/static/media/about_me_cover.50805b12.jpg"} strength={1000} className={"parallax-mobile-view " + style}>
-					<div className="headerbg"/>
-				</Parallax>
+				<ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={true}>
+					<Parallax bgImage={"/ptpeck357/Photographer-pete/static/media/about_me_cover.50805b12.jpg"} strength={1000} className={"parallax-mobile-view " + style}>
+						<div className="headerbg"/>
+					</Parallax>
+				</ScrollAnimation>
 				<MDBCard id="headerbox" className="rounded z-depth-2">
-					<MDBCardBody className="text-center Card">
+					<div className="text-center Card">
 						<h1 className="headerTitle display-4" ><strong>About me</strong></h1>
 						<h5 className="blue-text headerDate">{date} </h5>
 						<p className="grey-text headerDesc"> {desc}</p>
-					</MDBCardBody>
+					</div>
 				</MDBCard>
 			</div>
 		</>

@@ -1,24 +1,8 @@
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-}
-
 /* ===========================
 	Layouts
 ==============================*/
 .container {
-	width: 90% !important;
+	width: 85% !important;
 }
 
 .unorder-list {
@@ -97,13 +81,16 @@ p, h3 {
 ==============================*/
 
 #headerbox {
-	margin: -6em 18em 5em 18em;
+	/* /* margin: -6em 18em 5em 18em; */
+	/* opacity: 0.5; */
+		background-color: rgba(255, 255, 255, .7);
+
 }
 
 #headerbox .Card {
 	padding: 1.25rem;
-	background-color: rgba(255, 255, 255, .7);
-	margin-bottom: 7.5em;
+	/* background-color: rgba(255, 255, 255, .7); */
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
 }
 
 .headerbg {
@@ -122,6 +109,12 @@ p, h3 {
   All Projects Cards
 ==============================*/
 
+.display-4 {
+	font-weight: 500 !important;
+	padding-top: 1em;
+	/* text-shadow: 2px 2px 4px #5a5051; */
+	font-size: 4rem;
+}
 
 .tech-info {
 	font-size: 1.25rem;
@@ -157,7 +150,7 @@ p, h3 {
 
 .display-4 {
 	font-weight: 500 !important;
-	padding-top: 1em;
+	/* padding-top: 1em; */
 	font-size: 4rem;
 }
 
@@ -169,6 +162,11 @@ p, h3 {
 /* Large Display */
 
 @media only screen and (min-width: 1600px) {
+	.display-4 {
+		padding-top: 0.5em !important;
+		font-size: 4.5em !important;
+	}
+
 	.parallax-mobile-view img {
 		top: -30rem;
 		height: 100 !important;
@@ -188,6 +186,18 @@ p, h3 {
 }
 
 @media only screen and (min-width: 1477px) and (max-width: 1599px) {
+	.container {
+		max-width: 75%!important;
+	}
+
+	#headerbox{
+		margin: -5em 20em 5em 20em !important;
+	}
+
+	.display-4 {
+		padding-top: 0.5em !important;
+	}
+
 	.parallax-mobile-view img {
 		top: -15em;
 		height: 70em !important;
@@ -198,30 +208,29 @@ p, h3 {
 	html {
 		font-size: 80%;
 	}
+
+	.display-4 {
+		padding-top: 0.5em !important;
+	}
+
 	.container {
 		max-width: 80%!important;
 	}
-	.view .imgFit {
-		height: 57vh !important;
-		width: 93vw !important;
-	}
-	.view .stripe div p {
-		font-size: 1.25em !important;
-	}
+
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -25em;
 		height: 85em !important;
 	}
-	.display-4 {
-		padding-top: 0.5em !important;
-	}
+
 	.view .mb-intro {
 		margin-bottom: 10em;
 	}
+
 	#headerbox {
-		margin: -6em 23em 5em 23em;
+		margin: -5em 23em 5em 23em;
 	}
+
 	.headerbg-contact {
 		height: 47em !important;
 	}
@@ -242,6 +251,10 @@ p, h3 {
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1341px) {
+	.display-4 {
+		padding-top: 0.5em !important;
+	}
+
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -15em;
@@ -256,8 +269,15 @@ p, h3 {
 }
 
 /* Medium screen : 992px. Ipad Pro */
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+	html {
+		font-size: 90%;
+	}
+
+	.display-4 {
+		padding-top: 1em !important;
+	}
+
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -15em;
@@ -274,10 +294,15 @@ p, h3 {
 /* Tablet :768px. Ipad */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.display-4 {
+		font-size: 3.25em !important;
+		padding-top: 1em !important;
+	}
+
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
-		left: 20em !important;
 		top: -10em !important;
+		left: 15em !important;
 		height: 50em !important;
 	}
 }
@@ -294,6 +319,11 @@ p, h3 {
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 767px) {
+	.display-4 {
+		font-size: 4em !important;
+		padding-top: 0em !important;
+	}
+
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		left: 14em !important;
@@ -321,11 +351,24 @@ p, h3 {
 /* small mobile :320px. */
 
 @media only screen and (max-width: 479px) {
+	#headerbox {
+		margin-top: -3em !important;
+	}
+
+	.display-4 {
+		font-size: 1.85em !important;
+		padding-top: 1em !important;
+	}
+
 	/* Parallax Header Image  */
+	.headerbg {
+		height: 250px;
+	}
+
 	.parallax-mobile-view img {
 		top: -8em !important;
-		left: -7rem !important;
-		height: 55em !important;
+		left: -5rem !important;
+		height: 45em !important;
 	}
 
 	.bottom-right {

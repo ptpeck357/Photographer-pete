@@ -26,14 +26,6 @@ const SOCIAL_MEDIA_LIST = [
 	{
 		href: 'https://www.linkedin.com/in/petertpeck/',
 		fa_class: 'fab fa-linkedin'
-	},
-	{
-		href: 'https://www.youtube.com/channel/UCRdXzzZ0yJ0xtxhzAwNZPCA',
-		fa_class: 'fab fa-youtube'
-	},
-	{
-		href: 'https://www.pinterest.com/ptpeck357/_saved/',
-		fa_class: 'fab fa-pinterest'
 	}
 ];
 

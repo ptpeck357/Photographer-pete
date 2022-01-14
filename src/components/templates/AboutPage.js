@@ -1,5 +1,6 @@
-// eslint-disable-next-line
 import { MDBRipple, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
+// eslint-disable-next-line
+
 import LazyLoad from 'react-lazy-load';
 import ScrollAnimation from 'react-animate-on-scroll';
 import styled from 'styled-components';
@@ -30,10 +31,10 @@ const Mask = styled.div`
 `;
 
 const AboutPage = () => {
-	// window.scroll({
-	// 	top: 0,
-	// 	behavior: 'smooth'
-	// });
+	window.scroll({
+		top: 0,
+		behavior: 'smooth'
+	});
 
 	return (
 		<>
@@ -47,14 +48,14 @@ const AboutPage = () => {
 						growing up days on a small ranch in Montana. I love to travel, meet people, and explore the outdoors... rest to be continued!
 					</p>
 					<StyledHr />
+
 					{/* Photographer Section */}
 					<MDBRow className="mt-5">
-						{/* <MDBCol lg="1"/> */}
 						<MDBCol lg="5">
 							<div className="rounded z-depth-4 mb-lg-0 mb-4">
 								<MDBRipple className="hover-overlay" rippleColor="white">
 									<img className="img-fluid shadow-3-strong" src={PhotographerPic} alt="Photographer" loading="lazy" />
-									<div class="bottom-right overlay-text">Photo Credit: Adrianna Keeney</div>
+									{/* <div class="bottom-right overlay-text">Photo Credit: Adrianna Keeney</div> */}
 									<a>
 										<Mask className="mask" />
 									</a>

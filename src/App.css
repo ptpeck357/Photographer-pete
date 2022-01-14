@@ -230,10 +230,6 @@ p, h3 {
 	#headerbox {
 		margin: -5em 23em 5em 23em;
 	}
-
-	.headerbg-contact {
-		height: 47em !important;
-	}
 }
 
 @media only screen and (min-width: 1342px) and (max-width: 1399px) {
@@ -244,9 +240,6 @@ p, h3 {
 	}
 	#headerbox {
 		margin: -6em 23em 5em 23em;
-	}
-	.headerbg-contact {
-		height: 47em !important;
 	}
 }
 
@@ -263,9 +256,6 @@ p, h3 {
 	#headerbox {
 		margin: -6em 23em 5em 23em;
 	}
-	.headerbg-contact {
-		height: 47em !important;
-	}
 }
 
 /* Medium screen : 992px. Ipad Pro */
@@ -274,20 +264,18 @@ p, h3 {
 		font-size: 90%;
 	}
 
-	.display-4 {
-		padding-top: 1em !important;
-	}
-
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -15em;
 		height: 60em !important;
 	}
+
 	#headerbox {
-		margin: -6em 23em 5em 23em;
+		margin: -6em 3em 6em 3em;
 	}
-	.headerbg-contact {
-		height: 47em !important;
+
+	.display-4 {
+		padding-top: 1em !important;
 	}
 }
 
@@ -304,6 +292,16 @@ p, h3 {
 		top: -10em !important;
 		left: 15em !important;
 		height: 50em !important;
+	}
+
+	#headerbox {
+		margin: -5em 3em 5em 3em;
+
+	}
+
+	.display-4 {
+		font-size: 3.25em !important;
+		padding-top: 1em !important;
 	}
 }
 

@@ -46,7 +46,7 @@ const Footer = () => {
 				<small>Peter Peck Photography &copy; {(new Date().getFullYear())}</small>
 			</div>
 			<div className="footer-copyright text-center pt-1 pb-1" style={{ backgroundColor: '#323741', color: '#ADAFB3' }}>
-				<small> Built with React.js</small>
+				<small>Built with React.js</small>
 			</div>
 		</MDBFooter>
 	);

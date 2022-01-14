@@ -36,7 +36,7 @@ const ProjectHeader = ({ bgImageProp, titleProp, dateProp, descProp, styleProp }
 
 			<div>
 				<ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={true}>
-					<Parallax bgImage={"/ptpeck357/Photographer-pete/static/media/about_me_cover.50805b12.jpg"} strength={1000} className={"parallax-mobile-view " + style}>
+					<Parallax bgImage={"/ptpeck357/Photographer-pete/static/media/cover_photo.84743d14.jpg"} strength={1000} className={"parallax-mobile-view " + style}>
 						<div className="headerbg"/>
 					</Parallax>
 				</ScrollAnimation>

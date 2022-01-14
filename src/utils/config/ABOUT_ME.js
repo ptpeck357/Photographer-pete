@@ -1,4 +1,4 @@
-import BackgroundImage from '../../images/about_me_cover.jpg'
+import BackgroundImage from '../../images/cover_photo.jpg'
 
 const headerData = {
 	bgImage: {BackgroundImage},

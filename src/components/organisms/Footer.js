@@ -1,6 +1,22 @@
 import { MDBFooter, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import styled from 'styled-components';
 import SocialMediaLinks from '../molecules/SocialMediaLinks';
 import ContactInfo from '../molecules/ContactInfo';
+
+const CompanyNameDiv = styled.div`
+	text-align: center;
+	padding: 1.5em;
+	background-color: #3E4551;
+	color: #FFFFF4;
+`;
+
+const FooterDiv = styled.div`
+	text-align: center;
+	padding-top: 0.50em;
+	padding-bottom: 0.50em;
+	background-color: #323741;
+	color: #ADAFB3;
+`;
 
 const Footer = () => {
 	return (
@@ -42,12 +58,12 @@ const Footer = () => {
 					</MDBRow>
 				</MDBContainer>
 			</section>
-			<div className="text-center p-4" style={{ backgroundColor: '#3E4551', color: '#FFFFF4' }}>
+			<CompanyNameDiv>
 				<small>Peter Peck Photography &copy; {(new Date().getFullYear())}</small>
-			</div>
-			<div className="footer-copyright text-center pt-1 pb-1" style={{ backgroundColor: '#323741', color: '#ADAFB3' }}>
+			</CompanyNameDiv>
+			<FooterDiv>
 				<small>Built with React.js</small>
-			</div>
+			</FooterDiv>
 		</MDBFooter>
 	);
 }

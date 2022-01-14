@@ -3,11 +3,11 @@ import { Parallax } from 'react-parallax';
 import PropTypes from 'prop-types';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import { MDBCard, MDBCardBody, MDBCardTitle } from 'mdb-react-ui-kit';
+import { MDBCard } from 'mdb-react-ui-kit';
 
 const ProjectHeader = ({ bgImageProp, titleProp, dateProp, descProp, styleProp }) => {
 	const [bgImage, setBgImage] = useState('');
-	const [title, setTitle] = useState('');// eslint-disable-next-line
+	const [title, setTitle] = useState('');
 	const [date, setDate] = useState('');
 	const [desc, setDesc] = useState('');
 	const [style, setStyle] = useState('');

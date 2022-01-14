@@ -45,8 +45,9 @@ const AboutPage = () => {
 						<br />
 						I'm a photographer, wanderer, and a software engineer.
 						I was born in Cambodia and was adopted at age 1. I've spent most of my
-						growing up days on a small ranch in Montana. I love to travel, meet people, and explore the outdoors... rest to be continued!
+						growing up days on a small ranch in Montana. I love to travel, eat food, and explore the outdoors... rest to be continued!
 					</p>
+
 					<StyledHr />
 
 					{/* Photographer Section */}
@@ -54,8 +55,10 @@ const AboutPage = () => {
 						<MDBCol lg="5">
 							<div className="rounded z-depth-4 mb-lg-0 mb-4">
 								<MDBRipple className="hover-overlay" rippleColor="white">
-									<img className="img-fluid shadow-3-strong" src={PhotographerPic} alt="Photographer" loading="lazy" />
-									{/* <div class="bottom-right overlay-text">Photo Credit: Adrianna Keeney</div> */}
+									<LazyLoad>
+										<img className="img-fluid shadow-3-strong" src={PhotographerPic} alt="Photographer" loading="lazy" />
+									</LazyLoad>
+									{/* <div class=name"bottom-right overlay-text">Photo Credit: Adrianna Keeney</div> */}
 									<a>
 										<Mask className="mask" />
 									</a>
@@ -71,10 +74,10 @@ const AboutPage = () => {
 								What kind of photography do I do? Well, I do all types varying from landscape, portraits, engagement and graduation sessions to aerial shots! I've also dabbled in videography and Davinci Resolve editing software.
 							</p>
 							<p>
-								I first got into photography when I received a digital Kodak camera for my 11th birthday, which then sat in my dresser for a year... Nevertheless, over the years I've been slowly adding the different niches of photography to my skillset.
+								I first got into photography when I received a digital Kodak camera for my 11th birthday, which then sat in my dresser for a year... Over the years I've been slowly adding the different niches of photography to my skillset.
 							</p>
 							<p>
-								June 2010 is when I first picked up a camera and started doing landscape. August 2016, I started dabbling in astrophotography (probably my favorite). July 2020, I started doing more portrait and engagement shoots. My latest interest  since July 2021 has been flying my drone videoing and capturing photos from up above.
+								June 2010 is when I first picked up a camera and started doing landscape. Then August 2016 I started dabbling in astrophotography (still probably my favorite). I got bored and in July 2020 I started doing more portrait and engagement shoots (which was out of my comfort zone at the time). My latest interest since July 2021 has been flying my drone videoing and capturing photos.
 							</p>
 							<p>
 								Even though I've been doing photography for 12 plus years, there's always something new and exciting to learn! Usually how life works.
@@ -89,9 +92,9 @@ const AboutPage = () => {
 								<li className="camera-info-list">Canon 6D Mark II</li>
 								<li className="camera-info-list">Sigma 50mm f1.4 Lens</li>
 								<li className="camera-info-list">Canon EF 24-70mm f2.8</li>
-								<li className="camera-info-list">Canon EF 70-200mm f/2.8L IS II</li>
-								<li className="camera-info-list">DJI Air 2s Drone</li>
-								<li className="camera-info-list">GoPro Hero8 Black</li>
+								<li className="camera-info-list">Canon EF 70-200mm f/2.8</li>
+								<li className="camera-info-list">DJI Air 2s</li>
+								<li className="camera-info-list">GoPro Hero 8</li>
 							</StyledUl>
 							<br />
 						</MDBCol>
@@ -99,9 +102,7 @@ const AboutPage = () => {
 							<h4 className="tech-info text-dark">Editing Software</h4>
 							<StyledUl className="unorder-list">
 								<li className="software-info-list">Adobe Lightroom Classic</li>
-								<li className="software-info-list">Adobe Lightroom</li>
 								<li className="software-info-list">Adobe Photoshop</li>
-								<li className="software-info-list">Adobe Photoshop Express</li>
 								<li className="software-info-list">Adobe Bridge</li>
 								<li className="software-info-list">Adobe Premiere Rush</li>
 								<li className="software-info-list">Davinci Resolve 17</li>
@@ -120,7 +121,7 @@ const AboutPage = () => {
 								I'm a Software Engineer specialized in Full-Stack Web Development with 3 years of experience in the industry. I currently work at {<ActionLink href="https://www.economicmodeling.com/" classes="blue" target="_blank">Emsi Burning Glass</ActionLink>} located here in Moscow, Idaho.
 							</p>
 							<p>
-								Since I was about 8 years old, I had dreams of becoming an engineer. Since childhood, I loved solving problems, brain teaser puzzles, creating things with my hands, and of course math being my favorite subject in school. Ironically, I rarely use math at my current job 😂.
+								Since I was about 8 years old, I had dreams of becoming an engineer. Since childhood, I loved solving problems, brain teaser puzzles, creating things with my hands, and of course math being my favorite subject in school. Ironically, I rarely use math at my current job.
 							</p>
 							<p>
 								The things I appreciate about software engineering is the creativity, the critical thinking, and the fact you can build anything at the tips of your fingertips! With me being a visual person in general, building things and having that instantaneous feedback is my cup of tea.
@@ -130,7 +131,9 @@ const AboutPage = () => {
 						<MDBCol lg="5">
 							<div className="rounded z-depth-4 mb-lg-0 mb-4">
 								<MDBRipple className="hover-overlay" rippleColor="white">
-									<img className="img-fluid shadow-3-strong" src={LinkedinPic} alt="Software Engineering" />
+									<LazyLoad>
+										<img className="img-fluid shadow-3-strong" src={LinkedinPic} alt="Software Engineering" />
+									</LazyLoad>
 									<a>
 										<Mask className="mask" />
 									</a>
@@ -144,10 +147,10 @@ const AboutPage = () => {
 							<StyledUl className="unorder-list">
 								<li className="languages-info-list">HTML/CSS/SASS</li>
 								<li className="languages-info-list">Javascript/jQuery</li>
-								<li className="languages-info-list">Node.js</li>
+								<li className="languages-info-list">Node.js/Express.js</li>
 								<li className="languages-info-list">React.js</li>
-								<li className="languages-info-list">PHP (OOP)</li>
-								<li className="languages-info-list">SQL</li>
+								<li className="languages-info-list">PHP</li>
+								<li className="languages-info-list">SQL/NoSQL </li>
 							</StyledUl>
 						</MDBCol>
 
@@ -158,7 +161,9 @@ const AboutPage = () => {
 						<MDBCol lg="5">
 							<div className="rounded z-depth-4 mb-lg-0 mb-4 ">
 								<MDBRipple className="hover-overlay" rippleColor="white">
-									<img className="img-fluid shadow-3-strong" src={EverydayLifePic} alt="Life" />
+									<LazyLoad>
+										<img className="img-fluid shadow-3-strong" src={EverydayLifePic} alt="Life" />
+									</LazyLoad>
 									<a>
 										<Mask className="mask" />
 									</a>
@@ -167,15 +172,14 @@ const AboutPage = () => {
 						</MDBCol>
 						<MDBCol lg="7" className="mt-1">
 							<h2 className="mb-2 p-0 text-dark">
-								<i class="mr-2 fas fa-mountain" />
+								<i className="mr-2 fas fa-mountain" />
 								<strong>Life</strong>
 							</h2>
 							<p>
-								My name is Peter and I like to party.
 								Outside of work and photography, I love learning new things and going out of my comfort zone which caused me to have a lot of different hobbies and interests. Basically, I enjoy anything that involves the outdoors!
 							</p>
 							<p>
-								Since I grew up in Montana, some of my hobbies/interests include hunting and fishing, hiking and camping (aka feeding the Mosquitoes), shooting guns and archery, skiing, dirtbiking, or playing with a can of gasoline and matches... because that's how you entertain country kids... Anyways, let's forget I said that. I also enjoy playing sports to pass time such as ultimate frisbee, spikeball, volleyball, soccer, disc golf, or martial arts.
+								Because I grew up in Montana, some of my hobbies/interests include hunting and fishing, hiking and camping (aka feeding the Mosquitoes), shooting guns and archery, skiing, dirtbiking, and playing with a can of gasoline and matches... because that's how you entertain country kids... Anyways, let's forget I said that. I also enjoy playing sports to pass time such as ultimate frisbee, spikeball, volleyball, soccer, disc golf, and martial arts.
 							</p>
 							<p>
 								To end, I want to give credit to God for giving me the talents and gifts I have. And of course, thankful for my parents for supporting, encouarging, and pushing me in life. It hasn't been the easiest but who said the Christian faith was suppose to be easy?

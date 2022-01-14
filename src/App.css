@@ -1,6 +1,7 @@
 /* ===========================
 	Layouts
 ==============================*/
+
 .container {
 	width: 75% !important;
 }
@@ -249,8 +250,9 @@ p, h3 {
 		top: -15em;
 		height: 60em !important;
 	}
+
 	#headerbox {
-		margin: -6em 23em 5em 23em;
+		margin: -6em 10em 5em 10em;
 	}
 }
 
@@ -293,7 +295,6 @@ p, h3 {
 
 	#headerbox {
 		margin: -5em 3em 5em 3em;
-
 	}
 
 	.display-4 {

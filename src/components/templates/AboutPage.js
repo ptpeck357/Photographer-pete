@@ -1,7 +1,6 @@
 import { MDBRipple, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 // eslint-disable-next-line
 
-import LazyLoad from 'react-lazy-load';
 import ScrollAnimation from 'react-animate-on-scroll';
 import styled from 'styled-components';
 import ActionLink from '../atoms/ActionLink'
@@ -38,7 +37,7 @@ const AboutPage = () => {
 
 	return (
 		<>
-			<ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={false}>
+			<ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={true}>
 				<MDBContainer id="aboutpage" className="mt-3">
 					<p className="text-center w-responsive mx-auto text-body">
 						Yo! Welcome to my website!
@@ -52,12 +51,10 @@ const AboutPage = () => {
 
 					{/* Photographer Section */}
 					<MDBRow className="mt-5">
-						<MDBCol lg="5">
+						<MDBCol lg="4">
 							<div className="rounded z-depth-4 mb-lg-0 mb-4">
 								<MDBRipple className="hover-overlay" rippleColor="white">
-									<LazyLoad>
-										<img className="img-fluid shadow-3-strong" src={PhotographerPic} alt="Photographer" loading="lazy" />
-									</LazyLoad>
+										<img className="img-fluid shadow-3-strong" src={PhotographerPic} alt="Photographer" />
 									{/* <div class=name"bottom-right overlay-text">Photo Credit: Adrianna Keeney</div> */}
 									<a>
 										<Mask className="mask" />
@@ -71,26 +68,23 @@ const AboutPage = () => {
 								<strong>Photographer</strong>
 							</h2>
 							<p>
-								What kind of photography do I do? Well, I do all types varying from landscape, portraits, engagement and graduation sessions to aerial shots! I've also dabbled in videography and Davinci Resolve editing software.
+								What kind of photography do I do? Well, I do all types varying from landscape, portraits, engagement and graduation sessions to aerial shots! I also dabble in videography and post processing in Davinci Resolve.
 							</p>
 							<p>
-								I first got into photography when I received a digital Kodak camera for my 11th birthday, which then sat in my dresser for a year... Over the years I've been slowly adding the different niches of photography to my skillset.
+								I first got into photography when I received a digital Kodak camera for my 11th birthday which then sat in my dresser for a year... Roughly a year later on June 2010, I decided to put my camera to use and started doing landscape photography. August 2016 rolled around, I started to dabble in astrophotography. After quarantine in 2020, I wanted to learn and get more into portrait and engagement shoots. My latest interest niche now is aerial photography since July 2021.
 							</p>
 							<p>
-								June 2010 is when I first picked up a camera and started doing landscape. Then August 2016 I started dabbling in astrophotography (still probably my favorite). I got bored and in July 2020 I started doing more portrait and engagement shoots (which was out of my comfort zone at the time). My latest interest since July 2021 has been flying my drone videoing and capturing photos.
-							</p>
-							<p>
-								Even though I've been doing photography for 12 plus years, there's always something new and exciting to learn! Usually how life works.
+								Even though I've been doing photography for 12 plus years, there's always something new and exciting to learn whether of new editing skills or new techniques when I'm out in the field.
 							</p>
 
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="border-bottom ps-0 pt-4">
+					<MDBRow className="border-bottom ps-0 pt-5">
 						<MDBCol lg="3">
 							<h6 className="tech-info text-dark">My Camera Gear</h6>
 							<StyledUl className="unorder-list">
 								<li className="camera-info-list">Canon 6D Mark II</li>
-								<li className="camera-info-list">Sigma 50mm f1.4 Lens</li>
+								<li className="camera-info-list">Sigma 50mm f1.4</li>
 								<li className="camera-info-list">Canon EF 24-70mm f2.8</li>
 								<li className="camera-info-list">Canon EF 70-200mm f/2.8</li>
 								<li className="camera-info-list">DJI Air 2s</li>
@@ -121,19 +115,17 @@ const AboutPage = () => {
 								I'm a Software Engineer specialized in Full-Stack Web Development with 3 years of experience in the industry. I currently work at {<ActionLink href="https://www.economicmodeling.com/" classes="blue" target="_blank">Emsi Burning Glass</ActionLink>} located here in Moscow, Idaho.
 							</p>
 							<p>
-								Since I was about 8 years old, I had dreams of becoming an engineer. Since childhood, I loved solving problems, brain teaser puzzles, creating things with my hands, and of course math being my favorite subject in school. Ironically, I rarely use math at my current job.
+								Since I was about 8 years old, I dreamed of becoming an engineer whether that was aerospace or civil engineering. I always loved solving problems, brain teaser puzzles, creating things with my hands, and of course playing with legos. Ironically though, I rarely use math at my current job...
 							</p>
 							<p>
 								The things I appreciate about software engineering is the creativity, the critical thinking, and the fact you can build anything at the tips of your fingertips! With me being a visual person in general, building things and having that instantaneous feedback is my cup of tea.
 							</p>
 
 						</MDBCol>
-						<MDBCol lg="5">
+						<MDBCol lg="4">
 							<div className="rounded z-depth-4 mb-lg-0 mb-4">
 								<MDBRipple className="hover-overlay" rippleColor="white">
-									<LazyLoad>
-										<img className="img-fluid shadow-3-strong" src={LinkedinPic} alt="Software Engineering" />
-									</LazyLoad>
+									<img className="img-fluid shadow-3-strong" src={LinkedinPic} alt="Software Engineering" />
 									<a>
 										<Mask className="mask" />
 									</a>
@@ -141,16 +133,20 @@ const AboutPage = () => {
 							</div><MDBCol lg="1" />
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="border-bottom pt-4">
+					<MDBRow className="border-bottom pt-5">
 						<MDBCol lg="5" offsetLg="7">
-							<h4 className="tech-info text-dark">Programming Languages</h4>
+							<h4 className="tech-info text-dark">Skills</h4>
 							<StyledUl className="unorder-list">
 								<li className="languages-info-list">HTML/CSS/SASS</li>
 								<li className="languages-info-list">Javascript/jQuery</li>
 								<li className="languages-info-list">Node.js/Express.js</li>
 								<li className="languages-info-list">React.js</li>
 								<li className="languages-info-list">PHP</li>
-								<li className="languages-info-list">SQL/NoSQL </li>
+								<li className="languages-info-list">SQL/NoSQL</li>
+								<li className="languages-info-list">GIT</li>
+								<li className="languages-info-list">Github/Gitlab</li>
+								<li className="languages-info-list">CI/CD</li>
+								<li className="languages-info-list">Visual Studio Codes</li>
 							</StyledUl>
 						</MDBCol>
 
@@ -158,12 +154,10 @@ const AboutPage = () => {
 
 					{/* Everyday Life Section */}
 					<MDBRow className="mt-5 mb-5">
-						<MDBCol lg="5">
+						<MDBCol lg="4">
 							<div className="rounded z-depth-4 mb-lg-0 mb-4 ">
 								<MDBRipple className="hover-overlay" rippleColor="white">
-									<LazyLoad>
-										<img className="img-fluid shadow-3-strong" src={EverydayLifePic} alt="Life" />
-									</LazyLoad>
+									<img className="img-fluid shadow-3-strong" src={EverydayLifePic} alt="Life" />
 									<a>
 										<Mask className="mask" />
 									</a>
@@ -179,11 +173,13 @@ const AboutPage = () => {
 								Outside of work and photography, I love learning new things and going out of my comfort zone which caused me to have a lot of different hobbies and interests. Basically, I enjoy anything that involves the outdoors!
 							</p>
 							<p>
-								Because I grew up in Montana, some of my hobbies/interests include hunting and fishing, hiking and camping (aka feeding the Mosquitoes), shooting guns and archery, skiing, dirtbiking, and playing with a can of gasoline and matches... because that's how you entertain country kids... Anyways, let's forget I said that. I also enjoy playing sports to pass time such as ultimate frisbee, spikeball, volleyball, soccer, disc golf, and martial arts.
+								Because I grew up in Montana, some of my hobbies/interests include hunting and fishing, hiking and camping (aka feeding the Mosquitoes), shooting guns and archery, skiing, dirtbiking, and playing with a can of gasoline and matches... because that's how you entertain country kids... Anyways, let's forget I said that. I also enjoy playing sports to pass time such as ultimate frisbee, spikeball, volleyball, soccer, disc golf, ping-pong, billiard, and martial arts.
 							</p>
 							<p>
 								To end, I want to give credit to God for giving me the talents and gifts I have. And of course, thankful for my parents for supporting, encouarging, and pushing me in life. It hasn't been the easiest but who said the Christian faith was suppose to be easy?
 							</p>
+							<br />
+							<br />
 							<br />
 							<p className="no-indentation">
 								"For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast."
@@ -191,6 +187,19 @@ const AboutPage = () => {
 								- Ephesians 2:8-9
 							</p>
 						</MDBCol>
+						<MDBRow className="border-bottom pt-5">
+							<MDBCol lg="3">
+								<h4 className="tech-info text-dark">Survival Skills</h4>
+								<StyledUl className="unorder-list">
+									<li className="languages-info-list">Eating</li>
+									<li className="languages-info-list">Making coffee</li>
+									<li className="languages-info-list">Fixing myself a bowl of cereal at night</li>
+									<li className="languages-info-list">Sleeping</li>
+									<li className="languages-info-list">Full sends only</li>
+								</StyledUl>
+							</MDBCol>
+
+						</MDBRow>
 					</MDBRow>
 				</MDBContainer>
 			</ScrollAnimation>

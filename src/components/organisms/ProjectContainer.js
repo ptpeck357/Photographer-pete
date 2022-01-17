@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 
 import ProjectHeader from './ProjectHeader';
 import AboutPage from '../templates/AboutPage';
+import Home from '../templates/Home';
 
 const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, showFilterProp, styleProp }) => {
-	const [headerInfo, setHeaderInfo] = useState('');// eslint-disable-next-line
+	const [headerInfo, setHeaderInfo] = useState(headerInfoProp);// eslint-disable-next-line
 	const [imageArray, setImageArray] = useState([]);// eslint-disable-next-line
 	const [renderType, setRenderType] = useState('');// eslint-disable-next-line
 	const [showFilter, setShowFilter] = useState(false);// eslint-disable-next-line
@@ -17,11 +18,15 @@ const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, show
 		setRenderType(renderTypeProp);
 		setShowFilter(showFilterProp);
 		setStyle(styleProp);
-	}, [headerInfoProp, imageArrayProp, renderTypeProp, showFilterProp, styleProp]);
+	}, []);
 
 	const renderComponent = (renderType) => {
 		switch (renderType){
-			case 'aboutme':
+			// case 'gallery':
+			// 	return <Home />
+			case 'feature':
+				return <AboutPage />
+			case 'about':
 				return <AboutPage />
 			default:
 				return <span>No Pictures</span>

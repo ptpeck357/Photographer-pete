@@ -1,10 +1,10 @@
 import BackgroundImage from '../../images/cover_photo.jpg'
 
 const headerData = {
-	bgImage: {BackgroundImage},
-	title: 'About Me',
-	date: '',
-	desc: ''
+	bgImageProp: BackgroundImage,
+	titleProp: 'About Me',
+	dateProp: '',
+	descProp: ''
 };
 
 const imageArray = [];

@@ -11,7 +11,7 @@ const HOME_PAGE_LINKS = [
 	},
 	{
 		text: 'About Me',
-		link: '/aboutme',
+		link: '/about',
 		fa_class: 'fa fa-address-card'
 	}
 ];

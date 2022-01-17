@@ -20,7 +20,7 @@ const FooterDiv = styled.div`
 
 const Footer = () => {
 	return (
-		<MDBFooter className="text-center text-lg-start bg-white rounded text-muted">
+		<MDBFooter id="footer_anchor" className="text-center text-lg-start bg-white rounded text-muted">
 			<section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
 				<div className="me-5 d-none d-lg-block">
 					<h6>Social media:</h6>

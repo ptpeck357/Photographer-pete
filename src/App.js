@@ -6,7 +6,6 @@ import NavigationBar from './components/organisms/NavigationBar';
 import Routes from './components/Routes'
 import Footer from './components/organisms/Footer';
 
-
 // eslint-disable-next-line
 import ReactGA from 'react-ga';
 

@@ -30,10 +30,10 @@ const Mask = styled.div`
 `;
 
 const AboutPage = () => {
-	window.scroll({
-		top: 0,
-		behavior: 'smooth'
-	});
+	// window.scroll({
+	// 	top: 0,
+	// 	behavior: 'smooth'
+	// });
 
 	return (
 		<>
@@ -179,8 +179,6 @@ const AboutPage = () => {
 								To end, I want to give credit to God for giving me the talents and gifts I have. And of course, thankful for my parents for supporting, encouarging, and pushing me in life. It hasn't been the easiest but who said the Christian faith was suppose to be easy?
 							</p>
 							<br />
-							<br />
-							<br />
 							<p className="no-indentation">
 								"For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast."
 								<br />
@@ -193,7 +191,7 @@ const AboutPage = () => {
 								<StyledUl className="unorder-list">
 									<li className="languages-info-list">Eating</li>
 									<li className="languages-info-list">Making coffee</li>
-									<li className="languages-info-list">Fixing myself a bowl of cereal at night</li>
+									<li className="languages-info-list">Fixing a bowl of cereal at night</li>
 									<li className="languages-info-list">Sleeping</li>
 									<li className="languages-info-list">Full sends only</li>
 								</StyledUl>

@@ -18,15 +18,17 @@ const CarouselIntro = () => {
 	return (
 		<div id="carouselIntro">
 			<MDBCarousel
-				fade={true}
-				showControls={true}
-				showIndicators={true}
+				keyboard
+				fade
+				showControls
+				showIndicators
+				className='carousel-fade'
 			>
 				<MDBCarouselInner>
-					<CarouselIntroItem view="1" active={'active'}/>
+					<CarouselIntroItem view="1"/>
 					<CarouselIntroItem view="2"/>
 					<CarouselIntroItem view="3"/>
-					<CarouselIntroItem view="4"/>
+					<CarouselIntroItem view="4" active={'active'}/>
 				</MDBCarouselInner>
 			</MDBCarousel>
 		</div>

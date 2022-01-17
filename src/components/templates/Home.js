@@ -29,7 +29,6 @@ const Home = () => {
 						headerInfo={ABOUT_ME.projectHeader}
 						renderType="feature"
 					/>
-				Home
 				</ScrollAnimation>
 			</div>
 		</>

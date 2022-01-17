@@ -21,7 +21,7 @@ const ProjectHeader = ({ bgImageProp, titleProp, dateProp, descProp, styleProp }
 			</ScrollAnimation>
 			<MDBCard id="headerbox" className="rounded z-depth-2">
 				<div className="text-center Card">
-					<h1 className="headerTitle display-4">{title}</h1>
+					<h1 className="headerTitle display-4"><strong>{title}</strong></h1>
 					<h5 className="blue-text headerDate">{date}</h5>
 					<p className="grey-text headerDesc">{desc}</p>
 				</div>

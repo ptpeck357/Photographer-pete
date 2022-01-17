@@ -29,22 +29,22 @@ const CarouselIntroItem = ({ view, active }) => {
 						<div>
 							<ScrollAnimation delay={1000} animateIn="fadeIn" animateOnce={true}>
 								<MDBContainer className="px-md-3 px-sm-0">
-									<MDBRow>
-										<MDBCol className="mb-4 intro-container" md={12} style={{ border: "solid", backgroundColor: '#2715151f', color: '#FFFFFF' }}>
-											<MDBCol className="text-md-left p-2" md={6}>
+									<MDBRow className='middle'>
+										<MDBCol className="mb-4 intro-container" md={12} style={{ border: 'solid', backgroundColor: '#2715151f', color: '#FFFFFF' }}>
+											<MDBCol className="text-md-left p-2" sm={4} md={8} lg={9}>
 												<div>
 													<h4 className="display-4 intro-title">Peter Peck</h4>
 													<h3 className="display-5 intro-subtitle">Photography | Travel</h3>
 												</div>
 												<hr className="hr-light" />
-												<AnchorLink href='#headerbox'>
-													<MDBBtn type="button" color="white" onClick={() => trackGA('Portfolio_Anchor')}>Portfolio</MDBBtn>
+												<AnchorLink href="#headerbox">
+													<MDBBtn type="button" className="m-1" color="white" onClick={() => trackGA('Portfolio_Anchor')}>Portfolio</MDBBtn>
 												</AnchorLink>
-												<Link to="/projects">
-													<MDBBtn type="button" color="danger" onClick={() => trackGA('Projects_Anchor')}>Projects</MDBBtn>
+												<Link to="/projects" >
+													<MDBBtn type="button" className="m-1" color="danger"  onClick={() => trackGA('Projects_Anchor')}>Projects</MDBBtn>
 												</Link>
-												<AnchorLink href='#footer_anchor'>
-													<MDBBtn type="button" outline color="white" onClick={() => trackGA('Contact_Anchor')}>Contact</MDBBtn>
+												<AnchorLink href="#footer_anchor">
+													<MDBBtn type="button" className="m-1" outline color="white" onClick={() => trackGA('Contact_Anchor')}>Contact</MDBBtn>
 												</AnchorLink>
 											</MDBCol>
 										</MDBCol>

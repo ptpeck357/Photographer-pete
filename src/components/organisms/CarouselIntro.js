@@ -25,10 +25,10 @@ const CarouselIntro = () => {
 				className='carousel-fade'
 			>
 				<MDBCarouselInner>
-					<CarouselIntroItem view="1"/>
-					<CarouselIntroItem view="2"/>
-					<CarouselIntroItem view="3"/>
-					<CarouselIntroItem view="4" active={'active'}/>
+					<CarouselIntroItem view="1" active={'active'} />
+					<CarouselIntroItem view="2" />
+					<CarouselIntroItem view="3" />
+					<CarouselIntroItem view="4" />
 				</MDBCarouselInner>
 			</MDBCarousel>
 		</div>

@@ -6,13 +6,21 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { MDBCard } from 'mdb-react-ui-kit';
 
 const ProjectHeader = ({ bgImageProp, titleProp, dateProp, descProp, styleProp }) => {
-	const [bgImage, setBgImage] = useState(bgImageProp);
-	const [title, setTitle] = useState(titleProp);
-	const [date, setDate] = useState(dateProp);
-	const [desc, setDesc] = useState(descProp);
-	const [style, setStyle] = useState(styleProp);
+	const [bgImage, setBgImage] = useState();
+	const [title, setTitle] = useState();
+	const [date, setDate] = useState();
+	const [desc, setDesc] = useState();
+	const [style, setStyle] = useState();
 
-	return  (
+	useEffect(() => {
+		setBgImage(bgImageProp);
+		setTitle(titleProp);
+		setDate(dateProp);
+		setDesc(descProp);
+		setStyle(styleProp);
+	}, [bgImageProp, titleProp, dateProp, descProp, styleProp]);
+
+	return (
 		<div>
 			<ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={true}>
 				<Parallax bgImage={bgImage} strength={1000} className={"parallax-mobile-view " + style}>

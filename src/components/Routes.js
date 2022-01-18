@@ -1,7 +1,7 @@
 import { Routes as Switch, Route } from 'react-router-dom';
 import Home from "./templates/Home";
 import ProjectContainer from './organisms/ProjectContainer';
-import ABOUT_ME from '../utils/config/ABOUT_ME';
+import ABOUT_ME from '../utils/photo_projects/ABOUT_ME';
 
 const Routes = () => {
 	return (

@@ -1,9 +1,8 @@
 import { useEffect } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import CarouselIntro from "../organisms/CarouselIntro";
-import ABOUT_ME from '../../utils/config/ABOUT_ME';
+import FEATURE from '../../utils/photo_projects/FEATURE_PORTFOLIO';
 import ProjectContainer from './../organisms/ProjectContainer';
-import { Parallax } from 'react-parallax';
 
 const Home = () => {
 	useEffect(() => {
@@ -20,14 +19,13 @@ const Home = () => {
 					<CarouselIntro />
 				</ScrollAnimation>
 			</div>
-
 			<div id="section2">
 				<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
 					<ProjectContainer
 						// showFilter={true}
-						imageArray={ABOUT_ME.imageArray}
-						headerInfo={ABOUT_ME.projectHeader}
-						renderType="feature"
+						imageArrayProp={FEATURE.imageArray}
+						headerInfoProp={FEATURE.projectHeader}
+						renderTypeProp="feature"
 					/>
 				</ScrollAnimation>
 			</div>

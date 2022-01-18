@@ -5,9 +5,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import styled from 'styled-components';
 import ActionLink from '../atoms/ActionLink'
 
-import PhotographerPic from '../../images/photographer.jpg';
-import LinkedinPic from '../../images/linkedin_pic.jpg';
-import EverydayLifePic from '../../images/every_day_life.jpg';
+import PhotographerPic from '../../images/me/photographer.jpg';
+import LinkedinPic from '../../images/me/linkedin_pic.jpg';
+import EverydayLifePic from '../../images/me/every_day_life.jpg';
 
 // eslint-disable-next-line
 import ReactGA from 'react-ga';
@@ -56,9 +56,9 @@ const AboutPage = () => {
 								<MDBRipple className="hover-overlay" rippleColor="white">
 										<img className="img-fluid shadow-3-strong" src={PhotographerPic} alt="Photographer" />
 									{/* <div class=name"bottom-right overlay-text">Photo Credit: Adrianna Keeney</div> */}
-									<a>
+									<div role='button'>
 										<Mask className="mask" />
-									</a>
+									</div>
 								</MDBRipple>
 							</div>
 						</MDBCol>
@@ -79,7 +79,7 @@ const AboutPage = () => {
 
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="border-bottom ps-0 pt-5">
+					<MDBRow className="border-bottom ps-0 pt-4">
 						<MDBCol lg="3">
 							<h6 className="tech-info text-dark">My Camera Gear</h6>
 							<StyledUl className="unorder-list">
@@ -126,14 +126,14 @@ const AboutPage = () => {
 							<div className="rounded z-depth-4 mb-lg-0 mb-4">
 								<MDBRipple className="hover-overlay" rippleColor="white">
 									<img className="img-fluid shadow-3-strong" src={LinkedinPic} alt="Software Engineering" />
-									<a>
+									<div role='button'>
 										<Mask className="mask" />
-									</a>
+									</div>
 								</MDBRipple>
 							</div><MDBCol lg="1" />
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="border-bottom pt-5">
+					<MDBRow className="border-bottom pt-4">
 						<MDBCol lg="5" offsetLg="7">
 							<h4 className="tech-info text-dark">Skills</h4>
 							<StyledUl className="unorder-list">
@@ -158,9 +158,9 @@ const AboutPage = () => {
 							<div className="rounded z-depth-4 mb-lg-0 mb-4 ">
 								<MDBRipple className="hover-overlay" rippleColor="white">
 									<img className="img-fluid shadow-3-strong" src={EverydayLifePic} alt="Life" />
-									<a>
+									<div role='button'>
 										<Mask className="mask" />
-									</a>
+									</div>
 								</MDBRipple>
 							</div>
 						</MDBCol>
@@ -185,7 +185,7 @@ const AboutPage = () => {
 								- Ephesians 2:8-9
 							</p>
 						</MDBCol>
-						<MDBRow className="border-bottom pt-5">
+						<MDBRow className="border-bottom pt-4">
 							<MDBCol lg="3">
 								<h4 className="tech-info text-dark">Survival Skills</h4>
 								<StyledUl className="unorder-list">

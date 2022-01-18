@@ -421,8 +421,11 @@ button:hover {
 		top: -10em !important;
 		height: 50rem !important;
 	}
-	#headerbox {
+	/* #headerbox {
 		margin-top: -3em !important;
+	} */
+	#headerbox {
+		margin: -7em 2em 5em 2em;
 	}
 	.container p {
 		text-indent: 0em;
@@ -438,6 +441,10 @@ button:hover {
 		left: -50rem !important;
 		height: 55em !important;
 	}
+	/* .parallax-mobile-view img {
+		top: 8em !important;
+		height: 48em !important;
+	} */
 }
 
 /* small mobile :320px. */
@@ -446,32 +453,37 @@ button:hover {
 	.container {
 		width: 85% !important;
 	}
-
 	#headerbox {
 		margin-top: -3em !important;
 	}
-
 	.display-4 {
 		font-size: 1.85em !important;
 		padding-top: 1em !important;
 	}
-
+	.display-5 {
+		font-size: 1em !important;
+	}
 	/* Parallax Header Image  */
 	.headerbg {
 		height: 250px;
 	}
-
 	.parallax-mobile-view img {
-		top: -8em !important;
+		top: -10em !important;
 		left: -2rem !important;
 		height: 45em !important;
 	}
-
+	/* .featured-header-mobile { */
+		/* top: -1em !important; */
+		/* left: -2rem !important; */
+		/* height: 45em !important; */
+	/* } */
+	.mb-intro .intro-container {
+		padding: 2em 10px 2em 0em;
+	}
 	.bottom-right {
 		position: absolute;
 		bottom: 0px;
 	}
-
 	.overlay-text {
 		font: bold 1.0rem Helvetica, Sans-Serif;
 	}
@@ -482,7 +494,7 @@ button:hover {
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -18em !important;
-		/* left: -10rem !important; */
+		left: -10rem !important;
 		height: 50em !important;
 	}
 }

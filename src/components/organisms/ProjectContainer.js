@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
-import ProjectHeader from './ProjectHeader';
 import AboutPage from '../templates/AboutPage';
-import Home from '../templates/Home';
+import ProjectHeader from '../molecules/ProjectHeader';
 
 const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, showFilterProp, styleProp }) => {
-	const [headerInfo, setHeaderInfo] = useState(headerInfoProp);// eslint-disable-next-line
-	const [imageArray, setImageArray] = useState([]);// eslint-disable-next-line
-	const [renderType, setRenderType] = useState('');// eslint-disable-next-line
-	const [showFilter, setShowFilter] = useState(false);// eslint-disable-next-line
-	const [style, setStyle] = useState('');// eslint-disable-next-line
+	const [headerInfo, setHeaderInfo] = useState();// eslint-disable-next-line
+	const [imageArray, setImageArray] = useState();
+	const [renderType, setRenderType] = useState();// eslint-disable-next-line
+	const [showFilter, setShowFilter] = useState();// eslint-disable-next-line
+	const [style, setStyle] = useState();
 
 	useEffect(() => {
 		setHeaderInfo(headerInfoProp);
@@ -18,18 +17,23 @@ const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, show
 		setRenderType(renderTypeProp);
 		setShowFilter(showFilterProp);
 		setStyle(styleProp);
-	}, []);
+	}, [headerInfoProp, imageArrayProp, renderTypeProp, showFilterProp, styleProp]);
 
 	const renderComponent = (renderType) => {
 		switch (renderType){
 			// case 'gallery':
 			// 	return <Home />
 			case 'feature':
-				return <AboutPage />
+				return
+				//  <GalleryContainer
+				// 	style={this.state.style}
+				// 	showFilter={this.state.showFilter}
+				// 	imageArray={this.state.imageArray}
+				// />;
 			case 'about':
-				return <AboutPage />
+				return <AboutPage />;
 			default:
-				return <span>No Pictures</span>
+				return <span>No Pictures</span>;
 		}
 	};
 
@@ -44,7 +48,7 @@ const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, show
 };
 
 ProjectHeader.propTypes = {
-	headerInfoProp: PropTypes.string.isRequired,
+	headerInfoProp: PropTypes.string,
 	imageArrayProp: PropTypes.array,
 	renderTypeProp: PropTypes.string,
 	showFilterProp: PropTypes.bool,

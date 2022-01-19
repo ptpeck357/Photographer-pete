@@ -24,7 +24,8 @@ const ProjectHeader = ({ bgImageProp, titleProp, dateProp, descProp, styleProp }
 		<div>
 			<ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={true}>
 				<Parallax bgImage={bgImage} strength={1000} className={"parallax-mobile-view " + style}>
-					<div className="headerbg"/>
+					<div className="headerbg">
+					</div>
 				</Parallax>
 			</ScrollAnimation>
 			<MDBCard id="headerbox" className="rounded z-depth-2">

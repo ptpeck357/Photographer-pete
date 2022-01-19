@@ -26,7 +26,7 @@ const Footer = () => {
 					<h6>Social media:</h6>
 				</div>
 				{/* style={{ fontSize: '0.75em', margin: 'auto' }} */}
-				<div className="text-center" >
+				<div className="text-center footer-links" >
 					{SocialMediaLinks}
 				</div>
 			</section>

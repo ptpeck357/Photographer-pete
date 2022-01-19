@@ -545,7 +545,7 @@ button:hover {
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -18em !important;
-		left: -10rem !important;
-		height: 50em !important;
+		left: -25rem !important;
+		height: 90em !important;
 	}
 }

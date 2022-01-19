@@ -27,6 +27,10 @@ p, h3 {
 	text-indent: 0em !important;
 }
 
+.no-underline {
+	text-decoration: none !important
+}
+
 .bottom-right {
 	position: absolute;
 	bottom: 0px;
@@ -61,11 +65,9 @@ p, h3 {
 
 /* Carousel Intro CSS
 /*----------------------------------------*/
-.mb-intro .intro-container {
-	padding: 2em 0 2em 1em;
-	border: "solid" !important;
-	background-color: '#2715151F' !important;
-}
+/* .mb-intro .intro-container {
+	padding: 2em 0 2em 1em !important;
+} */
 
 #carouselIntro .view1 {
 	background-image: url('./images/backgrounds/carousel-1.jpg');
@@ -238,6 +240,10 @@ button:hover {
 /* Large Display */
 
 @media only screen and (min-width: 1600px) {
+	.mb-intro .intro-container {
+		padding: 2em 0 4em 1em;
+	}
+
 	.display-4 {
 		padding-top: 0.5em !important;
 		font-size: 3.5em !important;
@@ -272,15 +278,19 @@ button:hover {
 	.container {
 		max-width: 75%!important;
 	}
-
 	#headerbox{
-		margin: -5em 20em 5em 20em !important;
+		margin: -5em 10em 5em 10em !important;
 	}
-
+	.mb-intro .intro-container {
+		padding: 2em 0 5em 0em;
+	}
+	.mb-intro {
+		margin-bottom: 4em !important;
+	}
 	.display-4 {
 		padding-top: 0.5em !important;
 	}
-
+	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -15em;
 		height: 70em !important;
@@ -291,31 +301,47 @@ button:hover {
 	html {
 		font-size: 80%;
 	}
-
 	.display-4 {
 		padding-top: 0.5em !important;
 	}
-
 	.container {
 		max-width: 80%!important;
 	}
-
+	.intro-title {
+		font-size: 5em !important;
+	}
+	.intro-subtitle {
+		font-size: 3em !important;
+	}
+	.mb-intro .intro-container {
+		padding: 2em 0 5em 0em;
+	}
+	.mb-intro {
+		margin-bottom: 0em !important;
+	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -25em;
 		height: 85em !important;
 	}
-
 	.view .mb-intro {
 		margin-bottom: 10em;
 	}
-
 	#headerbox {
 		margin: -5em 23em 5em 23em;
 	}
 }
 
 @media only screen and (min-width: 1342px) and (max-width: 1399px) {
+	.intro-title {
+		font-size: 3em !important;
+	}
+	.intro-subtitle {
+		font-size: 2em !important;
+	}
+	.mb-intro .intro-container {
+		padding: 2em 0 3em 0em;
+	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -15em;
@@ -330,13 +356,23 @@ button:hover {
 	.display-4 {
 		padding-top: 0.5em !important;
 	}
-
+	.intro-title {
+		font-size: 4em !important;
+	}
+	.intro-subtitle {
+		font-size: 1.5em !important;
+	}
+	.mb-intro .intro-container {
+		padding: 0em 0 2em 0em;
+	}
+	.mb-intro {
+		margin-bottom: 0em !important;
+	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -15em;
 		height: 60em !important;
 	}
-
 	#headerbox {
 		margin: -6em 10em 5em 10em;
 	}
@@ -348,6 +384,18 @@ button:hover {
 	html {
 		font-size: 90%;
 	}
+	.intro-title {
+		font-size: 4em !important;
+	}
+	.intro-subtitle {
+		font-size: 2em !important;
+	}
+	.mb-intro .intro-container {
+		padding: 0em 0 2em 0em;
+	}
+	.mb-intro {
+		margin-bottom: 5em!important;
+	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -15em;
@@ -358,9 +406,6 @@ button:hover {
 	}
 	.display-4 {
 		padding-top: 1em !important;
-	}
-	.mb-intro .intro-container {
-		padding: 0em 5em 1em 5em;
 	}
 }
 
@@ -386,11 +431,10 @@ button:hover {
 		font-size: 1.25em !important;
 	}
 	.mb-intro .intro-container {
-		padding: 0em 0 1em 0em;
-		margin: 0 1em 0 1em;
+		padding: 0em 0 3em 0em !important;
 	}
 	.mb-intro {
-		margin-bottom: 11em!important;
+		margin-bottom: 11em !important;
 	}
 }
 
@@ -410,11 +454,18 @@ button:hover {
 		font-size: 3em !important;
 		padding-top: 0em !important;
 	}
-
+	.intro-title {
+		font-size: 2em !important;
+	}
+	.intro-subtitle {
+		font-size: 1em !important;
+	}
 	.mb-intro .intro-container {
 		padding: 2em 0 2em 0em;
 	}
-
+	.mb-intro {
+		margin-bottom: 11em !important;
+	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		left: 14em !important;
@@ -478,7 +529,10 @@ button:hover {
 		/* height: 45em !important; */
 	/* } */
 	.mb-intro .intro-container {
-		padding: 2em 10px 2em 0em;
+		padding: 2em 10px 2em 10px !important;
+	}
+	.mb-intro {
+		margin-bottom: 5em !important;
 	}
 	.bottom-right {
 		position: absolute;

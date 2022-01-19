@@ -7,6 +7,7 @@ import './App.css';
 import './index.css';
 import './lib/animate.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 ReactDOM.render(
 	<React.StrictMode>

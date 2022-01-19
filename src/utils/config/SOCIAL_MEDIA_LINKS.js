@@ -20,7 +20,7 @@ const SOCIAL_MEDIA_LIST = [
 		fa_class: 'fab fa-500px',
 	},
 	{
-		href: 'https://www.instagram.com/pete_the_repeat',
+		href: 'https://www.instagram.com/pete_the_repeat_',
 		fa_class: 'fab fa-instagram'
 	},
 	{

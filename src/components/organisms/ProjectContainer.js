@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import AboutPage from '../templates/AboutPage';
 import ProjectHeader from '../molecules/ProjectHeader';
+import GalleryContainer from '../molecules/ResponsiveGallery';
 
 const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, showFilterProp, styleProp }) => {
 	const [headerInfo, setHeaderInfo] = useState();// eslint-disable-next-line
@@ -21,15 +22,20 @@ const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, show
 
 	const renderComponent = (renderType) => {
 		switch (renderType){
-			// case 'gallery':
-			// 	return <Home />
+			case 'gallery':
+				return
+					<GalleryContainer
+						style={this.state.style}
+						showFilter={this.state.showFilter}
+						imageArray={this.state.imageArray}
+					/>;
 			case 'feature':
 				return
-				//  <GalleryContainer
-				// 	style={this.state.style}
-				// 	showFilter={this.state.showFilter}
-				// 	imageArray={this.state.imageArray}
-				// />;
+					<GalleryContainer
+						style={this.state.style}
+						showFilter={this.state.showFilter}
+						imageArray={this.state.imageArray}
+					/>;
 			case 'about':
 				return <AboutPage />;
 			default:

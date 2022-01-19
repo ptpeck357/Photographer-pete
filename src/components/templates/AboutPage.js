@@ -44,7 +44,7 @@ const AboutPage = () => {
 						<br />
 						I'm a photographer, wanderer, and a software engineer.
 						I was born in Cambodia and was adopted at age 1. I've spent most of my
-						growing up days on a small ranch in Montana. I love to travel, eat food, and explore the outdoors... rest to be continued!
+						growing up days on a small ranch in Montana. I love to travel, vibe, and explore the outdoors... rest to be continued!
 					</p>
 
 					<StyledHr />
@@ -71,7 +71,7 @@ const AboutPage = () => {
 								What kind of photography do I do? Well, I do all types varying from landscape, portraits, engagement and graduation sessions to aerial shots! I also dabble in videography and post processing in Davinci Resolve.
 							</p>
 							<p>
-								I first got into photography when I received a digital Kodak camera for my 11th birthday which then sat in my dresser for a year... Roughly a year later on June 2010, I decided to put my camera to use and started doing landscape photography. August 2016 rolled around, I started to dabble in astrophotography. After quarantine in 2020, I wanted to learn and get more into portrait and engagement shoots. My latest interest niche now is aerial photography since July 2021.
+								I first got introducd toe photography when I received a digital Kodak camera for my 11th birthday which then sat in my dresser for a year... Roughly a year later around June 2010, I decided to put my camera to use and started doing landscape photography. August 2016 rolled around, I started to dabble in astrophotography. After quarantine in 2020, I wanted to learn and get more into portrait and engagement shoots. My latest interest niche now is aerial photography since July 2021.
 							</p>
 							<p>
 								Even though I've been doing photography for 12 plus years, there's always something new and exciting to learn whether of new editing skills or new techniques when I'm out in the field.
@@ -149,11 +149,10 @@ const AboutPage = () => {
 								<li className="languages-info-list">Visual Studio Codes</li>
 							</StyledUl>
 						</MDBCol>
-
 					</MDBRow>
 
 					{/* Everyday Life Section */}
-					<MDBRow className="mt-5 mb-5">
+					<MDBRow className="border-bottom mt-5 mb-5">
 						<MDBCol lg="4">
 							<div className="rounded z-depth-4 mb-lg-0 mb-4 ">
 								<MDBRipple className="hover-overlay" rippleColor="white">
@@ -161,10 +160,20 @@ const AboutPage = () => {
 									<div role='button'>
 										<Mask className="mask" />
 									</div>
+									<div className="mt-4">
+										<h4 className="tech-info text-dark">Survival Skills</h4>
+										<StyledUl className="unorder-list">
+											<li className="languages-info-list">Eating</li>
+											<li className="languages-info-list">Making coffee</li>
+											<li className="languages-info-list">Fixing a bowl of cereal at night</li>
+											<li className="languages-info-list">Sleeping</li>
+											<li className="languages-info-list">Full sends only</li>
+										</StyledUl>
+									</div>
 								</MDBRipple>
 							</div>
 						</MDBCol>
-						<MDBCol lg="7" className="mt-1">
+						<MDBCol lg="8" className="mt-1">
 							<h2 className="mb-2 p-0 text-dark">
 								<i className="mr-2 fas fa-mountain" />
 								<strong>Life</strong>
@@ -176,28 +185,14 @@ const AboutPage = () => {
 								Because I grew up in Montana, some of my hobbies/interests include hunting and fishing, hiking and camping (aka feeding the Mosquitoes), shooting guns and archery, skiing, dirtbiking, and playing with a can of gasoline and matches... because that's how you entertain country kids... Anyways, let's forget I said that. I also enjoy playing sports to pass time such as ultimate frisbee, spikeball, volleyball, soccer, disc golf, ping-pong, billiard, and martial arts.
 							</p>
 							<p>
-								To end, I want to give credit to God for giving me the talents and gifts I have. And of course, thankful for my parents for supporting, encouarging, and pushing me in life. It hasn't been the easiest but who said the Christian faith was suppose to be easy?
+								Each and everyday I thank my Lord and Savior for  giving me the talents, and skils and share it with people. It's nothing I did to deserve or earn His grace. And of course, thankful for my parents for supporting, encouarging, and pushing me in life. It hasn't been the easiest but who said the Christian faith was suppose to be easy?
 							</p>
-							<br />
 							<p className="no-indentation">
 								"For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast."
 								<br />
 								- Ephesians 2:8-9
 							</p>
 						</MDBCol>
-						<MDBRow className="border-bottom pt-4">
-							<MDBCol lg="3">
-								<h4 className="tech-info text-dark">Survival Skills</h4>
-								<StyledUl className="unorder-list">
-									<li className="languages-info-list">Eating</li>
-									<li className="languages-info-list">Making coffee</li>
-									<li className="languages-info-list">Fixing a bowl of cereal at night</li>
-									<li className="languages-info-list">Sleeping</li>
-									<li className="languages-info-list">Full sends only</li>
-								</StyledUl>
-							</MDBCol>
-
-						</MDBRow>
 					</MDBRow>
 				</MDBContainer>
 			</ScrollAnimation>

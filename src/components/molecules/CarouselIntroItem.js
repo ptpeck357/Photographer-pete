@@ -41,4 +41,5 @@ const CarouselIntroItem = ({ view, active }) => {
 		</MDBCarouselItem>
 	);
 }
+
 export default CarouselIntroItem;

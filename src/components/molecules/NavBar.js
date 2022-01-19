@@ -11,7 +11,7 @@ const NavBar = ({ classes }) => {
 			{
 				HOME_PAGE_LINKS.map((obj, index) =>
 					<NavBarItem classes={"text-center mx-2 mx-lg-1"} key={index}>
-						<NavBarLink classes='nav-bar-link' link={obj.link} >
+						<NavBarLink classes="nav-bar-link no-underline" link={obj.link} >
 							<div>
 								<i className={"fa-lg mb-1 " + obj.fa_class} />
 							</div>

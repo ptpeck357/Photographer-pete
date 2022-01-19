@@ -1,33 +1,23 @@
-import React from 'react';
-import {
-	MDBCarousel,
-	MDBCarouselInner,
-	MDBCarouselItem,
-	MDBCarouselElement,
-	MDBCarouselCaption,
-} from 'mdb-react-ui-kit';
+import { MDBCarousel, MDBCarouselInner } from 'mdb-react-ui-kit';
+import CarouselIntroItem from '../molecules/CarouselIntroItem'
 
 const CarouselIntro = () => {
 	return (
-		<MDBCarousel showIndicators showControls fade keyboard>
-			<MDBCarouselInner>
-				<MDBCarouselItem className='active'>
-					<MDBCarouselElement src='https://mdbootstrap.com/img/Photos/Slides/img%20(15).webp' alt='...' />
-				</MDBCarouselItem>
-				<MDBCarouselItem>
-					<MDBCarouselElement src='https://mdbootstrap.com/img/Photos/Slides/img%20(22).webp' alt='...' />
-				</MDBCarouselItem>
-				<MDBCarouselItem>
-					<MDBCarouselElement src='https://mdbootstrap.com/img/Photos/Slides/img%20(23).webp' alt='...' />
-				</MDBCarouselItem>
-				<MDBCarouselItem>
-					<MDBCarouselElement src='https://mdbootstrap.com/img/Photos/Slides/img%20(24).webp' alt='...' />
-				</MDBCarouselItem>
-				<MDBCarouselItem>
-					<MDBCarouselElement src='https://mdbootstrap.com/img/Photos/Slides/img%20(25).webp' alt='...' />
-				</MDBCarouselItem>
-			</MDBCarouselInner>
-		</MDBCarousel>
+		<div id="carouselIntro">
+			<MDBCarousel
+				keyboard
+				fade
+				showControls
+				showIndicators
+			>
+				<MDBCarouselInner>
+					<CarouselIntroItem view="1" active={'active'} />
+					<CarouselIntroItem view="2" />
+					<CarouselIntroItem view="3" />
+					<CarouselIntroItem view="4" />
+				</MDBCarouselInner>
+			</MDBCarousel>
+		</div>
 	);
 };
 

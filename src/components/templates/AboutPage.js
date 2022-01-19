@@ -120,7 +120,6 @@ const AboutPage = () => {
 							<p>
 								The things I appreciate about software engineering is the creativity, the critical thinking, and the fact you can build anything at the tips of your fingertips! With me being a visual person in general, building things and having that instantaneous feedback is my cup of tea.
 							</p>
-
 						</MDBCol>
 						<MDBCol lg="4">
 							<div className="rounded z-depth-4 mb-lg-0 mb-4">

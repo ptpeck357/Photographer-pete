@@ -9,7 +9,7 @@ const GalleryContainer = ({ imageArrayProp, titleProp, descProp, showFilterProp,
 	const [desc, setDesc] = useState();
 	const [showFilter, setShowFilter] = useState();// eslint-disable-next-line
 	const [style, setStyle] = useState();
-
+	console.log('imageArrayPropimageArrayPropimageArrayProp', imageArrayProp)
 	useEffect(() => {
 		setImageArray(imageArrayProp);
 		setTitle(titleProp);
@@ -33,7 +33,7 @@ const GalleryContainer = ({ imageArrayProp, titleProp, descProp, showFilterProp,
 		<div>
 			<div id="GalleryContainer view" className={style}>
 				<section id="gallery">
-					<ResponseiveGallery showFilter={showFilter} images={imageArray} />
+					{/* <ResponseiveGallery showFilter={showFilter} imageArray={imageArray} /> */}
 				</section>
 			</div>
 		</div>

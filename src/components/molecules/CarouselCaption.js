@@ -1,8 +1,8 @@
 import { MDBCarouselCaption } from 'mdb-react-ui-kit';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Bounce } from 'react-motions'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Bounce } from 'react-motions';
 import FadeIn from 'react-fade-in';
-import { trackGA } from './../../utils/helpers/functions'
+import { trackGA } from './../../utils/helpers/functions';
 
 const CarouselCaption = () => {
 	return (
@@ -14,5 +14,6 @@ const CarouselCaption = () => {
 			</FadeIn>
 		</MDBCarouselCaption>
 	);
-}
+};
+
 export default CarouselCaption;

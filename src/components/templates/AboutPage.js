@@ -45,7 +45,6 @@ const AboutPage = () => {
 						I was born in Cambodia and was adopted at age 1. I've spent most of my
 						growing up days on a small ranch in Montana. I love to travel, meet new people, and explore the outdoors... rest to be continued!
 					</p>
-
 					<StyledHr />
 
 					{/* Photographer Section */}
@@ -110,7 +109,7 @@ const AboutPage = () => {
 								<strong>Software Engineer</strong>
 							</h2>
 							<p>
-								I'm a Software Engineer specialized in Full-Stack Web Development with 3 years of experience in the industry. I currently work at {<ActionLink href="https://www.economicmodeling.com/" classes="blue" target="_blank">Emsi Burning Glass</ActionLink>} located here in Moscow, Idaho.
+								I'm a Software Engineer specialized in Full-Stack Web Development with 3 years of professional experience in the industry. I currently work at {<ActionLink href="https://www.economicmodeling.com/" classes="blue" target="_blank">Emsi Burning Glass</ActionLink>} located here in Moscow, Idaho.
 							</p>
 							<p>
 								Since I was about 8 years old, I dreamed of becoming an engineer whether that was aerospace or civil engineering. I always loved solving problems, brain teaser puzzles, creating things with my hands, and of course playing with legos. Ironically though, I rarely use math at my current job...
@@ -127,7 +126,7 @@ const AboutPage = () => {
 										<Mask className="mask" />
 									</div>
 								</MDBRipple>
-							</div><MDBCol lg="1" />
+							</div>
 						</MDBCol>
 					</MDBRow>
 					<MDBRow className="border-bottom pt-4">
@@ -149,23 +148,13 @@ const AboutPage = () => {
 					</MDBRow>
 
 					{/* Everyday Life Section */}
-					<MDBRow className="border-bottom mt-5 mb-5">
+					<MDBRow className="mt-5 mb-4">
 						<MDBCol lg="4">
 							<div className="rounded z-depth-4 mb-lg-0 mb-4 ">
 								<MDBRipple className="hover-overlay" rippleColor="white">
 									<img className="img-fluid shadow-3-strong" src={EverydayLifePic} alt="Life" />
 									<div role='button'>
 										<Mask className="mask" />
-									</div>
-									<div className="mt-4">
-										<h4 className="tech-info text-dark">Survival Skills</h4>
-										<StyledUl className="unorder-list">
-											<li className="languages-info-list">Eating</li>
-											<li className="languages-info-list">Making coffee</li>
-											<li className="languages-info-list">Fixing a bowl of cereal at night</li>
-											<li className="languages-info-list">Sleeping</li>
-											<li className="languages-info-list">Full sends only</li>
-										</StyledUl>
 									</div>
 								</MDBRipple>
 							</div>
@@ -179,7 +168,7 @@ const AboutPage = () => {
 								Outside of work and photography, I love learning new things and going out of my comfort zone which caused me to have a lot of different hobbies and interests. Basically, I enjoy anything that involves the outdoors!
 							</p>
 							<p>
-								Because I grew up in Montana, some of my hobbies/interests include hunting and fishing, hiking and camping (aka feeding the Mosquitoes), shooting guns and archery, skiing, dirtbiking, and playing with a can of gasoline and matches... because that's how you entertain country kids... Anyways, let's forget I said that. I also enjoy playing sports to pass time such as ultimate frisbee, spikeball, volleyball, soccer, disc golf, ping-pong, billiard, and martial arts.
+								Since I grew up in Montana, some of my hobbies include hunting and fishing, and playing with a can of gasoline and matches... because that's how you entertain country kids... Anyways, let's forget I said that. I also enjoy playing sports with friends to pass time.
 							</p>
 							<p>
 								Each and everyday I thank my Lord and Savior for  giving me the talents, and skils and share it with people. It's nothing I did to deserve or earn His grace. And of course, thankful for my parents for supporting, encouarging, and pushing me in life. It hasn't been the easiest but who said the Christian faith was suppose to be easy?
@@ -189,6 +178,31 @@ const AboutPage = () => {
 								<br />
 								- Ephesians 2:8-9
 							</p>
+						</MDBCol>
+					</MDBRow>
+					<MDBRow className="border-bottom ps-0 pt-1">
+						<MDBCol lg="2">
+							<h6 className="tech-info text-dark">Hobbies/Interests</h6>
+							<StyledUl className="unorder-list">
+								<li className="camera-info-list">Hunting</li>
+								<li className="camera-info-list">Fishing</li>
+								<li className="camera-info-list">Camping</li>
+								<li className="camera-info-list">Dirtbiking</li>
+								<li className="camera-info-list">Disc Golf</li>
+								<li className="software-info-list">Ultimate Frisbee</li>
+							</StyledUl>
+							<br />
+						</MDBCol>
+						<MDBCol lg="3" className="pt-1">
+							<br />
+							<StyledUl className="unorder-list">
+								<li className="software-info-list">Spikeball</li>
+								<li className="software-info-list">Volleyball</li>
+								<li className="software-info-list">Disc Golf</li>
+								<li className="software-info-list">Ping Pong</li>
+								<li className="software-info-list">Martial Arts</li>
+								<li className="camera-info-list">Playing the Piano</li>
+							</StyledUl>
 						</MDBCol>
 					</MDBRow>
 				</MDBContainer>

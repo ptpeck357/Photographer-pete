@@ -321,8 +321,8 @@ button:hover {
 	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
-		top: -25em;
-		height: 85em !important;
+		top: -15em;
+		height: 95em !important;
 	}
 	.view .mb-intro {
 		margin-bottom: 10em;

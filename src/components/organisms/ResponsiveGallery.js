@@ -49,8 +49,11 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 			<Tabs id="Tab" defaultTab="one" className="GalleryContainer">
 				<TabList className="TabList" style={{ border: 'none', margin: '0em 0 1em 0em', color: 'black' }}>
 					<Tab style={cursorStyle} tabFor="one" onClick={() => filterImage('*')}>Featured</Tab>
-					<Tab style={cursorStyle} tabFor="two" onClick={() => filterImage('nightsky')}>Night Sky</Tab>
-					<Tab style={cursorStyle} tabFor="three" onClick={() => filterImage('people')}>People</Tab>
+					<Tab style={cursorStyle} tabFor="two" onClick={() => filterImage('people')}>Montana</Tab>
+					<Tab style={cursorStyle} tabFor="three" onClick={() => filterImage('people')}>Washington</Tab>
+					<Tab style={cursorStyle} tabFor="four" onClick={() => filterImage('people')}>Israel</Tab>
+					<Tab style={cursorStyle} tabFor="five" onClick={() => filterImage('nightsky')}>Night Sky</Tab>
+					<Tab style={cursorStyle} tabFor="six" onClick={() => filterImage('people')}>People</Tab>
 					{/* <Tab tabFor="four">
 						<MDBDropdown>
 							<MDBDropdownToggle className="brand colorBlackLink" nav caret>Projects</MDBDropdownToggle>

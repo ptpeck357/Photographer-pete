@@ -73,18 +73,7 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 	};
 
 	useEffect(() => {
-		let imagesCopy = imageArrayProp;
-
-		let newArray = imagesCopy.filter((img) => {
-			let searchValue = img.category;
-			return searchValue.includes(filterType);
-		});
-
-		if(filterType === '*'){
-			newArray = shuffleArray(newArray);
-		}
-
-		setImageArray(newArray);
+		filterImage('*')
 	}, []);
 
 	return (

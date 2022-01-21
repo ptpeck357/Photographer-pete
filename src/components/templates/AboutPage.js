@@ -2,7 +2,7 @@ import { MDBRipple, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import styled from 'styled-components';
-import ActionLink from '../atoms/ActionLink'
+import ActionLink from '../atoms/ActionLink';
 
 import PhotographerPic from '../../images/me/photographer.jpg';
 import LinkedinPic from '../../images/me/linkedin_pic.jpg';
@@ -66,18 +66,18 @@ const AboutPage = () => {
 								<strong>Photographer</strong>
 							</h2>
 							<p>
-								What kind of photography do I do? Well, I do all types varying from landscape, portraits, engagement and graduation sessions to aerial shots! I also dabble in videography and post processing in Davinci Resolve.
+								What kind of photography do I do? Well, I do all types varying from landscape, portraits, engagement and graduation sessions to aerial shots! I also dabble in videography and Davinci Resolve for post processing.
 							</p>
 							<p>
-								I first got introducd toe photography when I received a digital Kodak camera for my 11th birthday which then sat in my dresser for a year... Roughly a year later around June 2010, I decided to put my camera to use and started doing landscape photography. August 2016 rolled around, I started to dabble in astrophotography. After quarantine in 2020, I wanted to learn and get more into portrait and engagement shoots. My latest interest niche now is aerial photography since July 2021.
+								For my 11th birthday, I recieved a digital Kodak camera which then sat in my dresser for a year... Roughly a year later around June 2010, I decided to actually put my camera to use and start snapping landscape photos. Over the years since then, I picked up different types of photography and trying to improve my skills!
 							</p>
 							<p>
-								Even though I've been doing photography for 12 plus years, there's always something new and exciting to learn whether of new editing skills or new techniques when I'm out in the field.
+								Even though I've been doing photography for 12 plus years, there's always something new and exciting to learn whether it's new editing tricks or techniques when I'm out in the field.
 							</p>
 						</MDBCol>
 					</MDBRow>
 					<MDBRow className="border-bottom ps-0 pt-4">
-						<MDBCol lg="2">
+						<MDBCol lg="3">
 							<h6 className="tech-info text-dark">My Camera Gear</h6>
 							<StyledUl className="unorder-list">
 								<li className="camera-info-list">Canon 6D Mark II</li>
@@ -112,10 +112,10 @@ const AboutPage = () => {
 								I'm a Software Engineer specialized in Full-Stack Web Development with 3 years of professional experience in the industry. I currently work at {<ActionLink href="https://www.economicmodeling.com/" classes="blue" target="_blank">Emsi Burning Glass</ActionLink>} located here in Moscow, Idaho.
 							</p>
 							<p>
-								Since I was about 8 years old, I dreamed of becoming an engineer whether that was aerospace or civil engineering. I always loved solving problems, brain teaser puzzles, creating things with my hands, and of course playing with legos. Ironically though, I rarely use math at my current job...
+								Since I was about 8 years old, I dreamed of becoming an engineer whether that was Aerospace or Civil engineering. But then life happened and I decided to go the Software engineering oute. I've always loved brain teaser problems, creating things with my hands, and of course math being my favorite subject.
 							</p>
 							<p>
-								The things I appreciate about software engineering is the creativity, the critical thinking, and the fact you can build anything at the tips of your fingertips! With me being a visual person in general, building things and having that instantaneous feedback is my cup of tea.
+								The things I appreciate about Software engineering is the creativity, the critical thinking, and the fact you can build anything at the tips of your fingertips! Since I'm a visual guy in general, I like to have the instant feedback with the things I build in software.
 							</p>
 						</MDBCol>
 						<MDBCol lg="4">
@@ -168,9 +168,11 @@ const AboutPage = () => {
 								Outside of work and photography, I love learning new things and going out of my comfort zone which caused me to have a lot of different hobbies and interests. Basically, I enjoy anything that involves the outdoors!
 							</p>
 							<p>
-								Since I grew up in Montana, some of my hobbies include hunting and fishing, and playing with a can of gasoline and matches... because that's how you entertain country kids... Anyways, let's forget I said that. I also enjoy playing sports with friends to pass time.
+								Since I grew up in Montana, some of my hobbies include hunting and fishing, and playing with a can of gasoline and matches... because that's how you entertain country kids... I also enjoy playing sports with friends.
 							</p>
 							<p>
+								Everyday I feel blessed that God put me in a Christian family here in America where I have these opportunties.
+
 								Each and everyday I thank my Lord and Savior for  giving me the talents, and skils and share it with people. It's nothing I did to deserve or earn His grace. And of course, thankful for my parents for supporting, encouarging, and pushing me in life. It hasn't been the easiest but who said the Christian faith was suppose to be easy?
 							</p>
 							<p className="no-indentation">
@@ -188,8 +190,8 @@ const AboutPage = () => {
 								<li className="camera-info-list">Fishing</li>
 								<li className="camera-info-list">Camping</li>
 								<li className="camera-info-list">Dirtbiking</li>
-								<li className="camera-info-list">Disc Golf</li>
-								<li className="software-info-list">Ultimate Frisbee</li>
+								<li className="camera-info-list">Skiing</li>
+								<li className="software-info-list">Ultimate frisbee</li>
 							</StyledUl>
 							<br />
 						</MDBCol>
@@ -198,10 +200,10 @@ const AboutPage = () => {
 							<StyledUl className="unorder-list">
 								<li className="software-info-list">Spikeball</li>
 								<li className="software-info-list">Volleyball</li>
-								<li className="software-info-list">Disc Golf</li>
-								<li className="software-info-list">Ping Pong</li>
-								<li className="software-info-list">Martial Arts</li>
-								<li className="camera-info-list">Playing the Piano</li>
+								<li className="software-info-list">Disc golf</li>
+								<li className="software-info-list">Ping pong</li>
+								<li className="software-info-list">Martial arts</li>
+								<li className="camera-info-list">Playing the piano</li>
 							</StyledUl>
 						</MDBCol>
 					</MDBRow>

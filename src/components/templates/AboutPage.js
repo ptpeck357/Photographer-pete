@@ -1,5 +1,4 @@
 import { MDBRipple, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
-// eslint-disable-next-line
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import styled from 'styled-components';
@@ -30,10 +29,10 @@ const Mask = styled.div`
 `;
 
 const AboutPage = () => {
-	// window.scroll({
-	// 	top: 0,
-	// 	behavior: 'smooth'
-	// });
+	window.scroll({
+		top: 0,
+		behavior: 'smooth'
+	});
 
 	return (
 		<>
@@ -44,7 +43,7 @@ const AboutPage = () => {
 						<br />
 						I'm a photographer, wanderer, and a software engineer.
 						I was born in Cambodia and was adopted at age 1. I've spent most of my
-						growing up days on a small ranch in Montana. I love to travel, vibe, and explore the outdoors... rest to be continued!
+						growing up days on a small ranch in Montana. I love to travel, meet new people, and explore the outdoors... rest to be continued!
 					</p>
 
 					<StyledHr />
@@ -76,17 +75,16 @@ const AboutPage = () => {
 							<p>
 								Even though I've been doing photography for 12 plus years, there's always something new and exciting to learn whether of new editing skills or new techniques when I'm out in the field.
 							</p>
-
 						</MDBCol>
 					</MDBRow>
 					<MDBRow className="border-bottom ps-0 pt-4">
-						<MDBCol lg="3">
+						<MDBCol lg="2">
 							<h6 className="tech-info text-dark">My Camera Gear</h6>
 							<StyledUl className="unorder-list">
 								<li className="camera-info-list">Canon 6D Mark II</li>
 								<li className="camera-info-list">Sigma 50mm f1.4</li>
-								<li className="camera-info-list">Canon EF 24-70mm f2.8</li>
-								<li className="camera-info-list">Canon EF 70-200mm f/2.8</li>
+								<li className="camera-info-list">Canon 24-70mm f2.8</li>
+								<li className="camera-info-list">Canon 70-200mm f/2.8</li>
 								<li className="camera-info-list">DJI Air 2s</li>
 								<li className="camera-info-list">GoPro Hero 8</li>
 							</StyledUl>

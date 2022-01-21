@@ -1,4 +1,4 @@
-import BackgroundImage from '../../images/me/mirror_pic.jpg'
+import BackgroundImage from '../../images/me/mirror_pic.jpg';
 import { importAll, shuffleArray } from '../helpers/functions';
 
 const headerData = {
@@ -11,11 +11,12 @@ const headerData = {
 
 let imageArray = [];
 
-const featureArray = [];
 const featLandscape = [14, 15];
 
 const Landscape = importAll(require.context('../../images/feature/landscape', false, /\.(jpg)$/));
 const LandscapeObjLenth = Object.keys(Landscape).length;
+
+const featureArray = [];
 for(var i = 1; i <= LandscapeObjLenth; i++) {
 	const landscapeObj = {
 		src: Landscape['img-' + i + '.jpg'].default,
@@ -25,24 +26,25 @@ for(var i = 1; i <= LandscapeObjLenth; i++) {
 	}
 
 	 if(featLandscape.includes(i)){
-		landscapeObj['category'].push('people')
+		landscapeObj['category'].push('people');
 	}
 	featureArray.push(landscapeObj);
 }
+
 const featurePeople = [14, 15, 16, 18];
 
 const People = importAll(require.context('../../images/feature/people', false, /\.(jpg)$/));
 const peopleObjLenth = Object.keys(People).length;
-for(var i = 1; i <= peopleObjLenth; i++) {
+for(var z = 1; z <= peopleObjLenth; z++) {
 	const peopleObj = {
-		src: People['img-' + i + '.jpg'].default,
-		category: ["people"],
+		src: People['img-' + z + '.jpg'].default,
+		category: ['people'],
 		height: 2,
 		width: 3
 	}
 
-	if(featurePeople.includes(i)){
-		peopleObj['category'].push('*')
+	if(featurePeople.includes(z)){
+		peopleObj['category'].push('*');
 	}
 
 	featureArray.push(peopleObj);
@@ -50,10 +52,10 @@ for(var i = 1; i <= peopleObjLenth; i++) {
 
 const NightSky = importAll(require.context('../../images/feature/nightsky', false, /\.(jpg)$/));
 const NightSkyObjLenth = Object.keys(NightSky).length;
-for (var i = 1; i <= NightSkyObjLenth; i++) {
+for (var k = 1; k <= NightSkyObjLenth; k++) {
 	const nightskyObj = {
-		src: NightSky['img-' + i + '.jpg'].default,
-		category: ["nightsky"],
+		src: NightSky['img-' + k + '.jpg'].default,
+		category: ['nightsky'],
 		height: 2,
 		width: 3
 	}
@@ -65,16 +67,16 @@ const featurePortrait = [1, 2, 3, 13, 18];
 
 const Portrait = importAll(require.context('../../images/feature/portrait', false, /\.(jpg)$/));
 const PortraitObjLenth = Object.keys(Portrait).length;
-for(var i = 1; i <= PortraitObjLenth; i++){
+for(var j = 1; j <= PortraitObjLenth; j++){
 	const portraitObj = {
-		src: Portrait['img-' + i + '.jpg'].default,
+		src: Portrait['img-' + j + '.jpg'].default,
 		caption: '',
-		category: ["people"],
+		category: ['people'],
 		height: 5,
 		width: 4
 	}
-	if (featurePortrait.includes(i)){
-		portraitObj['category'].push('*')
+	if(featurePortrait.includes(j)){
+		portraitObj['category'].push('*');
 	}
 
 	featureArray.push(portraitObj);

@@ -21,13 +21,15 @@ const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, show
 	}, [headerInfoProp, imageArrayProp, renderTypeProp, showFilterProp, styleProp]);
 
 	const renderComponent = (renderType) => {
-		switch (renderType){
+		switch(renderType){
 			case 'gallery':
-				return <ResponsiveGallery imageArrayProp={imageArrayProp} showFilter={false}/>;
+				return <ResponsiveGallery imageArrayProp={imageArrayProp} showFilter={false} />;
 			case 'feature':
 				return <ResponsiveGallery imageArrayProp={imageArrayProp} showFilter={false} />;
 			case 'about':
 				return <AboutPage />;
+			// case 'allprojects':
+			// 	return <Home />;
 			default:
 				return <span>No Pictures</span>;
 		}

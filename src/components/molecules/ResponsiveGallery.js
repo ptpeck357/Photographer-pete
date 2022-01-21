@@ -1,3 +1,4 @@
+import { MDBNavbarNav } from 'mdb-react-ui-kit';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 
@@ -27,11 +28,10 @@ const ResponsiveGallery = ({imageArray, showFilter}) => {
 				<Tabs id="Tab" defaultTab="one" className="GalleryContainer">
 					<TabList className="TabList" style={{ border: 'none', margin: '0em 0 1em 0em' }}>
 						<Tab style={cursorStyle} tabFor="one" onClick={() => this.filterImage("*")}>Featured</Tab>
-						<Tab style={cursorStyle} tabFor="two" onClick={() => this.filterImage("travel")}>Travel</Tab>
+						<Tab style={cursorStyle} tabFor="two" onClick={() => this.filterImage("travel")}>Landscape</Tab>
 						<Tab style={cursorStyle} tabFor="three" onClick={() => this.filterImage("ppl")}>People</Tab>
-						<Tab style={cursorStyle} tabFor="four" onClick={() => this.filterImage("urb")}>Urban & Street</Tab>
-						<Tab style={cursorStyle} tabFor="five" onClick={() => this.filterImage("wed")}>Weddings</Tab>
-						<Tab style={cursorStyle} tabFor="six" onClick={() => this.filterImage("concert")}>Concert</Tab>
+						<Tab style={cursorStyle} tabFor="four" onClick={() => this.filterImage("urb")}>Aerial</Tab>
+						<Tab style={cursorStyle} tabFor="five" onClick={() => this.filterImage("wed")}>Night Sky</Tab>
 						{/* <Tab tabFor="sevon">
 							<Dropdown>
 								<DropdownToggle className="brand colorBlackLink" nav caret>Projects</DropdownToggle>
@@ -53,21 +53,21 @@ const ResponsiveGallery = ({imageArray, showFilter}) => {
 	return (
 		<div className="content page-section spad text-center App">
 			{renderFilter(true)}
-			<Gallery photos={imageArray} onClick={openLightbox} direction={"column"} lazyload={true} />
-			<ModalGateway>
-				{viewerIsOpen ? (
-					<Modal onClose={closeLightbox}>
-						<Carousel
-							currentIndex={currentImage}
-							views={imageArray.map(x => ({
-								...x,
-								srcset: x.srcSet,
-								caption: x.title
-							}))}
-						/>
-					</Modal>
-				) : null}
-			</ModalGateway>
+				<Gallery photos={imageArray} onClick={openLightbox} direction={"column"} lazyload={true} />
+				<ModalGateway>
+					{viewerIsOpen ? (
+						<Modal onClose={closeLightbox}>
+							<Carousel
+								currentIndex={currentImage}
+								views={imageArray.map(x => ({
+									...x,
+									srcset: x.srcSet,
+									caption: x.title
+								}))}
+							/>
+						</Modal>
+					) : null}
+				</ModalGateway>
 		</div>
 	)
 }

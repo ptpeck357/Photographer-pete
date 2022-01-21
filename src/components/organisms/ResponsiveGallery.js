@@ -1,7 +1,10 @@
 import { Tabs, Tab, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 
+import { MDBNavbarNav, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from 'mdb-react-ui-kit';
+import NavBarItem from '../atoms/NavBarItem';
 import NavBarLink from '../atoms/NavBarLink';
+
 import React, { useState, useCallback, useEffect } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
@@ -31,7 +34,7 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 			return searchValue.includes(filterType);
 		});
 
-		if(filterType === "*") {
+		if(filterType === "*"){
 			newArray = shuffleArray(newArray);
 		}
 
@@ -47,6 +50,19 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 					<Tab style={cursorStyle} tabFor="one" onClick={() => filterImage("*")}>Featured</Tab>
 					<Tab style={cursorStyle} tabFor="two" onClick={() => filterImage("nightsky")}>Night Sky</Tab>
 					<Tab style={cursorStyle} tabFor="three" onClick={() => filterImage("people")}>People</Tab>
+					{/* <Tab tabFor="four">
+						<MDBDropdown>
+							<MDBDropdownToggle className="brand colorBlackLink" nav caret>Projects</MDBDropdownToggle>
+							<MDBDropdownMenu>
+								<MDBDropdownItem>
+									<NavBarItem classes="nav-format">
+										<NavBarLink className="brand nav-format" to="/">All Projects</NavBarLink>
+										<NavBarLink className="brand nav-format" to="/">All Projects</NavBarLink>
+									</NavBarItem>
+								</MDBDropdownItem>
+							</MDBDropdownMenu>
+						</MDBDropdown>
+					</Tab> */}
 				</TabList>
 			</Tabs>
 		)

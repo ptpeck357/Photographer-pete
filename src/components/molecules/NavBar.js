@@ -1,25 +1,36 @@
 import PropTypes from 'prop-types';
 import { MDBNavbarNav } from 'mdb-react-ui-kit';
-
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import NavBarLink from '../atoms/NavBarLink';
 import NavBarItem from '../atoms/NavBarItem';
-import HOME_PAGE_LINKS from '../../utils/config/HOME_PAGE_LINKS';
 
 const NavBar = ({ classes }) => {
 	return (
 		<MDBNavbarNav className={classes}>
-			{
-				HOME_PAGE_LINKS.map((obj, index) =>
-					<NavBarItem classes={"text-center mx-2 mx-lg-1"} key={index}>
-						<NavBarLink classes="nav-bar-link no-underline" link={obj.link} >
-							<div>
-								<i className={"fa-lg mb-1 " + obj.fa_class} />
-							</div>
-							{obj.text}
-						</NavBarLink>
-					</NavBarItem>
-				)
-			}
+			<NavBarItem classes="text-center mx-2 mx-lg-1">
+				<NavBarLink classes="nav-bar-link no-underline" link="/featured" >
+					<div>
+						<i className="fa-lg mb-1 fa fa-home" />
+					</div>
+					Home
+				</NavBarLink>
+			</NavBarItem>
+			<NavBarItem classes="text-center mx-2 mx-lg-1  text-muted">
+				<AnchorLink classes="nav-bar-link" href="#headerbox">
+					<div className='text-muted'>
+						<i className="fa fa-address-card" />
+					</div>
+					<span className="text-muted">Portfolio</span>
+				</AnchorLink>
+			</NavBarItem>
+			<NavBarItem classes="text-center mx-2 mx-lg-1">
+				<NavBarLink classes="nav-bar-link no-underline" link="/about" >
+					<div>
+						<i className="fa fa-address-card" />
+					</div>
+					About Me
+				</NavBarLink>
+			</NavBarItem>
 		</MDBNavbarNav>
 	);
 };

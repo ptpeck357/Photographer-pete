@@ -1,47 +1,51 @@
-import React, { Component } from 'react';
-import './css/App.css'
+import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
-//Import responsive gallery component
-import ResponseiveGallery from './ResponsiveGallery';
-//import DEFAULT_IMAGES from './Images';
-import { View } from 'mdbreact'
+import ResponseiveGallery from './molecules/ResponsiveGallery';
 
-export default class GalleryContainer extends Component {
+const GalleryContainer = ({ imageArrayProp, titleProp, descProp, showFilterProp, styleProp }) => {
+	const [imageArray, setImageArray] = useState();
+	const [title, setTitle] = useState();
+	const [desc, setDesc] = useState();
+	const [showFilter, setShowFilter] = useState();// eslint-disable-next-line
+	const [style, setStyle] = useState();
+	console.log('imageArrayPropimageArrayPropimageArrayProp', imageArrayProp)
+	useEffect(() => {
+		setImageArray(imageArrayProp);
+		setTitle(titleProp);
+		setDesc(descProp);
+		setShowFilter(showFilterProp);
+		setStyle(styleProp);
+	});
 
-	constructor(props) {
-		super(props);
+	// componentWillMount() {
+	// 	this.setState({
+	// 		imageArray: this.props.imageArray,
+	// 		title: this.props.Title,
+	// 		desc: this.props.Desc,
+	// 		showFilter: this.props.showFilter,
+	// 		style: this.props.style
+	// 	});
+	// }
 
-		this.state = {
-			imageArray: [],
-			title: "",
-			desc: "",
-			showFilter: false,
-			style: ""
-		}
-	}
-
-	componentWillMount() {
-		this.setState({
-			imageArray: this.props.imageArray,
-			title: this.props.Title,
-			desc: this.props.Desc,
-			showFilter: this.props.showFilter,
-			style: this.props.style
-		});
-	}
-
-	render() {
-		const { imageArray, showFilter, style } = this.state;
-		return (
-			<div>
-				{/* Remove Container if you want entire page gallery */}
-				<View id="GalleryContainer" className={style}>
-					<section id="gallery">
-						<ResponseiveGallery showFilter={showFilter} images={imageArray} />
-					</section>
-				</View>
-
+	// const { imageArray, showFilter, style } = this.state;
+	return (
+		<div>
+			<div id="GalleryContainer view" className={style}>
+				<section id="gallery">
+					{/* <ResponseiveGallery showFilter={showFilter} imageArray={imageArray} /> */}
+				</section>
 			</div>
-		)
-	}
+		</div>
+	)
 }
+
+GalleryContainer.propTypes = {
+	imageArrayProp: PropTypes.array,
+	titleProp: PropTypes.string,
+	descProp: PropTypes.string,
+	showFilterProp: PropTypes.bool,
+	styleProp: PropTypes.string
+};
+
+export default GalleryContainer;

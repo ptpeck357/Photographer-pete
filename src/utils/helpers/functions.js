@@ -19,3 +19,11 @@ export const shuffleArray = (array) => {
 	}
 	return tempArray;
 };
+
+export const importAll = (r) => {
+	let images = {};
+	r.keys().map((item) => {
+		return images[item.replace('./', '')] = r(item);
+	});
+	return images;
+}

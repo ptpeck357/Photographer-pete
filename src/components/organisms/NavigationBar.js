@@ -13,7 +13,7 @@ const NavigationBar = () => {
 	return (
 		<MDBNavbar className="navbar-expand-lg navbar-dark bg-dark">
 			<MDBContainer fluid>
-				<MDBNavbarBrand href="/">Peter Peck | Photography</MDBNavbarBrand>
+				<MDBNavbarBrand href="/featured">Peter Peck | Photography</MDBNavbarBrand>
 				<MDBNavbarToggler
 					data-bs-toggle="collapse"
 					data-bs-target="#hamburgerMenu"

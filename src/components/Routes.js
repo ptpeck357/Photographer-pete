@@ -6,7 +6,8 @@ import ABOUT_ME from '../utils/photo_projects/ABOUT_ME';
 const Routes = () => {
 	return (
 		<Switch>
-			<Route exact path="/" element={<Home />} />
+			<Route exact path="/featured" element={<Home />} />
+			<Route path="/*" element={<Home />} />
 			<Route
 				path="about"
 				element={

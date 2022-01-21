@@ -6,7 +6,7 @@ const HOME_PAGE_LINKS = [
 	},
 	{
 		text: 'Portfolio',
-		link: '#portfolio',
+		link: '/#headerbox',
 		fa_class: 'fa fa-folder'
 	},
 	{

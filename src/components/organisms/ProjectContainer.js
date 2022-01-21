@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import AboutPage from '../templates/AboutPage';
 import ProjectHeader from '../molecules/ProjectHeader';
-import ResponsiveGallery from '../molecules/ResponsiveGallery';
+import ResponsiveGallery from './ResponsiveGallery';
 
 const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, showFilterProp, styleProp }) => {
 	const [headerInfo, setHeaderInfo] = useState();
@@ -23,9 +23,9 @@ const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, show
 	const renderComponent = (renderType) => {
 		switch (renderType){
 			case 'gallery':
-				return <ResponsiveGallery imageArray={imageArrayProp} showFilter={false}/>;
+				return <ResponsiveGallery imageArrayProp={imageArrayProp} showFilter={false}/>;
 			case 'feature':
-				return <ResponsiveGallery imageArray={imageArrayProp} showFilter={false} />;
+				return <ResponsiveGallery imageArrayProp={imageArrayProp} showFilter={false} />;
 			case 'about':
 				return <AboutPage />;
 			default:

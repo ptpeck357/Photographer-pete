@@ -1,6 +1,6 @@
 import { MDBRow, MDBContainer, MDBCol, MDBCarouselItem, MDBBtn } from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
-import ScrollAnimation from 'react-animate-on-scroll';
+import FadeIn from 'react-fade-in';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { trackGA } from './../../utils/helpers/functions'
 import CarouselCaption from './CarouselCaption';
@@ -13,7 +13,7 @@ const CarouselIntroItem = ({ view, active }) => {
 					<div className="mask d-flex justify-content-center align-items-center">
 						<MDBContainer className="mb-intro">
 							<MDBRow>
-								<ScrollAnimation delay={1300} animateIn="fadeIn" animateOnce={false}>
+								<FadeIn delay={1500} animateIn="fadeIn" animateOnce={false}>
 									<MDBContainer className="px-md-3 px-sm-0">
 										<MDBCol className="mb-4 intro-container" style={{ border: 'solid', backgroundColor: '#2715151f', color: '#FFFFFF' }}>
 											<MDBCol className="p-md-2 text-center text-md-left" md={12}>
@@ -25,16 +25,16 @@ const CarouselIntroItem = ({ view, active }) => {
 												<AnchorLink href="#headerbox">
 													<MDBBtn type="button" className="m-1 bg-white" color="white" onClick={() => trackGA('Portfolio_Anchor')}>Portfolio</MDBBtn>
 												</AnchorLink>
-												<Link to="/projects">
+												<AnchorLink href="#headerbox">
 													<MDBBtn type="button" className="m-1" color="danger" onClick={() => trackGA('Projects_Anchor')}>Projects</MDBBtn>
-												</Link>
+												</AnchorLink>
 												<AnchorLink href="#footer_anchor">
 													<MDBBtn type="button" className="m-1 text-white" outline color="white" onClick={() => trackGA('Contact_Anchor')}>Contact</MDBBtn>
 												</AnchorLink>
 											</MDBCol>
 										</MDBCol>
 									</MDBContainer>
-								</ScrollAnimation>
+								</FadeIn>
 							</MDBRow>
 						</MDBContainer>
 					</div>

@@ -556,6 +556,10 @@ button:hover {
 /* small mobile :320px. */
 
 @media only screen and (max-width: 479px) {
+	.container p,.smaller-text {
+		font-size: 0.7em;
+	}
+
 	.container {
 		width: 85% !important;
 	}

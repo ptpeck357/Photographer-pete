@@ -97,7 +97,7 @@ const graduationSessions = [
 	},
 	{
 		title: 'Sonia López',
-		date: 'May 2021',
+		date: 'June 2021',
 		coverImage: BackgroundImage,
 		link: '/sonialopez',
 		category: 'graduation',
@@ -221,10 +221,9 @@ const travel = [
 
 imageArray.push.apply(imageArray, travel);
 
-
 const projectData = {
 	imageArray: imageArray,
 	projectHeader: headerData
-}
+};
 
 export default projectData;

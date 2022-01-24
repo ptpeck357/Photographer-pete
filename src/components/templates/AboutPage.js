@@ -29,10 +29,10 @@ const Mask = styled.div`
 `;
 
 const AboutPage = () => {
-	window.scroll({
-		top: 0,
-		behavior: 'smooth'
-	});
+	// window.scroll({
+	// 	top: 0,
+	// 	behavior: 'smooth'
+	// });
 
 	return (
 		<>
@@ -62,8 +62,10 @@ const AboutPage = () => {
 						</MDBCol>
 						<MDBCol lg="7">
 							<h2 className="mb-2 p-0 text-dark">
-								<li className="mr-2 fa fa-camera-retro" />
-								<strong>Photographer</strong>
+								<h4 className="smaller-text">
+									<li className="mr-2 fa fa-camera-retro" />
+									<span className="ms-2">Photographer</span>
+								</h4>
 							</h2>
 							<p>
 								What kind of photography do I do? Well, I do all types varying from landscape, portraits, engagement and graduation sessions to aerial shots! I also dabble in videography and Davinci Resolve for post processing.
@@ -76,7 +78,7 @@ const AboutPage = () => {
 							</p>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="border-bottom ps-0 pt-4">
+					<MDBRow className="border-bottom ps-0 pt-4 smaller-text">
 						<MDBCol lg="3">
 							<h6 className="tech-info text-dark">My Camera Gear</h6>
 							<StyledUl className="unorder-list">
@@ -105,8 +107,10 @@ const AboutPage = () => {
 					<MDBRow className="mt-5">
 						<MDBCol lg="7">
 							<h2 className="mb-2 p-0 text-dark">
-								<i className="mr-2 fas fa-laptop-code" />
-								<strong>Software Engineer</strong>
+								<h4 className="smaller-text">
+									<i className="mr-2 fas fa-laptop-code" />
+									<span className="ms-2">Software Engineer</span>
+								</h4>
 							</h2>
 							<p>
 								I'm a Software Engineer specialized in Full-Stack Web Development with 3 years of professional experience in the industry. I currently work at {<ActionLink href="https://www.economicmodeling.com/" classes="blue" target="_blank">Emsi Burning Glass</ActionLink>} located here in Moscow, Idaho.
@@ -129,7 +133,7 @@ const AboutPage = () => {
 							</div>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="border-bottom pt-4">
+					<MDBRow className="border-bottom pt-4 smaller-text">
 						<MDBCol lg="5" offsetLg="7">
 							<h4 className="tech-info text-dark">Skills</h4>
 							<StyledUl className="unorder-list">
@@ -161,8 +165,10 @@ const AboutPage = () => {
 						</MDBCol>
 						<MDBCol lg="8" className="mt-1">
 							<h2 className="mb-2 p-0 text-dark">
-								<i className="mr-2 fas fa-mountain" />
-								<strong>Life</strong>
+								<h4 className="smaller-text">
+									<i className="mr-2 fas fa-mountain" />
+									<span className="ms-2">Life</span>
+								</h4>
 							</h2>
 							<p>
 								Outside of work and photography, I love learning new things and going out of my comfort zone which caused me to have a lot of different hobbies and interests. Basically, I enjoy anything that involves the outdoors!
@@ -182,7 +188,7 @@ const AboutPage = () => {
 							</p>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="border-bottom ps-0 pt-1">
+					<MDBRow className="border-bottom ps-0 pt-1 smaller-text">
 						<MDBCol lg="2">
 							<h6 className="tech-info text-dark">Hobbies/Interests</h6>
 							<StyledUl className="unorder-list">

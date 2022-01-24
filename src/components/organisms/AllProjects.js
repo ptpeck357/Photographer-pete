@@ -12,7 +12,7 @@ const AllProjects = ({ imageArrayProp, showFilter }) => {
 	useEffect(() => {
 		setImageArray(imageArrayProp.reverse());
 		setImageArrayCopy(imageArrayProp);
-		filterProjects();
+		filterProjects('engagment');
 
 		window.scroll({
 			top: 150,
@@ -24,7 +24,7 @@ const AllProjects = ({ imageArrayProp, showFilter }) => {
 		});
 	}, []);
 
-	const filterProjects = (filterProject = 'people') => {
+	const filterProjects = (filterProject = 'engagment') => {
 		const filteredProjects = imageArrayCopy.filter(project =>
 			project.category === filterProject
 		);
@@ -54,9 +54,9 @@ const AllProjects = ({ imageArrayProp, showFilter }) => {
 		return (
 			<Tabs id="Tab" defaultTab="one" className="GalleryContainer">
 				<TabList className="TabList" style={{ border: 'none', margin: '3em 0 2em 0em' }}>
-					<Tab style={cursorStyle} tabFor="one" onClick={() => filterProjects('people')}>Photo shoots</Tab>
-					<Tab style={cursorStyle} tabFor="two" onClick={() => filterProjects('engagment')}>Engagments/Wedding</Tab>
-					<Tab style={cursorStyle} tabFor="three" onClick={() => filterProjects('graduation')}>Graduation</Tab>
+					<Tab style={cursorStyle} tabFor="one" onClick={() => filterProjects('engagment')}>Engagments/Wedding</Tab>
+					<Tab style={cursorStyle} tabFor="two" onClick={() => filterProjects('graduation')}>Graduation</Tab>
+					<Tab style={cursorStyle} tabFor="three" onClick={() => filterProjects('people')}>Photo shoots</Tab>
 					<Tab style={cursorStyle} tabFor="four" onClick={() => filterProjects('travel')}>Travel</Tab>
 				</TabList>
 			</Tabs>

@@ -22,8 +22,8 @@ const Footer = () => {
 	return (
 		<MDBFooter id="footer_anchor" className="text-center text-lg-start bg-white rounded text-muted">
 			<section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-				<div className="me-5 d-none d-lg-block">
-					<h6>Social media:</h6>
+				<div className="me-5 d-none d-md-block footer-links">
+					<h5>Social media:</h5>
 				</div>
 				{/* style={{ fontSize: '0.75em', margin: 'auto' }} */}
 				<div className="text-center footer-links" >

@@ -1,9 +1,9 @@
 
 import { useEffect } from 'react';
-import Headroom from 'react-headroom'
+import Headroom from 'react-headroom';
 
 import NavigationBar from './components/organisms/NavigationBar';
-import Routes from './components/Routes'
+import Routes from './components/Routes';
 import Footer from './components/organisms/Footer';
 
 // eslint-disable-next-line
@@ -17,9 +17,9 @@ const App = () => {
 	useEffect(() => {
 		window.scroll({
 			top: 70,
-			behavior: "smooth"
+			behavior: 'smooth'
 		});
-	}, [])
+	}, []);
 
 	return (
 		<>

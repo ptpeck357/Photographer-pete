@@ -69,7 +69,7 @@ const AboutPage = () => {
 								What kind of photography do I do? Well, I do all types varying from landscape, portraits, engagement and graduation sessions to aerial shots! I also dabble in videography and Davinci Resolve for post processing.
 							</p>
 							<p>
-								For my 11th birthday, I recieved a digital Kodak camera which then sat in my dresser for a year... Roughly a year later around June 2010, I decided to actually put my camera to use and start snapping landscape photos. Over the years since then, I picked up different types of photography and trying to improve my skills!
+								I got into photography when I was 12 years old. For my 11th birthday, I recieved a digital Kodak camera which then sat in my dresser for a year... A year later around June 2010, I decided to actually put my camera to use and start snapping landscape photos. Over the years since then, I've expanded out in astro portrait, and now aerial photography.
 							</p>
 							<p>
 								Even though I've been doing photography for 12 plus years, there's always something new and exciting to learn whether it's new editing tricks or techniques when I'm out in the field.
@@ -168,10 +168,10 @@ const AboutPage = () => {
 								Outside of work and photography, I love learning new things and going out of my comfort zone which caused me to have a lot of different hobbies and interests. Basically, I enjoy anything that involves the outdoors!
 							</p>
 							<p>
-								Since I grew up in Montana, some of my hobbies include hunting and fishing, and playing with a can of gasoline and matches... because that's how you entertain country kids... I also enjoy playing sports with friends.
+								Since I grew up in Montana, some of my hobbies include hunting and fishing, and playing with a can of gasoline and matches... because that's how you entertain country kids... I also enjoy playing sports with friends. So fun fact, the ranch I was working at when I was 15, I broke my wrist from getting bucked off a calf. That's when I knew bull riding wasn't my career.
 							</p>
 							<p>
-								Everyday I feel blessed that God put me in a Christian family here in America where I have these opportunties.
+								To end, everyday I am truely blessed from my Heavenly Father for the talents and .
 
 								Each and everyday I thank my Lord and Savior for  giving me the talents, and skils and share it with people. It's nothing I did to deserve or earn His grace. And of course, thankful for my parents for supporting, encouarging, and pushing me in life. It hasn't been the easiest but who said the Christian faith was suppose to be easy?
 							</p>
@@ -192,16 +192,18 @@ const AboutPage = () => {
 								<li className="camera-info-list">Dirtbiking</li>
 								<li className="camera-info-list">Skiing</li>
 								<li className="software-info-list">Ultimate frisbee</li>
+								<li className="software-info-list">Spikeball</li>
 							</StyledUl>
 							<br />
 						</MDBCol>
 						<MDBCol lg="3" className="pt-1">
 							<br />
 							<StyledUl className="unorder-list">
-								<li className="software-info-list">Spikeball</li>
 								<li className="software-info-list">Volleyball</li>
 								<li className="software-info-list">Disc golf</li>
 								<li className="software-info-list">Ping pong</li>
+								<li className="software-info-list">Cribbage</li>
+								<li className="software-info-list">Billard</li>
 								<li className="software-info-list">Martial arts</li>
 								<li className="camera-info-list">Playing the piano</li>
 							</StyledUl>

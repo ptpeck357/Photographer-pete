@@ -1,4 +1,8 @@
+import React, { useState, useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import Gallery from 'react-photo-gallery';
+import Carousel, { Modal, ModalGateway } from 'react-images';
+
 import { Tabs, Tab, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 
@@ -6,9 +10,6 @@ import 'react-web-tabs/dist/react-web-tabs.css';
 // import NavBarItem from '../atoms/NavBarItem';
 // import NavBarLink from '../atoms/NavBarLink';
 
-import React, { useState, useCallback, useEffect } from "react";
-import Gallery from 'react-photo-gallery';
-import Carousel, { Modal, ModalGateway } from 'react-images';
 import { shuffleArray } from '../../utils/helpers/functions';
 
 const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {

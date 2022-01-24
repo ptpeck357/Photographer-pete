@@ -202,7 +202,6 @@ const AboutPage = () => {
 								<li className="software-info-list">Volleyball</li>
 								<li className="software-info-list">Disc golf</li>
 								<li className="software-info-list">Ping pong</li>
-								<li className="software-info-list">Cribbage</li>
 								<li className="software-info-list">Billard</li>
 								<li className="software-info-list">Martial arts</li>
 								<li className="camera-info-list">Playing the piano</li>

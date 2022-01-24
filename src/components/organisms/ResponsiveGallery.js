@@ -6,9 +6,9 @@ import Carousel, { Modal, ModalGateway } from 'react-images';
 import { Tabs, Tab, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 
-// import { MDBNavbarNav, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from 'mdb-react-ui-kit';
-// import NavBarItem from '../atoms/NavBarItem';
-// import NavBarLink from '../atoms/NavBarLink';
+import { MDBNavbarNav, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from 'mdb-react-ui-kit';
+import NavBarItem from '../atoms/NavBarItem';
+import NavBarLink from '../atoms/NavBarLink';
 
 import { shuffleArray } from '../../utils/helpers/functions';
 
@@ -49,25 +49,14 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 		return (
 			<Tabs id="Tab" defaultTab="one" className="GalleryContainer">
 				<TabList className="TabList" style={{ border: 'none', margin: '0em 0 1em 0em', color: 'black' }}>
-					<Tab style={cursorStyle} tabFor="one" onClick={() => filterImage('*')}>Featured</Tab>
-					<Tab style={cursorStyle} tabFor="two" onClick={() => filterImage('people')}>Montana</Tab>
-					<Tab style={cursorStyle} tabFor="three" onClick={() => filterImage('people')}>Washington</Tab>
-					<Tab style={cursorStyle} tabFor="four" onClick={() => filterImage('people')}>Israel</Tab>
-					<Tab style={cursorStyle} tabFor="five" onClick={() => filterImage('nightsky')}>Night Sky</Tab>
+					<Tab style={cursorStyle} tabFor="one" onClick={() => filterImage('*')}>Home</Tab>
 					<Tab style={cursorStyle} tabFor="six" onClick={() => filterImage('people')}>People</Tab>
-					{/* <Tab tabFor="four">
-						<MDBDropdown>
-							<MDBDropdownToggle className="brand colorBlackLink" nav caret>Projects</MDBDropdownToggle>
-							<MDBDropdownMenu>
-								<MDBDropdownItem>
-									<NavBarItem classes="nav-format">
-										<NavBarLink className="brand nav-format" to="/">All Projects</NavBarLink>
-										<NavBarLink className="brand nav-format" to="/">All Projects</NavBarLink>
-									</NavBarItem>
-								</MDBDropdownItem>
-							</MDBDropdownMenu>
-						</MDBDropdown>
-					</Tab> */}
+					<Tab style={cursorStyle} tabFor="five" onClick={() => filterImage('nightsky')}>Night Sky</Tab>
+					<Tab style={cursorStyle} tabFor="three" onClick={() => filterImage('washington')}>Washington</Tab>
+					<Tab style={cursorStyle} tabFor="two" onClick={() => filterImage('montana')}>Montana</Tab>
+					<Tab tabFor="four">
+						<NavBarLink className="text-dark" link="/projects">More</NavBarLink>
+					</Tab>
 				</TabList>
 			</Tabs>
 		);

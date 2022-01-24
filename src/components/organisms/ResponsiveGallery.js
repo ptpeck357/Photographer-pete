@@ -22,6 +22,10 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 		setViewerIsOpen(true);
 	}, []);
 
+	useEffect(() => {
+		filterImage('*');
+	}, []);
+
 	const closeLightbox = () => {
 		setCurrentImage(0);
 		setViewerIsOpen(false);
@@ -54,16 +58,12 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 					<Tab style={cursorStyle} tabFor="three" onClick={() => filterImage('washington')}>Washington</Tab>
 					<Tab style={cursorStyle} tabFor="two" onClick={() => filterImage('montana')}>Montana</Tab>
 					<Tab tabFor="four">
-						<Link className="text-dark" to="/projects">More Photos</Link>
+						<NavBarLink classes="text-dark" link="/projects">More Photos</NavBarLink>
 					</Tab>
 				</TabList>
 			</Tabs>
 		);
 	};
-
-	useEffect(() => {
-		filterImage('*')
-	}, []);
 
 	return (
 		<div className="content page-section spad text-center App">

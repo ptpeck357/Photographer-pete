@@ -7,11 +7,12 @@ import 'react-web-tabs/dist/react-web-tabs.css';
 
 const AllProjects = ({ imageArrayProp, showFilter }) => {
 	const [imageArray, setImageArray] = useState();
-	const [imageArrayCopy, setImageArrayCopy] = useState();
+	const [imageArrayCopy, setImageArrayCopy] = useState(imageArrayProp);
 
 	useEffect(() => {
-		setImageArray(imageArrayProp.reverse())
+		setImageArray(imageArrayProp.reverse());
 		setImageArrayCopy(imageArrayProp);
+		filterProjects();
 
 		window.scroll({
 			top: 150,
@@ -23,7 +24,7 @@ const AllProjects = ({ imageArrayProp, showFilter }) => {
 		});
 	}, []);
 
-	const filterProjects = (filterProject) => {
+	const filterProjects = (filterProject = 'people') => {
 		const filteredProjects = imageArrayCopy.filter(project =>
 			project.category === filterProject
 		);
@@ -32,7 +33,7 @@ const AllProjects = ({ imageArrayProp, showFilter }) => {
 	}
 
 	const renderAllProject = () => {
-		if (!imageArray) {
+		if(!imageArray){
 			return;
 		}
 

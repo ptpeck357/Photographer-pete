@@ -24,7 +24,7 @@ const NavBar = ({ classes }) => {
 				</NavBarLink>
 			</NavBarItem>
 			<NavBarItem classes="text-center mx-2 mx-lg-1  text-muted">
-				<AnchorLink classes="nav-bar-link" href="#headerbox">
+				<AnchorLink href="#headerbox">
 					<div className='text-muted'>
 						<i className="fa fa-address-card" />
 					</div>

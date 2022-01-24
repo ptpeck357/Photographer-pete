@@ -11,10 +11,10 @@ const ProjectTemplate = (projectObject) => {
 				<NavBarLink link={link}>
 					<div className="view">
 						<img src={coverImage} className={'imgFit img-fluid ' + style} alt={title} />
-						<div className={'stripe light ' + bannerStyle}>
+						<div className={'stripe ' + bannerStyle}>
 							<div>
 								<p>{title}</p>
-								<p><i class="far fa-calendar-alt">{date}</i></p>
+								<p><i className="far fa-calendar-alt">{date}</i></p>
 							</div>
 						</div>
 					</div>

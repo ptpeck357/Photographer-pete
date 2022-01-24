@@ -508,7 +508,6 @@ button:hover {
 /* Large Mobile :480px. */
 
 @media only screen and (min-width: 479px) and (max-width: 540px) {
-
 	.display-4 {
 		font-size: 3em !important;
 		padding-top: 0em !important;
@@ -575,7 +574,7 @@ button:hover {
 	}
 	/* Parallax Header Image  */
 	.headerbg {
-		height: 300px;
+		height: 360px;
 	}
 	.parallax-mobile-view img {
 		top: -10em !important;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import NavBarLink from '../atoms/NavBarLink';
 import ProjectTemplate from '../molecules/ProjectTemplate';
 import ReactGA from 'react-ga';
 import { Tabs, Tab, TabList } from 'react-web-tabs';
@@ -58,6 +59,9 @@ const AllProjects = ({ imageArrayProp, showFilter }) => {
 					<Tab style={cursorStyle} tabFor="two" onClick={() => filterProjects('graduation')}>Graduation</Tab>
 					<Tab style={cursorStyle} tabFor="three" onClick={() => filterProjects('people')}>Photo shoots</Tab>
 					<Tab style={cursorStyle} tabFor="four" onClick={() => filterProjects('travel')}>Travel</Tab>
+					<Tab tabFor="five">
+						<NavBarLink classes="text-dark" link="/home">Back to Home</NavBarLink>
+					</Tab>
 				</TabList>
 			</Tabs>
 		);

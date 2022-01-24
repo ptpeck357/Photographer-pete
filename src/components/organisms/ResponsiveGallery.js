@@ -1,19 +1,15 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Gallery from 'react-photo-gallery';
-import { Link } from 'react-router-dom';
 import Carousel, { Modal, ModalGateway } from 'react-images';
-
+import NavBarLink from '../atoms/NavBarLink';
 import { Tabs, Tab, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
-
-import NavBarLink from '../atoms/NavBarLink';
 
 import { shuffleArray } from '../../utils/helpers/functions';
 
 const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 	const [imageArray, setImageArray] = useState([]);
-	const [filterType, setFilterType] = useState('*');
 	const [currentImage, setCurrentImage] = useState(0);
 	const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -23,7 +19,7 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 	}, []);
 
 	useEffect(() => {
-		filterImage('*');
+		filterImage();
 	}, []);
 
 	const closeLightbox = () => {
@@ -31,7 +27,7 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 		setViewerIsOpen(false);
 	};
 
-	const filterImage = (filterType) => {
+	const filterImage = (filterType = '*') => {
 		let imagesCopy = imageArrayProp;
 
 		let newArray = imagesCopy.filter((img) => {
@@ -57,7 +53,7 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 					<Tab style={cursorStyle} tabFor="tjree" onClick={() => filterImage('montana')}>Montana</Tab>
 					<Tab style={cursorStyle} tabFor="four" onClick={() => filterImage('nightsky')}>Night Sky</Tab>
 					<Tab style={cursorStyle} tabFor="five" onClick={() => filterImage('washington')}>Washington</Tab>
-					<Tab tabFor="four">
+					<Tab tabFor="six">
 						<NavBarLink classes="text-dark" link="/projects">More Photos</NavBarLink>
 					</Tab>
 				</TabList>

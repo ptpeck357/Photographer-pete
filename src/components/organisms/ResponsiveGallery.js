@@ -1,13 +1,12 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Gallery from 'react-photo-gallery';
+import { Link } from 'react-router-dom';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 
 import { Tabs, Tab, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 
-import { MDBNavbarNav, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from 'mdb-react-ui-kit';
-import NavBarItem from '../atoms/NavBarItem';
 import NavBarLink from '../atoms/NavBarLink';
 
 import { shuffleArray } from '../../utils/helpers/functions';
@@ -55,7 +54,7 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 					<Tab style={cursorStyle} tabFor="three" onClick={() => filterImage('washington')}>Washington</Tab>
 					<Tab style={cursorStyle} tabFor="two" onClick={() => filterImage('montana')}>Montana</Tab>
 					<Tab tabFor="four">
-						<NavBarLink className="text-dark" link="/projects">More</NavBarLink>
+						<Link className="text-dark" to="/projects">More Photos</Link>
 					</Tab>
 				</TabList>
 			</Tabs>

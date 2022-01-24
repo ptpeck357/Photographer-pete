@@ -2,7 +2,8 @@
   "name": "photographer-pete",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/home",
+  "main": "index.js",
+  "homepage": "/",
   "author": "Peter Peck",
   "dependencies": {
     "animate.css": "^4.1.1",

@@ -14,7 +14,7 @@ const photoSessions = [
 		title: 'Sofia Cordero',
 		date: 'January 2021',
 		coverImage: BackgroundImage,
-		link: '/sofiacordero',
+		link: '/sofia_cordero',
 		category: 'people',
 		bannerStyle: 'light'
 	},
@@ -51,7 +51,7 @@ const graduationSessions = [
 		title: 'Shanna Emanuelson',
 		date: 'April 2021',
 		coverImage: BackgroundImage,
-		link: '/shannaemanuelson',
+		link: '/shanna_emanuelson',
 		category: 'graduation',
 		bannerStyle: 'light'
 	},
@@ -59,7 +59,7 @@ const graduationSessions = [
 		title: 'Madeline Anderson',
 		date: 'May 2021',
 		coverImage: BackgroundImage,
-		link: '/madelineanderson',
+		link: '/madeline_anderson',
 		category: 'graduation',
 		bannerStyle: 'light'
 	},
@@ -67,7 +67,7 @@ const graduationSessions = [
 		title: 'Jarred Acevedo',
 		date: 'May 2021',
 		coverImage: BackgroundImage,
-		link: '/jarredacevedo',
+		link: '/jarred_acevedo',
 		category: 'graduation',
 		bannerStyle: 'light'
 	},
@@ -75,7 +75,7 @@ const graduationSessions = [
 		title: 'Joshua Emanuelson',
 		date: 'May 2021',
 		coverImage: BackgroundImage,
-		link: '/joshuaemanuelson',
+		link: '/joshua_emanuelson',
 		category: 'graduation',
 		bannerStyle: 'light'
 	},
@@ -83,15 +83,15 @@ const graduationSessions = [
 		title: 'Sarah Calvin',
 		date: 'May 2021',
 		coverImage: BackgroundImage,
-		link: '/sarahcalvin',
+		link: '/sarah_calvin',
 		category: 'graduation',
 		bannerStyle: 'light'
 	},
 	{
-		title: 'Ruben Coello',
+		title: 'Ruben Andres Jerves Coello',
 		date: 'May 2021',
 		coverImage: BackgroundImage,
-		link: '/rubencoello',
+		link: '/ruben_coello',
 		category: 'graduation',
 		bannerStyle: 'light'
 	},
@@ -99,7 +99,7 @@ const graduationSessions = [
 		title: 'Sonia López',
 		date: 'June 2021',
 		coverImage: BackgroundImage,
-		link: '/sonialopez',
+		link: '/sonia_lopez',
 		category: 'graduation',
 		bannerStyle: 'light'
 	}
@@ -112,7 +112,7 @@ const engagmentSessions = [
 		title: 'Jacob and Raquel\'s Engagment',
 		date: 'August 2020',
 		coverImage: BackgroundImage,
-		link: '/jacobraquelengagment',
+		link: '/jacob_raquel_engagment',
 		category: 'engagment',
 		bannerStyle: 'light'
 	},
@@ -120,15 +120,15 @@ const engagmentSessions = [
 		title: 'Makiah and Rachel\'s Engagment',
 		date: 'November 2020',
 		coverImage: BackgroundImage,
-		link: '/makiahrachel',
+		link: '/makiah_rachel',
 		category: 'engagment',
 		bannerStyle: 'light'
 	},
 	{
 		title: 'Jacob and Raquel\'s wedding',
-		date: 'November 2020',
+		date: 'December 2020',
 		coverImage: BackgroundImage,
-		link: '/jacobraquelwedding',
+		link: '/jacob_raquel_wedding',
 		category: 'engagment',
 		bannerStyle: 'light'
 	},
@@ -136,7 +136,7 @@ const engagmentSessions = [
 		title: 'Nick and Audrey\'s Engagment',
 		date: 'January 2021',
 		coverImage: BackgroundImage,
-		link: '/nickaudrey',
+		link: '/nick_audrey',
 		category: 'engagment',
 		bannerStyle: 'light'
 	},
@@ -144,7 +144,7 @@ const engagmentSessions = [
 		title: 'Jared and Hallie\'s Engagment',
 		date: 'Feburary 2021',
 		coverImage: BackgroundImage,
-		link: '/jaredhallie',
+		link: '/jared_hallie',
 		category: 'engagment',
 		bannerStyle: 'light'
 	}
@@ -181,15 +181,7 @@ const travel = [
 		title: 'Chicago',
 		date: '2017 - 2018',
 		coverImage: BackgroundImage,
-		link: '/banff',
-		category: 'travel',
-		bannerStyle: 'light'
-	},
-	{
-		title: 'Idaho',
-		date: '2018 - 2022',
-		coverImage: BackgroundImage,
-		link: '/idaho',
+		link: '/chicago',
 		category: 'travel',
 		bannerStyle: 'light'
 	},

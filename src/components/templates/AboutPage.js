@@ -13,7 +13,7 @@ import ReactGA from 'react-ga';
 // ReactGA.pageview(window.location.href);
 
 const StyledHr = styled.hr`
-	width: 60%;
+	width: 100%;
 	margin: revert;
 	color: inherit;
 	border: 0;
@@ -43,7 +43,7 @@ const AboutPage = () => {
 						<br />
 						I'm a photographer, wanderer, and a software engineer.
 						I was born in Cambodia and was adopted at age 1. I've spent most of my
-						growing up days on a small ranch in Montana. I love to travel, meet new people, and explore the outdoors... rest to be continued!
+						growing up days on a small ranch in Montana. I love to travel, meeting new people, and explore the outdoors... rest to be continued!
 					</p>
 					<StyledHr />
 
@@ -78,7 +78,7 @@ const AboutPage = () => {
 							</p>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="border-bottom ps-0 pt-4 smaller-text">
+					<MDBRow className="ps-0 pt-4 smaller-text">
 						<MDBCol lg="3">
 							<h6 className="tech-info text-dark">My Camera Gear</h6>
 							<StyledUl className="unorder-list">
@@ -102,7 +102,7 @@ const AboutPage = () => {
 							</StyledUl>
 						</MDBCol>
 					</MDBRow>
-
+					<StyledHr />
 					{/* Software Engineering Section */}
 					<MDBRow className="mt-5">
 						<MDBCol lg="7">
@@ -133,7 +133,7 @@ const AboutPage = () => {
 							</div>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="border-bottom pt-4 smaller-text">
+					<MDBRow className="pt-4 smaller-text">
 						<MDBCol lg="5" offsetLg="7">
 							<h4 className="tech-info text-dark">Skills</h4>
 							<StyledUl className="unorder-list">
@@ -150,6 +150,8 @@ const AboutPage = () => {
 							</StyledUl>
 						</MDBCol>
 					</MDBRow>
+
+					<StyledHr />
 
 					{/* Everyday Life Section */}
 					<MDBRow className="mt-5 mb-4">
@@ -188,10 +190,10 @@ const AboutPage = () => {
 							</p>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="border-bottom ps-0 pt-1 smaller-text">
-						<MDBCol lg="2">
-							<h6 className="tech-info text-dark">Hobbies/Interests</h6>
-							<StyledUl className="unorder-list">
+					<MDBRow className="ps-0 pt-1 smaller-text pb-4">
+						<h6 className="tech-info text-dark">Hobbies/Interests</h6>
+						<MDBCol sm="6" lg="3">
+							<span className="unorder-list">
 								<li className="camera-info-list">Hunting</li>
 								<li className="camera-info-list">Fishing</li>
 								<li className="camera-info-list">Camping</li>
@@ -199,21 +201,20 @@ const AboutPage = () => {
 								<li className="camera-info-list">Skiing</li>
 								<li className="software-info-list">Ultimate frisbee</li>
 								<li className="software-info-list">Spikeball</li>
-							</StyledUl>
-							<br />
+							</span>
 						</MDBCol>
-						<MDBCol lg="3" className="pt-1">
-							<br />
-							<StyledUl className="unorder-list">
+						<MDBCol sm="6" lg="3">
+							<span className="unorder-list">
 								<li className="software-info-list">Volleyball</li>
 								<li className="software-info-list">Disc golf</li>
 								<li className="software-info-list">Ping pong</li>
 								<li className="software-info-list">Billard</li>
 								<li className="software-info-list">Martial arts</li>
 								<li className="camera-info-list">Playing the piano</li>
-							</StyledUl>
+							</span>
 						</MDBCol>
 					</MDBRow>
+					<StyledHr />
 				</MDBContainer>
 			</ScrollAnimation>
 		</>

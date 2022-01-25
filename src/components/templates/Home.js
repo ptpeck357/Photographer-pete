@@ -22,7 +22,7 @@ const Home = () => {
 			<div id="section2">
 				<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
 					<ProjectContainer
-						// showFilter={true}
+						showFilterProp={true}
 						imageArrayProp={FEATURE.imageArray}
 						headerInfoProp={FEATURE.projectHeader}
 						renderTypeProp="feature"

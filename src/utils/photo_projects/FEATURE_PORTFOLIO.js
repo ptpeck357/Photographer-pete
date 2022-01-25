@@ -122,6 +122,34 @@ for(var jj = 1; jj <= WashingtonObjLenth; jj++){
 
 imageArray = [...shuffleArray(featureArray)];
 
+const idaho = importAll(require.context('../../images/feature/idaho/landscape', false, /\.(jpg)$/));
+const idahoObjLenth = Object.keys(idaho).length;
+for(var gj = 1; gj <= idahoObjLenth; gj++){
+	const idahoObj = {
+		src: idaho['img-' + gj + '.jpg'].default,
+		caption: '',
+		category: ['idaho'],
+		height: 2,
+		width: 3
+	}
+	featureArray.push(idahoObj);
+}
+
+const idahoPortrait = importAll(require.context('../../images/feature/idaho/portrait', false, /\.(jpg)$/));
+const idahoPortraitObjLenth = Object.keys(idahoPortrait).length;
+for(var sss = 1; sss <= idahoPortraitObjLenth; sss++){
+	const idahoPortraitObj = {
+		src: idahoPortrait['img-' + sss + '.jpg'].default,
+		caption: '',
+		category: ['idaho'],
+		height: 5,
+		width: 4
+	}
+	featureArray.push(idahoPortraitObj);
+}
+
+imageArray = [...shuffleArray(featureArray)];
+
 const projectData = {
 	imageArray: imageArray,
 	projectHeader: headerData

@@ -24,9 +24,9 @@ const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, show
 	const renderComponent = (renderType) => {
 		switch(renderType){
 			case 'gallery':
-				return <ResponsiveGallery imageArrayProp={imageArrayProp} showFilter={false} />;
+				return <ResponsiveGallery imageArrayProp={imageArrayProp} showFilterProp={showFilter} />;
 			case 'feature':
-				return <ResponsiveGallery imageArrayProp={imageArrayProp} showFilter={false} />;
+				return <ResponsiveGallery imageArrayProp={imageArrayProp} showFilterProp={showFilter} />;
 			case 'about':
 				return <AboutPage />;
 			case 'projects':

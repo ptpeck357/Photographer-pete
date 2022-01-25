@@ -19,7 +19,7 @@ dist
 
 # images
 /src/images/
-/utils/photo_projects
+/src/utils/photo_projects
 
 # misc
 .DS_Store

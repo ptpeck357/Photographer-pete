@@ -214,7 +214,7 @@ const travel = [
 imageArray.push.apply(imageArray, travel);
 
 const projectData = {
-	imageArray: imageArray,
+	imageArray: imageArray.reverse(),
 	projectHeader: headerData
 };
 

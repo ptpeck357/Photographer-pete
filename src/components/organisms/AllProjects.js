@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import NavBarLink from '../atoms/NavBarLink';
 import ProjectTemplate from '../molecules/ProjectTemplate';
@@ -6,12 +7,12 @@ import ReactGA from 'react-ga';
 import { Tabs, Tab, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 
-const AllProjects = ({ imageArrayProp, showFilter }) => {
+const AllProjects = ({ imageArrayProp }) => {
 	const [imageArray, setImageArray] = useState();
 	const [imageArrayCopy, setImageArrayCopy] = useState(imageArrayProp);
 
 	useEffect(() => {
-		setImageArray(imageArrayProp.reverse());
+		setImageArray(imageArrayProp);
 		setImageArrayCopy(imageArrayProp);
 		filterProjects('engagment');
 
@@ -82,5 +83,9 @@ const AllProjects = ({ imageArrayProp, showFilter }) => {
 		</div>
 	)
 }
+
+AllProjects.propTypes = {
+	imageArrayProp: PropTypes.array.isRequired
+};
 
 export default AllProjects;

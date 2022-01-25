@@ -20,15 +20,19 @@ const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 	}, []);
 
 	useEffect(() => {
-		if(!showFilter){
+		if(!showFilterProp){
 			window.scroll({
 				top: 0,
-				behavior: "smooth"
+				behavior: 'smooth'
 			});
 		};
+
+		if(showFilterProp){
+			filterImage();
+		};
+
 		setShowFilter(showFilterProp);
-		filterImage();
-	}, []);
+	}, [showFilterProp]);
 
 	const closeLightbox = () => {
 		setCurrentImage(0);

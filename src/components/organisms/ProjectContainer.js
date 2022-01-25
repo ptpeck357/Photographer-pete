@@ -7,10 +7,10 @@ import ResponsiveGallery from './ResponsiveGallery';
 import AllProjects from './AllProjects';
 
 const ProjectContainer = ({ headerInfoProp, imageArrayProp, renderTypeProp, showFilterProp, styleProp }) => {
-	const [headerInfo, setHeaderInfo] = useState();
-	const [imageArray, setImageArray] = useState();
+	const [headerInfo, setHeaderInfo] = useState();  // eslint-disable-next-line
+	const [imageArray, setImageArray] = useState();  // eslint-disable-next-line
 	const [renderType, setRenderType] = useState();
-	const [showFilter, setShowFilter] = useState();
+	const [showFilter, setShowFilter] = useState();  // eslint-disable-next-line
 	const [style, setStyle] = useState();
 
 	useEffect(() => {

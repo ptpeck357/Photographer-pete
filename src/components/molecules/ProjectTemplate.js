@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { MDBCard, MDBCol } from 'mdb-react-ui-kit';
 import NavBarLink from '../atoms/NavBarLink';
 
@@ -22,6 +23,10 @@ const ProjectTemplate = (projectObject) => {
 			</MDBCard>
 		</MDBCol>
 	);
+};
+
+ProjectTemplate.propTypes = {
+	projectObject: PropTypes.object.isRequired
 };
 
 export default ProjectTemplate;

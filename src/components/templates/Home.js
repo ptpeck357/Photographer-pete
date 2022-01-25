@@ -8,7 +8,7 @@ const Home = () => {
 	useEffect(() => {
 		window.scroll({
 			top: 70,
-			behavior: "smooth"
+			behavior: 'smooth'
 		});
 	}, [])
 

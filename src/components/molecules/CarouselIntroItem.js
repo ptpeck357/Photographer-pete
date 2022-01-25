@@ -1,4 +1,5 @@
 import { MDBRow, MDBContainer, MDBCol, MDBCarouselItem, MDBBtn } from 'mdb-react-ui-kit';
+import PropTypes from 'prop-types';
 import FadeIn from 'react-fade-in';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { trackGA } from './../../utils/helpers/functions'
@@ -44,5 +45,10 @@ const CarouselIntroItem = ({ view, active }) => {
 		</MDBCarouselItem>
 	);
 }
+
+CarouselIntroItem.propTypes = {
+	imageArrayProp: PropTypes.string.isRequired,
+	showFilterProp: PropTypes.string
+};
 
 export default CarouselIntroItem;

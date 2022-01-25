@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import FadeIn from 'react-fade-in';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { trackGA } from './../../utils/helpers/functions'
-import CarouselCaption from './CarouselCaption';
 import NavBarLink from '../atoms/NavBarLink';
 
 const CarouselIntroItem = ({ view, active }) => {
@@ -41,14 +40,13 @@ const CarouselIntroItem = ({ view, active }) => {
 					</div>
 				</div>
 			</div>
-			<CarouselCaption />
 		</MDBCarouselItem>
 	);
 }
 
 CarouselIntroItem.propTypes = {
-	imageArrayProp: PropTypes.string.isRequired,
-	showFilterProp: PropTypes.string
+	view: PropTypes.string.isRequired,
+	active: PropTypes.string
 };
 
 export default CarouselIntroItem;

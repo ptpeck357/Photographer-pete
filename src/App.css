@@ -102,56 +102,6 @@ p, h3 {
 	height: 103vh;
 }
 
-/* Intro Arrow Button */
-
-.button, buttonMore {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-	-moz-transition: background-color 0.2s ease-in-out;
-	-webkit-transition: background-color 0.2s ease-in-out;
-	-ms-transition: background-color 0.2s ease-in-out;
-	transition: background-color 0.2s ease-in-out;
-	border: 0;
-	border-radius: 3.5em;
-	color: #ffffff;
-	cursor: pointer;
-	display: inline-block;
-	height: 3.5em;
-	line-height: 3.5em;
-	outline: 0;
-	padding: 0 2em 0 2em;
-	position: relative;
-	text-align: center;
-	text-decoration: none;
-}
-
-input[type="button"].down, .button.down, button.down {
-	height: 5em;
-	margin: 0 auto;
-	/* background-image: url("./images/dark-arrow.svg"); */
-	background-position: center center;
-	background-repeat: no-repeat;
-	margin-bottom: 2em;
-}
-
-button:hover {
-	background-color: rgba(229, 230, 231, 0.375);
-}
-
-.button:active, button:active {
-	background-color: rgba(229, 230, 231, 0.375);
-}
-
-.button.style2, button.style2 {
-	background-color: rgba(39, 21, 21, 0.12);
-	color: white;
-}
-
-.button.style2:hover, button.style2:hover {
-	background-color: rgba(229, 230, 231, 0.375);
-}
 
 /* ===========================
   Project Header
@@ -301,7 +251,7 @@ button:hover {
 		width: 100% !important;
 	}
 	.mb-intro .intro-container {
-		padding: 10em 1em 10em 1em;
+		padding: 10em 5em 10em 5em;
 	}
 	.display-4 {
 		font-size: 5em !important;
@@ -329,7 +279,7 @@ button:hover {
 		width: 100% !important;
 	}
 	.mb-intro .intro-container {
-		padding: 10em 1em 10em 1em;
+		padding: 8em 5em 8em 5em;
 	}
 	.display-4 {
 		font-size: 5em !important;
@@ -340,9 +290,6 @@ button:hover {
 	}
 	#headerbox{
 		margin: -5em 0em 5em 0em !important;
-	}
-	.mb-intro .intro-container {
-		padding: 10em 1em 10em 1em;
 	}
 	.mb-intro {
 		margin-bottom: 4em !important;
@@ -365,7 +312,7 @@ button:hover {
 		width: 100% !important;
 	}
 	.mb-intro .intro-container {
-		padding: 10em 1em 10em 1em;
+		padding: 8em 2em 8em 2em;
 	}
 	.display-4 {
 		font-size: 5em !important;
@@ -394,7 +341,7 @@ button:hover {
 		width: 100% !important;
 	}
 	.mb-intro .intro-container {
-		padding: 10em 1em 10em 1em;
+		padding: 8em 2em 8em 2em;
 	}
 	.display-4 {
 		font-size: 5em !important;
@@ -455,7 +402,7 @@ button:hover {
 		width: 95% !important;
 	}
 	.mb-intro .intro-container {
-		padding: 10em 1em 10em 1em;
+		padding: 8em 2em 8em 2em;
 	}
 	.display-4 {
 		font-size: 5em !important;
@@ -487,7 +434,7 @@ button:hover {
 		width: 100% !important;
 	}
 	.mb-intro .intro-container {
-		padding: 10em 1em 10em 1em;
+		padding: 8em 2em 8em 2em;
 	}
 	.display-4 {
 		font-size: 3.25em !important;
@@ -517,7 +464,7 @@ button:hover {
 		width: 100% !important;
 	}
 	.mb-intro .intro-container {
-		padding: 10em 1em 10em 1em;
+		padding: 8em 2em 8em 2em;
 	}
 	.display-4 {
 		font-size: 3.25em !important;
@@ -559,7 +506,7 @@ button:hover {
 		font-size: 2em !important;
 	}
 	.mb-intro .intro-container {
-		padding: 10em 1em 10em 1em;
+		padding: 8em 2em 8em 2em;
 	}
 	.mb-intro {
 		margin-bottom: 0em !important;

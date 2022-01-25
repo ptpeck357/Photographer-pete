@@ -32,7 +32,7 @@ const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 		};
 
 		setShowFilter(showFilterProp);
-	}, [showFilterProp]);
+	}, [imageArrayProp, showFilterProp]);
 
 	const closeLightbox = () => {
 		setCurrentImage(0);

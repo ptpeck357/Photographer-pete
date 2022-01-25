@@ -3,6 +3,7 @@ import FadeIn from 'react-fade-in';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { trackGA } from './../../utils/helpers/functions'
 import CarouselCaption from './CarouselCaption';
+import NavBarLink from '../atoms/NavBarLink';
 
 const CarouselIntroItem = ({ view, active }) => {
 	return (
@@ -21,11 +22,11 @@ const CarouselIntroItem = ({ view, active }) => {
 													<h3 className="display-5 intro-subtitle">Photography | Travel</h3>
 												</div>
 												<hr className="hr-light" />
+												<NavBarLink link="/projects">
+													<MDBBtn type="button" className="m-1 bg-white" color="white" onClick={() => trackGA('Home_Page_All_Projects')}>All Projects</MDBBtn>
+												</NavBarLink>
 												<AnchorLink href="#headerbox">
-													<MDBBtn type="button" className="m-1 bg-white" color="white" onClick={() => trackGA('Portfolio_Anchor')}>Portfolio</MDBBtn>
-												</AnchorLink>
-												<AnchorLink href="#headerbox">
-													<MDBBtn type="button" className="m-1" color="danger" onClick={() => trackGA('Projects_Anchor')}>Projects</MDBBtn>
+													<MDBBtn type="button" className="m-1" color="danger" onClick={() => trackGA('Portfolio_Anchor')}>Portfolio</MDBBtn>
 												</AnchorLink>
 												<AnchorLink href="#footer_anchor">
 													<MDBBtn type="button" className="m-1 text-white" outline color="white" onClick={() => trackGA('Contact_Anchor')}>Contact</MDBBtn>

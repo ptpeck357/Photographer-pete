@@ -8,15 +8,23 @@ const NavBar = ({ classes }) => {
 	return (
 		<MDBNavbarNav className={classes}>
 			<NavBarItem classes="text-center mx-2 mx-lg-1">
-				<NavBarLink classes="nav-bar-link no-underline" link="/featured" >
+				<NavBarLink classes="nav-bar-link no-underline" link="/home" >
 					<div>
 						<i className="fa-lg mb-1 fa fa-home" />
 					</div>
 					Home
 				</NavBarLink>
 			</NavBarItem>
+			<NavBarItem classes="text-center mx-2 mx-lg-1">
+				<NavBarLink classes="nav-bar-link no-underline" link="/projects">
+					<div>
+						<i className="fas fa-folder-open" />
+					</div>
+					All Projects
+				</NavBarLink>
+			</NavBarItem>
 			<NavBarItem classes="text-center mx-2 mx-lg-1  text-muted">
-				<AnchorLink classes="nav-bar-link" href="#headerbox">
+				<AnchorLink href="#headerbox">
 					<div className='text-muted'>
 						<i className="fa fa-address-card" />
 					</div>

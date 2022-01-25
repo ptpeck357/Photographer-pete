@@ -14,10 +14,12 @@ yarn-error.log*
 
 # production
 /build
+/dist
 dist
 
 # images
-# /src/images/
+/src/images/
+/utils/photo_projects
 
 # misc
 .DS_Store

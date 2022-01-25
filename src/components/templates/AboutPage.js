@@ -13,7 +13,7 @@ import ReactGA from 'react-ga';
 // ReactGA.pageview(window.location.href);
 
 const StyledHr = styled.hr`
-	width: 60%;
+	width: 100%;
 	margin: revert;
 	color: inherit;
 	border: 0;
@@ -29,10 +29,10 @@ const Mask = styled.div`
 `;
 
 const AboutPage = () => {
-	window.scroll({
-		top: 0,
-		behavior: 'smooth'
-	});
+	// window.scroll({
+	// 	top: 0,
+	// 	behavior: 'smooth'
+	// });
 
 	return (
 		<>
@@ -43,7 +43,7 @@ const AboutPage = () => {
 						<br />
 						I'm a photographer, wanderer, and a software engineer.
 						I was born in Cambodia and was adopted at age 1. I've spent most of my
-						growing up days on a small ranch in Montana. I love to travel, meet new people, and explore the outdoors... rest to be continued!
+						growing up days on a small ranch in Montana. I love to travel, meeting new people, and explore the outdoors... rest to be continued!
 					</p>
 					<StyledHr />
 
@@ -62,8 +62,10 @@ const AboutPage = () => {
 						</MDBCol>
 						<MDBCol lg="7">
 							<h2 className="mb-2 p-0 text-dark">
-								<li className="mr-2 fa fa-camera-retro" />
-								<strong>Photographer</strong>
+								<h4 className="smaller-text">
+									<li className="mr-2 fa fa-camera-retro" />
+									<span className="ms-2">Photographer</span>
+								</h4>
 							</h2>
 							<p>
 								What kind of photography do I do? Well, I do all types varying from landscape, portraits, engagement and graduation sessions to aerial shots! I also dabble in videography and Davinci Resolve for post processing.
@@ -76,7 +78,7 @@ const AboutPage = () => {
 							</p>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="border-bottom ps-0 pt-4">
+					<MDBRow className="ps-0 pt-4 smaller-text">
 						<MDBCol lg="3">
 							<h6 className="tech-info text-dark">My Camera Gear</h6>
 							<StyledUl className="unorder-list">
@@ -100,13 +102,15 @@ const AboutPage = () => {
 							</StyledUl>
 						</MDBCol>
 					</MDBRow>
-
+					<StyledHr />
 					{/* Software Engineering Section */}
 					<MDBRow className="mt-5">
 						<MDBCol lg="7">
 							<h2 className="mb-2 p-0 text-dark">
-								<i className="mr-2 fas fa-laptop-code" />
-								<strong>Software Engineer</strong>
+								<h4 className="smaller-text">
+									<i className="mr-2 fas fa-laptop-code" />
+									<span className="ms-2">Software Engineer</span>
+								</h4>
 							</h2>
 							<p>
 								I'm a Software Engineer specialized in Full-Stack Web Development with 3 years of professional experience in the industry. I currently work at {<ActionLink href="https://www.economicmodeling.com/" classes="blue" target="_blank">Emsi Burning Glass</ActionLink>} located here in Moscow, Idaho.
@@ -129,7 +133,7 @@ const AboutPage = () => {
 							</div>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="border-bottom pt-4">
+					<MDBRow className="pt-4 smaller-text">
 						<MDBCol lg="5" offsetLg="7">
 							<h4 className="tech-info text-dark">Skills</h4>
 							<StyledUl className="unorder-list">
@@ -147,6 +151,8 @@ const AboutPage = () => {
 						</MDBCol>
 					</MDBRow>
 
+					<StyledHr />
+
 					{/* Everyday Life Section */}
 					<MDBRow className="mt-5 mb-4">
 						<MDBCol lg="4">
@@ -161,8 +167,10 @@ const AboutPage = () => {
 						</MDBCol>
 						<MDBCol lg="8" className="mt-1">
 							<h2 className="mb-2 p-0 text-dark">
-								<i className="mr-2 fas fa-mountain" />
-								<strong>Life</strong>
+								<h4 className="smaller-text">
+									<i className="mr-2 fas fa-mountain" />
+									<span className="ms-2">Life</span>
+								</h4>
 							</h2>
 							<p>
 								Outside of work and photography, I love learning new things and going out of my comfort zone which caused me to have a lot of different hobbies and interests. Basically, I enjoy anything that involves the outdoors!
@@ -182,10 +190,10 @@ const AboutPage = () => {
 							</p>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="border-bottom ps-0 pt-1">
-						<MDBCol lg="2">
-							<h6 className="tech-info text-dark">Hobbies/Interests</h6>
-							<StyledUl className="unorder-list">
+					<MDBRow className="ps-0 pt-1 smaller-text pb-4">
+						<h6 className="tech-info text-dark">Hobbies/Interests</h6>
+						<MDBCol sm="6" lg="3">
+							<span className="unorder-list">
 								<li className="camera-info-list">Hunting</li>
 								<li className="camera-info-list">Fishing</li>
 								<li className="camera-info-list">Camping</li>
@@ -193,22 +201,20 @@ const AboutPage = () => {
 								<li className="camera-info-list">Skiing</li>
 								<li className="software-info-list">Ultimate frisbee</li>
 								<li className="software-info-list">Spikeball</li>
-							</StyledUl>
-							<br />
+							</span>
 						</MDBCol>
-						<MDBCol lg="3" className="pt-1">
-							<br />
-							<StyledUl className="unorder-list">
+						<MDBCol sm="6" lg="3">
+							<span className="unorder-list">
 								<li className="software-info-list">Volleyball</li>
 								<li className="software-info-list">Disc golf</li>
 								<li className="software-info-list">Ping pong</li>
-								<li className="software-info-list">Cribbage</li>
 								<li className="software-info-list">Billard</li>
 								<li className="software-info-list">Martial arts</li>
 								<li className="camera-info-list">Playing the piano</li>
-							</StyledUl>
+							</span>
 						</MDBCol>
 					</MDBRow>
+					<StyledHr />
 				</MDBContainer>
 			</ScrollAnimation>
 		</>

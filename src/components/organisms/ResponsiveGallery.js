@@ -2,19 +2,15 @@ import React, { useState, useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from 'react-images';
-
+import NavBarLink from '../atoms/NavBarLink';
 import { Tabs, Tab, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 
-// import { MDBNavbarNav, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from 'mdb-react-ui-kit';
-// import NavBarItem from '../atoms/NavBarItem';
-// import NavBarLink from '../atoms/NavBarLink';
-
 import { shuffleArray } from '../../utils/helpers/functions';
 
-const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
+const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 	const [imageArray, setImageArray] = useState([]);
-	const [filterType, setFilterType] = useState('*');
+	const [showFilter, setShowFilter] = useState();
 	const [currentImage, setCurrentImage] = useState(0);
 	const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -23,12 +19,23 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 		setViewerIsOpen(true);
 	}, []);
 
+	useEffect(() => {
+		if(!showFilter){
+			window.scroll({
+				top: 0,
+				behavior: "smooth"
+			});
+		};
+		setShowFilter(showFilterProp);
+		filterImage();
+	}, []);
+
 	const closeLightbox = () => {
 		setCurrentImage(0);
 		setViewerIsOpen(false);
 	};
 
-	const filterImage = (filterType) => {
+	const filterImage = (filterType = '*') => {
 		let imagesCopy = imageArrayProp;
 
 		let newArray = imagesCopy.filter((img) => {
@@ -49,37 +56,23 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 		return (
 			<Tabs id="Tab" defaultTab="one" className="GalleryContainer">
 				<TabList className="TabList" style={{ border: 'none', margin: '0em 0 1em 0em', color: 'black' }}>
-					<Tab style={cursorStyle} tabFor="one" onClick={() => filterImage('*')}>Featured</Tab>
-					<Tab style={cursorStyle} tabFor="two" onClick={() => filterImage('people')}>Montana</Tab>
-					<Tab style={cursorStyle} tabFor="three" onClick={() => filterImage('people')}>Washington</Tab>
-					<Tab style={cursorStyle} tabFor="four" onClick={() => filterImage('people')}>Israel</Tab>
+					<Tab style={cursorStyle} tabFor="one" onClick={() => filterImage('*')}>Home</Tab>
+					<Tab style={cursorStyle} tabFor="two" onClick={() => filterImage('people')}>People</Tab>
+					<Tab style={cursorStyle} tabFor="three" onClick={() => filterImage('idaho')}>Idaho</Tab>
+					<Tab style={cursorStyle} tabFor="four" onClick={() => filterImage('montana')}>Montana</Tab>
 					<Tab style={cursorStyle} tabFor="five" onClick={() => filterImage('nightsky')}>Night Sky</Tab>
-					<Tab style={cursorStyle} tabFor="six" onClick={() => filterImage('people')}>People</Tab>
-					{/* <Tab tabFor="four">
-						<MDBDropdown>
-							<MDBDropdownToggle className="brand colorBlackLink" nav caret>Projects</MDBDropdownToggle>
-							<MDBDropdownMenu>
-								<MDBDropdownItem>
-									<NavBarItem classes="nav-format">
-										<NavBarLink className="brand nav-format" to="/">All Projects</NavBarLink>
-										<NavBarLink className="brand nav-format" to="/">All Projects</NavBarLink>
-									</NavBarItem>
-								</MDBDropdownItem>
-							</MDBDropdownMenu>
-						</MDBDropdown>
-					</Tab> */}
+					<Tab style={cursorStyle} tabFor="six" onClick={() => filterImage('washington')}>Washington</Tab>
+					<Tab tabFor="seven">
+						<NavBarLink classes="text-dark" link="/projects">More Photos</NavBarLink>
+					</Tab>
 				</TabList>
 			</Tabs>
 		);
 	};
 
-	useEffect(() => {
-		filterImage('*')
-	}, []);
-
 	return (
 		<div className="content page-section spad text-center App">
-			{renderFilter()}
+			{showFilter && renderFilter()}
 			<Gallery photos={imageArray} onClick={openLightbox} direction={"column"} lazyload={true} />
 			<ModalGateway>
 				{viewerIsOpen ? (
@@ -101,12 +94,12 @@ const ResponsiveGallery = ({ imageArrayProp, showFilter }) => {
 
 ResponsiveGallery.propTypes = {
 	imageArrayProp: PropTypes.array.isRequired,
-	showFilter: PropTypes.bool
+	showFilterProp: PropTypes.bool
 };
 
 ResponsiveGallery.defaultProp = {
 	imageArrayProp: [],
-	showFilter: false
+	showFilterProp: false
 };
 
 export default ResponsiveGallery;

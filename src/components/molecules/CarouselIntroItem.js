@@ -15,7 +15,7 @@ const CarouselIntroItem = ({ view, active }) => {
 						<MDBContainer className="mb-intro">
 							<MDBRow>
 								<FadeIn delay={1500} animateIn="fadeIn" animateOnce={false}>
-									<MDBContainer className="px-md-3 px-sm-0">
+									<MDBContainer className="px-md-3 px-sm-0 intro-box">
 										<MDBCol className="mb-4 intro-container" style={{ border: 'solid', backgroundColor: '#2715151f', color: '#FFFFFF' }}>
 											<MDBCol className="p-md-2 text-center text-md-left" md={12}>
 												<div>

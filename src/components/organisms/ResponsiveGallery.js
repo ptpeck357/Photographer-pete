@@ -25,9 +25,9 @@ const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 				top: 0,
 				behavior: 'smooth'
 			});
-		};
-
-		if(showFilterProp){
+			setImageArray(imageArrayProp);
+		}
+		else {
 			filterImage();
 		};
 

@@ -62,13 +62,13 @@ const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 			<Tabs id="Tab" defaultTab="one" className="GalleryContainer">
 				<TabList className="TabList" style={{ border: 'none', margin: '0em 0 1em 0em', color: 'black' }}>
 					<Tab style={cursorStyle} tabFor="one" onClick={() => filterImage('*')}>Home</Tab>
-					<Tab style={cursorStyle} tabFor="two" onClick={() => filterImage('people')}>People</Tab>
-					<Tab style={cursorStyle} tabFor="three" onClick={() => filterImage('idaho')}>Idaho</Tab>
-					<Tab style={cursorStyle} tabFor="four" onClick={() => filterImage('montana')}>Montana</Tab>
-					<Tab style={cursorStyle} tabFor="five" onClick={() => filterImage('nightsky')}>Night Sky</Tab>
+					<Tab style={cursorStyle} tabFor="two" onClick={() => filterImage('idaho')}>Idaho</Tab>
+					<Tab style={cursorStyle} tabFor="three" onClick={() => filterImage('montana')}>Montana</Tab>
+					<Tab style={cursorStyle} tabFor="four" onClick={() => filterImage('nightsky')}>Night Sky</Tab>
+					<Tab style={cursorStyle} tabFor="five" onClick={() => filterImage('people')}>People</Tab>
 					<Tab style={cursorStyle} tabFor="six" onClick={() => filterImage('washington')}>Washington</Tab>
 					<Tab tabFor="seven">
-						<NavBarLink classes="text-dark" link="/projects">More Photos</NavBarLink>
+						<NavBarLink classes="text-dark" link="/projects">All Projects</NavBarLink>
 					</Tab>
 				</TabList>
 			</Tabs>

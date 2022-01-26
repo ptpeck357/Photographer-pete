@@ -31,7 +31,7 @@ for(var i = 1; i <= LandscapeObjLenth; i++) {
 	featureArray.push(landscapeObj);
 }
 
-const featurePeople = [5, 10, 13, 15, 16, 18];
+const featurePeople = [5, 10, 13, 15, 16, 18, 19, 22, 23];
 
 const People = importAll(require.context('../../images/feature/people', false, /\.(jpg)$/));
 const peopleObjLenth = Object.keys(People).length;

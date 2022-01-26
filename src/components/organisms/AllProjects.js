@@ -12,11 +12,14 @@ const AllProjects = ({ imageArrayProp }) => {
 	const [imageArray, setImageArray] = useState(imageArrayProp);
 	// eslint-disable-next-line
 	const [imageArrayCopy, setImageArrayCopy] = useState(imageArrayProp);
+	const [filter, setFilter] = useState('engagement');
+	const [tabIndex, setTabIndex] = useState('one');
 
 	useEffect(() => {
-			// eslint-disable-next-line
-		filterProjects();
-
+		// eslint-disable-next-line
+		filterProjects(filter);
+		console.log(filter)
+		console.log(imageArray)
 		window.scroll({
 			top: 150,
 			behavior: 'smooth'
@@ -25,12 +28,15 @@ const AllProjects = ({ imageArrayProp }) => {
 			category: 'LandedOn: /projects',
 			action: 'Landed On'
 		});
+
 		// eslint-disable-next-line
 	}, []);
-	const filterProjects = (filterProject = 'engagment') => {
+
+	const filterProjects = (filterProject) => {
 		const filteredProjects = imageArrayCopy.filter(project =>
 			project.category === filterProject
 		);
+
 		setImageArray(filteredProjects);
 	}
 
@@ -51,15 +57,26 @@ const AllProjects = ({ imageArrayProp }) => {
 		return projectGallery;
 	}
 
+	const handleTabClick = (filter, index) => {
+		filterProjects(filter);
+
+		setFilter(filter);
+		setTabIndex(index);
+
+		window.sessionStorage.setItem('tabIndex', index);
+		window.sessionStorage.setItem('filter', filter);
+	}
+
 	const renderFilter = () => {
 		const cursorStyle = { cursor: 'pointer' };
+
 		return (
-			<Tabs id="Tab" defaultTab="one" className="GalleryContainer">
+			<Tabs id="Tab" defaultTab={tabIndex} className="GalleryContainer">
 				<TabList className="TabList" style={{ border: 'none', margin: '3em 0 2em 0em' }}>
-					<Tab style={cursorStyle} tabFor="one" onClick={() => filterProjects('engagment')}>Engagments/Wedding</Tab>
-					<Tab style={cursorStyle} tabFor="two" onClick={() => filterProjects('graduation')}>Graduation</Tab>
-					<Tab style={cursorStyle} tabFor="three" onClick={() => filterProjects('people')}>Photo shoots</Tab>
-					<Tab style={cursorStyle} tabFor="four" onClick={() => filterProjects('travel')}>Travel</Tab>
+					<Tab style={cursorStyle} tabFor="one" onClick={() => handleTabClick('engagment', 'one')}>Engagments/Wedding</Tab>
+					<Tab style={cursorStyle} tabFor="two" onClick={() => handleTabClick('graduation', 'two')}>Graduation</Tab>
+					<Tab style={cursorStyle} tabFor="three" onClick={() => handleTabClick('people', 'three')}>Photo shoots</Tab>
+					<Tab style={cursorStyle} tabFor="four" onClick={() => handleTabClick('travel', 'four')}>Travel</Tab>
 					<Tab tabFor="five">
 						<NavBarLink classes="text-dark" link="/home">Back to Home Page</NavBarLink>
 					</Tab>

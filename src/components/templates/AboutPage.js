@@ -115,11 +115,12 @@ const AboutPage = () => {
 							<p>
 								Since I was about 8 years old, I dreamed of becoming an engineer whether it was Aerospace or Civil. I've always loved brain teasers, math, and using my hands and imagination to build things. That's when I knew engineering was for me. The thing I appreciate about software engineering is the creativity, the flexibility in traveling, always learning new ideas and technologies, and the complex challenges it brings.
 							</p>
-							<p>
-
-							</p>
+							<br />
+							<br />
 							<p className="no-indentation">
-								"It's not a bug, it's a feature!" - anonymous
+								"It's not a bug, it's a feature!"
+								<br />
+								- anonymous
 							</p>
 							<p className="no-indentation">
 								"There are two ways to write error-free programs; only the third one works."

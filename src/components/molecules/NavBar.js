@@ -8,7 +8,7 @@ const NavBar = ({ classes }) => {
 	return (
 		<MDBNavbarNav className={classes}>
 			<NavBarItem classes="text-center mx-2 mx-lg-1">
-				<NavBarLink classes="nav-bar-link no-underline" link="/home" >
+				<NavBarLink classes="nav-bar-link no-underline" link="/home">
 					<div>
 						<i className="fa-lg mb-1 fa fa-home" />
 					</div>
@@ -18,7 +18,7 @@ const NavBar = ({ classes }) => {
 			<NavBarItem classes="text-center mx-2 mx-lg-1">
 				<NavBarLink classes="nav-bar-link no-underline" link="/projects">
 					<div>
-						<i className="fas fa-folder-open" />
+						<i className="fas fa-photo-video" />
 					</div>
 					All Projects
 				</NavBarLink>
@@ -32,9 +32,9 @@ const NavBar = ({ classes }) => {
 				</AnchorLink>
 			</NavBarItem>
 			<NavBarItem classes="text-center mx-2 mx-lg-1">
-				<NavBarLink classes="nav-bar-link no-underline" link="/about" >
+				<NavBarLink classes="nav-bar-link no-underline" link="/about">
 					<div>
-						<i className="fa fa-address-card" />
+						<i className="fas fa-user-cog" />
 					</div>
 					About Me
 				</NavBarLink>

@@ -3,7 +3,8 @@ import ReactGA from 'react-ga';
 export const trackGA = (link) => {
 	ReactGA.event({
 		category: 'Clicked: ' + link,
-		action: 'Clicked link'
+		action: 'Clicked link',
+		link: 'label is ' + link
 	});
 };
 

@@ -1,4 +1,4 @@
-import BackgroundImage from '../../../images/allprojects/photo_shoots/baylon/landscape/img-3.jpg'
+import BackgroundImage from '../../../images/allprojects/photo_shoots/baylon/landscape/img-5.jpg'
 import { importAll, shuffleArray } from '../../helpers/functions';
 
 const headerData = {

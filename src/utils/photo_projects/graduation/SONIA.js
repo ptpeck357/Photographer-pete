@@ -1,4 +1,4 @@
-import BackgroundImage from '../../../images/allprojects/graduation/sonia/landscape/img-4.jpg'
+import BackgroundImage from '../../../images/allprojects/graduation/sonia/landscape/img-3.jpg'
 import { importAll, shuffleArray } from '../../helpers/functions';
 
 const headerData = {

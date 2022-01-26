@@ -1,4 +1,4 @@
-import BackgroundImage from '../../../images/allprojects/photo_shoots/yuen/landscape/img-5.jpg'
+import BackgroundImage from '../../../images/allprojects/photo_shoots/yuen/landscape/img-1.jpg'
 import { importAll, shuffleArray } from '../../helpers/functions';
 
 const headerData = {

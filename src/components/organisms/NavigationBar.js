@@ -19,6 +19,7 @@ const NavigationBar = () => {
 					data-bs-target="#hamburgerMenu"
 					aria-controls="hamburgerMenu"
 					aria-label="Toggle navigation"
+					aria-expanded="false"
 				>
 					<i className="fas fa-bars text-light" />
 				</MDBNavbarToggler>

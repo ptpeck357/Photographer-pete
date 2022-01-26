@@ -3,7 +3,7 @@ import { importAll, shuffleArray } from '../../helpers/functions';
 
 const headerData = {
 	bgImageProp: BackgroundImage,
-    titleProp: 'Sofia Cordero',
+	titleProp: 'Sofia Cordero',
 	dateProp: 'January 2021',
 	descProp: ''
 };

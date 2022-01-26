@@ -23,19 +23,19 @@ const Mask = styled.div`
 `;
 
 const AboutPage = () => {
-	// window.scroll({
-	// 	top: 0,
-	// 	behavior: 'smooth'
-	// });
+	window.scroll({
+		top: 0,
+		behavior: 'smooth'
+	});
 
 	return (
 		<>
 			<ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={true}>
 				<MDBContainer id="aboutpage" className="mt-3">
 					<p className="text-center w-responsive mx-auto text-body">
-						Yo! Welcome to my website!
+						Yo, welcome to my website!
 						<br />
-						I'm a photographer, wanderer, and a software engineer.
+						I'm a photographer and a software engineer.
 						I was born in Cambodia and was adopted at age 1. I've spent most of my
 						growing up days on a small ranch in Montana. I love to travel, meeting new people, play ultimate frisbee and spikeball, and explore the outdoors... rest to be continued!
 					</p>
@@ -175,7 +175,7 @@ const AboutPage = () => {
 								Since I grew up in Montana, some of my hobbies include hunting, fishing, archery, or shooting firearms. Fun fact, the ranch I was working at when I was 15, it's tradition to ride the calf after you're done wrestling the calf during branding season. Me being pressured from my friend into riding this 6 month old calf, I decided to hop on. Spoiler alert, I broke my wrist from getting bucked off. That's when I knew bull riding wasn't my career path.
 							</p>
 							<p>
-								To end, everyday I thank my Father in Heaven, my Lord and Savior, for giving me the talents and skills and share it with people. It's nothing I did to deserve or to earn His grace. Furthermore, I am blessed to be adopted into a Christian family in America. Story for another time but me being adopted didn't happen by luck or coincidence which is a testimony of God's timing and Grace. I've learn from a young age not to take life for granted. To end, I am thankful for my parents for supporting, encouarging, and pushing me in life. Honestly, it hasn't been the easiest but who said the Christian faith was supposed to be easy?
+								Everyday I thank my Father in Heaven, my Lord and Savior, for giving me the talents and gifts and share it with people. It's nothing I did to deserve or to earn His grace. I am blessed to be adopted into a Christian family here in America. Story for another time but basically me being adopted didn't JUST happen by luck or coincidence but by God's timing and planning. To end, I am thankful for my parents for supporting, encouarging, and pushing me in life. Honestly, it hasn't been the easiest but who said the Christian faith was supposed to be easy?
 							</p>
 							<p className="no-indentation">
 								"For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast."

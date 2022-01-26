@@ -1,4 +1,4 @@
-import BackgroundImage from '../../../images/allprojects/graduation/madeline/landscape/img-1.jpg'
+import BackgroundImage from '../../../images/allprojects/graduation/madeline/landscape/img-2.jpg'
 import { importAll, shuffleArray } from '../../helpers/functions';
 
 const headerData = {

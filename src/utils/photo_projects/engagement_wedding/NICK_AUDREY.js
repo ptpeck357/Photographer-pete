@@ -1,4 +1,4 @@
-import BackgroundImage from '../../../images/allprojects/engagement_wedding/nickaudrey/landscape/img-6.jpg'
+import BackgroundImage from '../../../images/allprojects/engagement_wedding/nickaudrey/landscape/img-3.jpg'
 import { importAll, shuffleArray } from '../../helpers/functions';
 
 const headerData = {

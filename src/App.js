@@ -10,11 +10,11 @@ import Footer from './components/organisms/Footer';
 import ReactGA from 'react-ga';
 import './App.css';
 
+ReactGA.initialize('UA-132438285-1');
+ReactGA.pageview(window.location.href);
+
 const App = () => {
 	useEffect(() => {
-		// ReactGA.initialize('UA-132438285-1');
-		ReactGA.pageview(window.location.href);
-
 		window.scroll({
 			top: 70,
 			behavior: 'smooth'

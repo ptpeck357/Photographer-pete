@@ -37,7 +37,7 @@ const Routes = () => {
 			<Route exact path="/home" element={<Home />} />
 			<Route path="/*" element={<Home />} />
 			<Route
-				path="about"
+				exact path="about"
 				element={
 					<ProjectContainer
 						showFilterProp={false}
@@ -48,7 +48,7 @@ const Routes = () => {
 				}
 			/>
 			<Route
-				path="projects"
+				exact path="projects"
 				element={
 					<ProjectContainer
 						showFilterProp={true}

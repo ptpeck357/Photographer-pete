@@ -1,25 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
-import NavBarLink from '../atoms/NavBarLink';
 import ProjectTemplate from '../molecules/ProjectTemplate';
 import ReactGA from 'react-ga';
 import { Tabs, Tab, TabList } from 'react-web-tabs'
 ;
 import 'react-web-tabs/dist/react-web-tabs.css';
+import { Link } from 'react-router-dom';
 
 const AllProjects = ({ imageArrayProp }) => {
 	const [imageArray, setImageArray] = useState(imageArrayProp);
 	// eslint-disable-next-line
 	const [imageArrayCopy, setImageArrayCopy] = useState(imageArrayProp);
-	const [filter, setFilter] = useState('engagement');
-	const [tabIndex, setTabIndex] = useState('one');
+	const [filter, setFilter] = useState('');
+	const [tabIndex, setTabIndex] = useState('');
 
 	useEffect(() => {
-		// eslint-disable-next-line
-		filterProjects(filter);
-		console.log(filter)
-		console.log(imageArray)
+		filterProjects(sessionStorage.getItem('filter') || 'graduation');
+		setTabIndex(sessionStorage.getItem('tabIndex') || 'one');
+
 		window.scroll({
 			top: 150,
 			behavior: 'smooth'
@@ -63,8 +62,8 @@ const AllProjects = ({ imageArrayProp }) => {
 		setFilter(filter);
 		setTabIndex(index);
 
-		window.sessionStorage.setItem('tabIndex', index);
-		window.sessionStorage.setItem('filter', filter);
+		sessionStorage.setItem('tabIndex', index);
+		sessionStorage.setItem('filter', filter);
 	}
 
 	const renderFilter = () => {
@@ -73,12 +72,12 @@ const AllProjects = ({ imageArrayProp }) => {
 		return (
 			<Tabs id="Tab" defaultTab={tabIndex} className="GalleryContainer">
 				<TabList className="TabList" style={{ border: 'none', margin: '3em 0 2em 0em' }}>
-					<Tab style={cursorStyle} tabFor="one" onClick={() => handleTabClick('engagment', 'one')}>Engagments/Wedding</Tab>
-					<Tab style={cursorStyle} tabFor="two" onClick={() => handleTabClick('graduation', 'two')}>Graduation</Tab>
+					<Tab style={cursorStyle} tabFor="one" onClick={() => handleTabClick('graduation', 'one')}>Graduation</Tab>
+					<Tab style={cursorStyle} tabFor="two" onClick={() => handleTabClick('engagment', 'two')}>Engagments/Wedding</Tab>
 					<Tab style={cursorStyle} tabFor="three" onClick={() => handleTabClick('people', 'three')}>Photo shoots</Tab>
 					<Tab style={cursorStyle} tabFor="four" onClick={() => handleTabClick('travel', 'four')}>Travel</Tab>
 					<Tab tabFor="five">
-						<NavBarLink classes="text-dark" link="/home">Back to Home Page</NavBarLink>
+						<Link rel="prefetch" className="text-dark" to="/home">Back to Home Page</Link>
 					</Tab>
 				</TabList>
 			</Tabs>

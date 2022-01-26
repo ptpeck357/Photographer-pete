@@ -38,8 +38,8 @@ const AboutPage = () => {
 						Yo, welcome to my website!
 						<br />
 						I'm a photographer and a software engineer.
-						I was born in Cambodia and was adopted at age 1. I've spent most of my
-						growing up days on a small ranch in Montana. I love to travel, play ultimate frisbee or spikeball, meeting new people, and explore the outdoors... rest to be continued!
+						I was born in Cambodia and was adopted at age the age of one. I've spent most of my
+						growing up days on a small ranch in Montana. I love to travel, play frisbee and spikeball, meeting new people, and explore the outdoors... to be continued!
 					</p>
 
 					<StyledHr />
@@ -64,10 +64,10 @@ const AboutPage = () => {
 								</h4>
 							</div>
 							<p>
-								What kind of photography do I do? Well, I do all types varying from landscape, portraits, engagement and graduation sessions to aerial footage! I also dabble in videography and Davinci Resolve for post-processing.
+								What kind of photography do I do? Well, I do all types varying from landscape, portraits, engagement, and graduation sessions to aerial footage! I also dabble in videography and Davinci Resolve for post-processing.
 							</p>
 							<p>
-								I got into photography when I was 12 years old. For my 11th birthday, I recieved a digital Kodak camera which then sat in my dresser for a year... A year later around June 2010, I decided to actually put my camera to use and start snapping landscape photos because how can you not when you're in Montana?
+								I got into photography when I was 12 years old. For my 11th birthday, I received a digital Kodak camera which then sat in my dresser for a year... A year later around June 2010, I decided to put my camera to use and start snapping landscape photos because how can you not when you're in Montana?
 							</p>
 							<p>
 								Over the years since then, I've expanded out in my photography niches. Even though I've been doing photography for 12 plus years, there's always something new and exciting to learn whether it's new editing tricks or techniques when I'm out in the field! Yeeet
@@ -110,13 +110,10 @@ const AboutPage = () => {
 								</h4>
 							</div>
 							<p>
-								I'm currently a Software Engineer specialized in Full-Stack Web Development with 3 years of professional experience in the industry. I currently work at {<ActionLink href="https://www.economicmodeling.com/" classes="blue" target="_blank">Emsi Burning Glass</ActionLink>} located here in Moscow, Idaho.
+								I currently work as a Software Engineer specializing in Full-Stack Web Development with three years of professional experience in the industry. I currently work at {<ActionLink href="https://www.economicmodeling.com/" classes="blue" target="_blank">Emsi Burning Glass</ActionLink>} located here in Moscow, Idaho.
 							</p>
 							<p>
-								Since I was about 8 years old, I had dreams of becoming an engineer whether that was Aerospace or Civil engineering. I've always loved brain teasers, Rubik's Cubes, Math, strategy board games, or using my imagination to create things. Legos were my friend.
-							</p>
-							<p>
-								The things I appreciate about Software engineering, though, is the creativity, the critical thinking, and the fact you can build anything at the tips of your fingertips!
+								Since I was about 8 years old, I have dreamed of becoming an engineer whether it be Aerospace or Civil engineering. I've always loved brain teasers like Rubik's Cubes and so forth.
 							</p>
 						</MDBCol>
 						<MDBCol lg="4">
@@ -170,13 +167,13 @@ const AboutPage = () => {
 								</h4>
 							</div>
 							<p>
-								Outside of work and photography, I love learning new things and going out of my comfort zone which caused me to have a lot of different hobbies and interests. Basically, I enjoy anything that involves the outdoors and people. Surprise surprise.
+								Outside of work and photography, I love learning new things and going out of my comfort zone which caused me to have a lot of different hobbies and interests. I enjoy anything that involves the outdoors and people. Surprise surprise.
 							</p>
 							<p>
-								Since I grew up in Montana, some of my hobbies include hunting, fishing, archery, or shooting firearms. Fun fact, the ranch I was working at when I was 15, it's tradition to ride the calf after you're done wrestling the calf during branding season. Me being pressured from my friend into riding this 6 month old calf, I decided to hop on. Spoiler alert, I broke my wrist from getting bucked off. That's when I knew bull riding wasn't my career path.
+								Since I grew up in Montana, some of my hobbies include hunting, fishing, archery, and shooting firearms. Fun fact, the ranch I was working at when I was 15, it's tradition to ride the calf after you're done wrestling the calf during branding season. Me being pressured by my friend into riding this 6-month-old calf, I decided to hop on. Spoiler alert, I broke my wrist from getting bucked off. That's when I knew bull riding wasn't my career path.
 							</p>
 							<p>
-								Everyday I thank my Father in Heaven, my Lord and Savior, for giving me the talents and gifts and share it with people. It's nothing I did to deserve or to earn His grace. I am blessed to be adopted into a Christian family here in America. Story for another time but basically me being adopted didn't JUST happen by luck or coincidence but by God's timing and planning. To end, I am thankful for my parents for supporting, encouarging, and pushing me in life. Honestly, it hasn't been the easiest but who said the Christian faith was supposed to be easy?
+								Every day I thank my Lord and Savior for giving me the talents and gifts and sharing them with people. It's nothing I did to deserve or to earn His grace. I am blessed to be adopted into a Christian family here in America. Story for another time but basically, me being adopted didn't JUST happen by luck or coincidence but by God's timing and planning. To end, I am thankful for my parents for supporting, encouraging, and pushing me in life. Honestly, it hasn't been the easiest but who said the Christian faith was supposed to be easy?
 							</p>
 							<p className="no-indentation">
 								"For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast."

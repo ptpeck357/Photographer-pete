@@ -37,7 +37,7 @@ const Footer = () => {
 								<i className="fa fa-gem" /> Peter Peck Photography
 							</h6>
 							<p className="no-indentation">Please reach out to me if you have any requests or inquiries!</p>
-							<p className="no-indentation">Be sure to check and follow me on my social media accounts up above!</p>
+							<p className="no-indentation">Be sure to check out and follow me on social media!</p>
 						</MDBCol>
 						<MDBCol md="4" lg="2" xl="2" className="mx-auto mb-4">
 							<h6 className="text-uppercase fw-bold mb-3">

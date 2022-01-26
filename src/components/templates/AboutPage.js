@@ -8,6 +8,8 @@ import LinkedinPic from '../../images/me/linkedin_pic.jpg';
 import EverydayLifePic from '../../images/me/every_day_life.jpg';
 
 import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-132438285-1');
 ReactGA.pageview(window.location.href);
 
 const StyledHr = styled.hr`
@@ -48,7 +50,6 @@ const AboutPage = () => {
 							<div className="rounded z-depth-4 mb-lg-0 mb-4">
 								<MDBRipple className="hover-overlay" rippleColor="white">
 										<img className="img-fluid shadow-3-strong" src={PhotographerPic} alt="Photographer" />
-									{/* <div class=name"bottom-right overlay-text">Photo Credit: Adrianna Keeney</div> */}
 									<div role='button'>
 										<Mask className="mask" />
 									</div>

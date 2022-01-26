@@ -4,7 +4,8 @@ import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import NavBarLink from '../atoms/NavBarLink';
 import ProjectTemplate from '../molecules/ProjectTemplate';
 import ReactGA from 'react-ga';
-import { Tabs, Tab, TabList } from 'react-web-tabs';
+import { Tabs, Tab, TabList } from 'react-web-tabs'
+;
 import 'react-web-tabs/dist/react-web-tabs.css';
 
 const AllProjects = ({ imageArrayProp }) => {

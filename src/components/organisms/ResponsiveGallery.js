@@ -32,6 +32,7 @@ const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 		};
 
 		setShowFilter(showFilterProp);
+		// eslint-disable-next-line
 	}, [imageArrayProp, showFilterProp]);
 
 	const closeLightbox = () => {

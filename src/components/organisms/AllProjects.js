@@ -9,10 +9,12 @@ import 'react-web-tabs/dist/react-web-tabs.css';
 
 const AllProjects = ({ imageArrayProp }) => {
 	const [imageArray, setImageArray] = useState(imageArrayProp);
+	// eslint-disable-next-line
 	const [imageArrayCopy, setImageArrayCopy] = useState(imageArrayProp);
 
 	useEffect(() => {
-		filterProjects('engagment');
+			// eslint-disable-next-line
+		filterProjects();
 
 		window.scroll({
 			top: 150,
@@ -22,13 +24,12 @@ const AllProjects = ({ imageArrayProp }) => {
 			category: 'LandedOn: /projects',
 			action: 'Landed On'
 		});
+		// eslint-disable-next-line
 	}, []);
-
 	const filterProjects = (filterProject = 'engagment') => {
 		const filteredProjects = imageArrayCopy.filter(project =>
 			project.category === filterProject
 		);
-
 		setImageArray(filteredProjects);
 	}
 

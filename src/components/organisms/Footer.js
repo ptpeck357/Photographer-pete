@@ -25,7 +25,6 @@ const Footer = () => {
 				<div className="me-5 d-none d-md-block footer-links">
 					<h5>Social media:</h5>
 				</div>
-				{/* style={{ fontSize: '0.75em', margin: 'auto' }} */}
 				<div className="text-center footer-links" >
 					{SocialMediaLinks}
 				</div>
@@ -40,7 +39,6 @@ const Footer = () => {
 							<p className="no-indentation">Please reach out to me if you have any requests or inquiries!</p>
 							<p className="no-indentation">Be sure to check and follow me on my social media accounts up above!</p>
 						</MDBCol>
-
 						<MDBCol md="4" lg="2" xl="2" className="mx-auto mb-4">
 							<h6 className="text-uppercase fw-bold mb-3">
 								Services

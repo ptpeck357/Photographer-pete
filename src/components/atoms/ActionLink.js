@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import { trackGA } from '../../utils/helpers/functions';
 const ActionLink = ({ href, classes, target, children }) => {
 	const rel = target === '_blank'
 		? 'noopener noreferrer'
@@ -11,6 +11,7 @@ const ActionLink = ({ href, classes, target, children }) => {
 			target={target}
 			rel={rel}
 			className={classes || "me-4 text-reset"}
+			onClick={() => trackGA(href)}
 		>
 			{children}
 		</a>

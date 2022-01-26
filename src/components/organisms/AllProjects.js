@@ -12,7 +12,6 @@ const AllProjects = ({ imageArrayProp }) => {
 	const [imageArray, setImageArray] = useState(imageArrayProp);
 	// eslint-disable-next-line
 	const [imageArrayCopy, setImageArrayCopy] = useState(imageArrayProp);
-	const [filter, setFilter] = useState('');
 	const [tabIndex, setTabIndex] = useState('');
 
 	useEffect(() => {
@@ -20,7 +19,7 @@ const AllProjects = ({ imageArrayProp }) => {
 		setTabIndex(sessionStorage.getItem('tabIndex') || 'one');
 
 		window.scroll({
-			top: 150,
+			top: 350,
 			behavior: 'smooth'
 		});
 		ReactGA.event({
@@ -59,7 +58,6 @@ const AllProjects = ({ imageArrayProp }) => {
 	const handleTabClick = (filter, index) => {
 		filterProjects(filter);
 
-		setFilter(filter);
 		setTabIndex(index);
 
 		sessionStorage.setItem('tabIndex', index);

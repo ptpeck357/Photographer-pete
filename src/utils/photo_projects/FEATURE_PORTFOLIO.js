@@ -11,7 +11,7 @@ const headerData = {
 
 let imageArray = [];
 
-const featLandscape = [14, 15];
+const featLandscape = [17, 18, 19];
 
 const Landscape = importAll(require.context('../../images/feature/landscape', false, /\.(jpg)$/));
 const LandscapeObjLenth = Object.keys(Landscape).length;
@@ -31,7 +31,7 @@ for(var i = 1; i <= LandscapeObjLenth; i++) {
 	featureArray.push(landscapeObj);
 }
 
-const featurePeople = [5, 10, 13, 14, 15, 16, 18];
+const featurePeople = [5, 10, 13, 15, 16, 18];
 
 const People = importAll(require.context('../../images/feature/people', false, /\.(jpg)$/));
 const peopleObjLenth = Object.keys(People).length;
@@ -63,7 +63,7 @@ for (var k = 1; k <= NightSkyObjLenth; k++) {
 	featureArray.push(nightskyObj);
 }
 
-const featurePortrait = [1, 2, 3, 13, 18];
+const featurePortrait = [1, 2, 3, 13, 18, 19, 20, 21];
 
 const Portrait = importAll(require.context('../../images/feature/portrait', false, /\.(jpg)$/));
 const PortraitObjLenth = Object.keys(Portrait).length;

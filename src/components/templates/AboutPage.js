@@ -39,7 +39,7 @@ const AboutPage = () => {
 						<br />
 						I'm a photographer and a software engineer.
 						I was born in Cambodia and was adopted at age 1. I've spent most of my
-						growing up days on a small ranch in Montana. I love to travel, meeting new people, play ultimate frisbee and spikeball, and explore the outdoors... rest to be continued!
+						growing up days on a small ranch in Montana. I love to travel, play ultimate frisbee or spikeball, meeting new people, and explore the outdoors... rest to be continued!
 					</p>
 
 					<StyledHr />

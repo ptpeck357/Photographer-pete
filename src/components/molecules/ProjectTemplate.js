@@ -4,7 +4,7 @@ import { MDBCard, MDBCol } from 'mdb-react-ui-kit';
 import NavBarLink from '../atoms/NavBarLink';
 
 const ProjectTemplate = (projectObject) => {
-	let { title, date, coverImage, link, bannerStyle, style } = projectObject.projectObject;
+	let { title, date, coverImage, link, bannerStyle, style='' } = projectObject.projectObject;
 
 	return (
 		<MDBCol sm="6" lg="3" md="6" className="card-margin">

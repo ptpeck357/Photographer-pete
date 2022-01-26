@@ -49,11 +49,13 @@ const photoSessions = [
 
 imageArray.push.apply(imageArray, photoSessions);
 
+const Graduation = importAll(require.context('../../images/allprojects/thumbnails/grad', false, /\.(jpg)$/));
+
 const graduationSessions = [
 	{
 		title: 'Shanna Emanuelson',
 		date: 'April 2021',
-		coverImage: BackgroundImage,
+		coverImage: Graduation['shanna.jpg'].default,
 		link: '/shanna_emanuelson',
 		category: 'graduation',
 		bannerStyle: 'light'
@@ -61,15 +63,15 @@ const graduationSessions = [
 	{
 		title: 'Madeline Anderson',
 		date: 'May 2021',
-		coverImage: BackgroundImage,
+		coverImage: Graduation['madeline.jpg'].default,
 		link: '/madeline_anderson',
 		category: 'graduation',
-		bannerStyle: 'light'
+		bannerStyle: 'dark'
 	},
 	{
 		title: 'Jarred Acevedo',
 		date: 'May 2021',
-		coverImage: BackgroundImage,
+		coverImage: Graduation['jarred.jpg'].default,
 		link: '/jarred_acevedo',
 		category: 'graduation',
 		bannerStyle: 'light'
@@ -77,15 +79,15 @@ const graduationSessions = [
 	{
 		title: 'Joshua Emanuelson',
 		date: 'May 2021',
-		coverImage: BackgroundImage,
+		coverImage: Graduation['josh.jpg'].default,
 		link: '/joshua_emanuelson',
 		category: 'graduation',
-		bannerStyle: 'light'
+		bannerStyle: 'dark'
 	},
 	{
 		title: 'Sarah Calvin',
 		date: 'May 2021',
-		coverImage: BackgroundImage,
+		coverImage: Graduation['sarah.jpg'].default,
 		link: '/sarah_calvin',
 		category: 'graduation',
 		bannerStyle: 'light'
@@ -93,15 +95,15 @@ const graduationSessions = [
 	{
 		title: 'Ruben Andres Jerves Coello',
 		date: 'May 2021',
-		coverImage: BackgroundImage,
+		coverImage: Graduation['ruben.jpg'].default,
 		link: '/ruben_coello',
 		category: 'graduation',
-		bannerStyle: 'light'
+		bannerStyle: 'dark'
 	},
 	{
 		title: 'Sonia López',
 		date: 'June 2021',
-		coverImage: BackgroundImage,
+		coverImage: Graduation['sonia.jpg'].default,
 		link: '/sonia_lopez',
 		category: 'graduation',
 		bannerStyle: 'light'
@@ -110,11 +112,13 @@ const graduationSessions = [
 
 imageArray.push.apply(imageArray, graduationSessions);
 
+const Engagement = importAll(require.context('../../images/allprojects/thumbnails/engagement', false, /\.(jpg)$/));
+
 const engagmentSessions = [
 	{
 		title: 'Jacob and Raquel\'s Engagment',
 		date: 'August 2020',
-		coverImage: BackgroundImage,
+		coverImage: Engagement['jacob_engagment.jpg'].default,
 		link: '/jacob_raquel_engagment',
 		category: 'engagment',
 		bannerStyle: 'light'
@@ -122,15 +126,15 @@ const engagmentSessions = [
 	{
 		title: 'Makiah and Rachel\'s Engagment',
 		date: 'November 2020',
-		coverImage: BackgroundImage,
+		coverImage: Engagement['makiah.jpg'].default,
 		link: '/makiah_rachel',
 		category: 'engagment',
-		bannerStyle: 'light'
+		bannerStyle: 'dark'
 	},
 	{
 		title: 'Jacob and Raquel\'s wedding',
 		date: 'December 2020',
-		coverImage: BackgroundImage,
+		coverImage: Engagement['jacob_wedding.jpg'].default,
 		link: '/jacob_raquel_wedding',
 		category: 'engagment',
 		bannerStyle: 'light'
@@ -138,15 +142,15 @@ const engagmentSessions = [
 	{
 		title: 'Nick and Audrey\'s Engagment',
 		date: 'January 2021',
-		coverImage: BackgroundImage,
+		coverImage: Engagement['nick.jpg'].default,
 		link: '/nick_audrey',
 		category: 'engagment',
-		bannerStyle: 'light'
+		bannerStyle: 'dark'
 	},
 	{
 		title: 'Jared and Hallie\'s Engagment',
 		date: 'Feburary 2021',
-		coverImage: BackgroundImage,
+		coverImage: Engagement['jared.jpg'].default,
 		link: '/jared_hallie',
 		category: 'engagment',
 		bannerStyle: 'light'
@@ -155,19 +159,21 @@ const engagmentSessions = [
 
 imageArray.push.apply(imageArray, engagmentSessions);
 
+const Travel = importAll(require.context('../../images/allprojects/thumbnails/travel', false, /\.(jpg)$/));
+
 const travel = [
 	{
 		title: 'Cambodia',
 		date: 'June 2013',
-		coverImage: BackgroundImage,
+		coverImage: Travel['cambodia.jpg'].default,
 		link: '/cambodia',
 		category: 'travel',
-		bannerStyle: 'light'
+		bannerStyle: 'dark'
 	},
 	{
 		title: 'Israel',
 		date: 'May 2017',
-		coverImage: BackgroundImage,
+		coverImage: Travel['israel.jpg'].default,
 		link: '/israel',
 		category: 'travel',
 		bannerStyle: 'light'
@@ -175,15 +181,15 @@ const travel = [
 	{
 		title: 'Banff National Park',
 		date: 'August 2017',
-		coverImage: BackgroundImage,
+		coverImage: Travel['banff.jpg'].default,
 		link: '/banff',
 		category: 'travel',
-		bannerStyle: 'light'
+		bannerStyle: 'dark'
 	},
 	{
 		title: 'Chicago',
 		date: '2017 - 2018',
-		coverImage: BackgroundImage,
+		coverImage: Travel['chicago.jpg'].default,
 		link: '/chicago',
 		category: 'travel',
 		bannerStyle: 'light'
@@ -191,15 +197,15 @@ const travel = [
 	{
 		title: 'Grand Canyon/Sedona',
 		date: 'April 2021',
-		coverImage: BackgroundImage,
+		coverImage: Travel['arizona.jpg'].default,
 		link: '/arizona',
 		category: 'travel',
-		bannerStyle: 'light'
+		bannerStyle: 'dark'
 	},
 	{
 		title: 'Grand Teton',
 		date: 'July 2021',
-		coverImage: BackgroundImage,
+		coverImage: Travel['wyoming.jpg'].default,
 		link: '/grandteton',
 		category: 'travel',
 		bannerStyle: 'light'
@@ -207,10 +213,10 @@ const travel = [
 	{
 		title: 'San Luis Obispo',
 		date: 'September 2021',
-		coverImage: BackgroundImage,
+		coverImage: Travel['california.jpg'].default,
 		link: '/sanluisobispo',
 		category: 'travel',
-		bannerStyle: 'light'
+		bannerStyle: 'dark'
 	}
 ];
 

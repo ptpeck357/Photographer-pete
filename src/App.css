@@ -359,6 +359,13 @@ p, h3 {
 	.display-5 {
 		font-size: 3em !important;
 	}
+	.view .imgFit {
+		height: 40vh !important;
+	}
+	.view .stripe {
+		padding: 0.2rem !important;
+		font-size: 0.7em !important;
+	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -15em;
@@ -464,12 +471,12 @@ p, h3 {
 		padding: 0 0 0 0 !important;
 	}
 	.view .imgFit {
-		height: 75vh !important;
-		width: 93vw !important;
+		height: 50vh !important;
+		width: 100vw !important;
 	}
 	.view .stripe {
 		padding: 0.2rem !important;
-		font-size: 0.7em !important;
+		font-size: 0.8em !important;
 	}
 	.parallax-mobile-view img {
 		top: -10em !important;
@@ -536,7 +543,7 @@ p, h3 {
 		margin-bottom: 0em !important;
 	}
 	.view .imgFit {
-		height: 70vh !important;
+		height: 40vh !important;
 		width: 100vw !important;
 		object-position: center !important;
 	}
@@ -621,6 +628,14 @@ p, h3 {
 	.display-5 {
 		font-size: 1em !important;
 	}
+	.view .imgFit {
+		height: 50vh !important;
+		width: 93vw !important;
+	}
+	.view .stripe {
+		padding: 0.2rem !important;
+		font-size: 0.65em !important;
+	}
 	/* Parallax Header Image  */
 	.headerbg {
 		height: 550px;
@@ -651,12 +666,12 @@ p, h3 {
 /* Galaxy Fold */
 @media only screen and (max-width: 320px){
 	.view .imgFit {
-		height: 50vh !important;
+		height: 55vh !important;
 		width: 93vw !important;
 	}
 	.view .stripe {
 		padding: 0.2rem !important;
-		font-size: 0.8em !important;
+		font-size: 0.5em !important;
 	}
 	.container {
 		width: 100% !important;

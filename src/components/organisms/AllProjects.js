@@ -59,7 +59,7 @@ const AllProjects = ({ imageArrayProp }) => {
 					<Tab style={cursorStyle} tabFor="three" onClick={() => filterProjects('people')}>Photo shoots</Tab>
 					<Tab style={cursorStyle} tabFor="four" onClick={() => filterProjects('travel')}>Travel</Tab>
 					<Tab tabFor="five">
-						<NavBarLink classes="text-dark" link="/home">Home Page</NavBarLink>
+						<NavBarLink classes="text-dark" link="/home">Back to Home Page</NavBarLink>
 					</Tab>
 				</TabList>
 			</Tabs>

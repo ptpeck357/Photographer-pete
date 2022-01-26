@@ -8,13 +8,13 @@ import Footer from './components/organisms/Footer';
 
 // eslint-disable-next-line
 import ReactGA from 'react-ga';
-
-// ReactGA.initialize('');
-// ReactGA.pageview(window.location.href);
 import './App.css';
 
 const App = () => {
 	useEffect(() => {
+		// ReactGA.initialize('UA-132438285-1');
+		ReactGA.pageview(window.location.href);
+
 		window.scroll({
 			top: 70,
 			behavior: 'smooth'

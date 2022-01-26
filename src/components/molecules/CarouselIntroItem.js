@@ -19,7 +19,7 @@ const CarouselIntroItem = ({ view, active }) => {
 											<MDBCol className="p-md-2 text-center text-md-left" md={12}>
 												<div>
 													<h4 className="display-4 intro-title">Peter Peck</h4>
-													<h3 className="display-5 intro-subtitle">Photography | Travel</h3>
+													<h3 className="display-5 intro-subtitle">Photography | Travel | Life</h3>
 												</div>
 												<hr className="hr-light" />
 												<NavBarLink link="/projects">
@@ -28,6 +28,9 @@ const CarouselIntroItem = ({ view, active }) => {
 												<AnchorLink href="#headerbox">
 													<MDBBtn type="button" className="m-1" color="danger" onClick={() => trackGA('Portfolio_Anchor')}>Portfolio</MDBBtn>
 												</AnchorLink>
+												<NavBarLink link="/about">
+													<MDBBtn type="button" className="m-1 text-white" outline color="black" onClick={() => trackGA('About_Me')}>About Me</MDBBtn>
+												</NavBarLink>
 												<AnchorLink href="#footer_anchor">
 													<MDBBtn type="button" className="m-1 text-white" outline color="white" onClick={() => trackGA('Contact_Anchor')}>Contact</MDBBtn>
 												</AnchorLink>

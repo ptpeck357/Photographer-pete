@@ -7,7 +7,7 @@ const ProjectTemplate = (projectObject) => {
 	let { title, date, coverImage, link, bannerStyle, style } = projectObject.projectObject;
 
 	return (
-		<MDBCol lg="3" md="6" className="card-margin">
+		<MDBCol sm="6" lg="3" md="6" className="card-margin">
 			<MDBCard className="z-depth-1-half bg-image hover-zoom">
 				<NavBarLink link={link}>
 					<div className="view">

@@ -118,7 +118,7 @@ p, h3 {
 }
 
 .headerbg {
-	height: 450px;
+	height: 500px;
 }
 
 .headerTitle {
@@ -194,7 +194,10 @@ p, h3 {
 	object-fit: cover !important;
 	object-position: center !important;
 }
-
+.view .stripe {
+	padding: 0.2rem !important;
+	font-size: 0.6em !important;
+}
 .view .stripe {
 	position: absolute;
 	bottom: 2rem;
@@ -297,6 +300,10 @@ p, h3 {
 	.display-4 {
 		padding-top: 0.5em !important;
 	}
+	.view .imgFit {
+		height: 57vh !important;
+		width: 93vw !important;
+	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -15em;
@@ -322,6 +329,9 @@ p, h3 {
 	}
 	.mb-intro {
 		margin-bottom: 0em !important;
+	}
+	.view .imgFit {
+		height: 50vh !important;
 	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
@@ -379,7 +389,6 @@ p, h3 {
 	.parallax-mobile-view img {
 		top: -15em;
 		height: 90em !important;
-
 	}
 	#headerbox {
 		margin: -6em 10em 5em 10em;
@@ -414,6 +423,13 @@ p, h3 {
 	.container .intro-box {
 		padding: 0 0 0 0 !important;
 	}
+	.view .imgFit {
+		height: 40vh !important;
+	}
+	.view .stripe {
+		padding: 0.2rem !important;
+		font-size: 0.8em !important;
+	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -15em;
@@ -446,6 +462,14 @@ p, h3 {
 	}
 	.container .intro-box {
 		padding: 0 0 0 0 !important;
+	}
+	.view .imgFit {
+		height: 75vh !important;
+		width: 93vw !important;
+	}
+	.view .stripe {
+		padding: 0.2rem !important;
+		font-size: 0.7em !important;
 	}
 	.parallax-mobile-view img {
 		top: -10em !important;
@@ -511,6 +535,18 @@ p, h3 {
 	.mb-intro {
 		margin-bottom: 0em !important;
 	}
+	.view .imgFit {
+		height: 70vh !important;
+		width: 100vw !important;
+		object-position: center !important;
+	}
+	.view .stripe {
+		bottom: 1rem !important;
+		padding: 0.2rem !important;
+	}
+	.view .stripe p {
+		font-size: 2em !important;
+	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		height: 90em !important;
@@ -547,7 +583,6 @@ p, h3 {
 	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
-		left: 14em !important;
 		top: -10em !important;
 		height: 80rem !important;
 	}
@@ -559,10 +594,10 @@ p, h3 {
 /* Iphone X */
 
 @media only screen and (max-width: 375px) and (max-height: 812px) {
+
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -10em !important;
-		left: -50rem !important;
 		height: 55em !important;
 	}
 }
@@ -588,12 +623,11 @@ p, h3 {
 	}
 	/* Parallax Header Image  */
 	.headerbg {
-		height: 360px;
+		height: 550px;
 	}
 	.parallax-mobile-view img {
 		top: -10em !important;
-		left: -10rem !important;
-		/* height: 45em !important; */
+		height: 80em !important;
 	}
 	.container .intro-box {
 		padding: 0 0 0 0 !important;
@@ -616,10 +650,23 @@ p, h3 {
 
 /* Galaxy Fold */
 @media only screen and (max-width: 320px){
+	.view .imgFit {
+		height: 50vh !important;
+		width: 93vw !important;
+	}
+	.view .stripe {
+		padding: 0.2rem !important;
+		font-size: 0.8em !important;
+	}
+	.container {
+		width: 100% !important;
+	}
+	.headerbg {
+		height: 500px;
+	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: -18em !important;
-		left: -25rem !important;
 		height: 90em !important;
 	}
 }

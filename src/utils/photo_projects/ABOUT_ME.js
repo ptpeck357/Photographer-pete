@@ -4,7 +4,8 @@ const headerData = {
 	bgImageProp: BackgroundImage,
 	titleProp: 'About Me',
 	dateProp: '',
-	descProp: ''
+	descProp: '',
+	styleProp: 'parallax-mobile-view-about-me'
 };
 
 const imageArray = [];

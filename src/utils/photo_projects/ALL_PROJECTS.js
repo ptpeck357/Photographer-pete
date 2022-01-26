@@ -1,4 +1,7 @@
-import BackgroundImage from '../../images/me/mirror_pic.jpg';
+import { importAll } from '../helpers/functions';
+import BackgroundImage from '../../images/backgrounds/all_projects.jpg';
+
+const Photoshoot = importAll(require.context('../../images/allprojects/thumbnails/photoshoot', false, /\.(jpg)$/));
 
 const headerData = {
 	bgImageProp: BackgroundImage,
@@ -13,7 +16,7 @@ const photoSessions = [
 	{
 		title: 'Sofia Cordero',
 		date: 'January 2021',
-		coverImage: BackgroundImage,
+		coverImage: Photoshoot['sofia.jpg'].default,
 		link: '/sofia_cordero',
 		category: 'people',
 		bannerStyle: 'light'
@@ -21,23 +24,23 @@ const photoSessions = [
 	{
 		title: 'Joe and Rebecca Baylon',
 		date: 'August 2021',
-		coverImage: BackgroundImage,
+		coverImage: Photoshoot['baylon.jpg'].default,
 		link: '/baylon',
-		category: 'people',
-		bannerStyle: 'light'
-	},
-	{
-		title: 'Andy and Melissa Yuen',
-		date: 'August 2021',
-		coverImage: BackgroundImage,
-		link: '/yuen',
 		category: 'people',
 		bannerStyle: 'dark'
 	},
 	{
+		title: 'Andy and Melissa Yuen',
+		date: 'August 2021',
+		coverImage: Photoshoot['yuen.jpg'].default,
+		link: '/yuen',
+		category: 'people',
+		bannerStyle: 'light'
+	},
+	{
 		title: 'Thomas and Charismah Worden',
 		date: 'September 2021',
-		coverImage: BackgroundImage,
+		coverImage: Photoshoot['worden.jpg'].default,
 		link: '/worden',
 		category: 'people',
 		bannerStyle: 'dark'

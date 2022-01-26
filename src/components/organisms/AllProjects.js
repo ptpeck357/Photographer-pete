@@ -8,12 +8,10 @@ import { Tabs, Tab, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 
 const AllProjects = ({ imageArrayProp }) => {
-	const [imageArray, setImageArray] = useState();
+	const [imageArray, setImageArray] = useState(imageArrayProp);
 	const [imageArrayCopy, setImageArrayCopy] = useState(imageArrayProp);
 
 	useEffect(() => {
-		setImageArray(imageArrayProp);
-		setImageArrayCopy(imageArrayProp);
 		filterProjects('engagment');
 
 		window.scroll({
@@ -61,7 +59,7 @@ const AllProjects = ({ imageArrayProp }) => {
 					<Tab style={cursorStyle} tabFor="three" onClick={() => filterProjects('people')}>Photo shoots</Tab>
 					<Tab style={cursorStyle} tabFor="four" onClick={() => filterProjects('travel')}>Travel</Tab>
 					<Tab tabFor="five">
-						<NavBarLink classes="text-dark" link="/home">Back to Home</NavBarLink>
+						<NavBarLink classes="text-dark" link="/home">Home Page</NavBarLink>
 					</Tab>
 				</TabList>
 			</Tabs>

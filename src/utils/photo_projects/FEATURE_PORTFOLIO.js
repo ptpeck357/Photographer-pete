@@ -1,4 +1,4 @@
-import BackgroundImage from '../../images/me/mirror_pic.jpg';
+import BackgroundImage from '../../images/me/motorcycle.jpg';
 import { importAll, shuffleArray } from '../helpers/functions';
 
 const headerData = {

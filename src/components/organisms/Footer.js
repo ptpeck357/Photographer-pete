@@ -35,7 +35,7 @@ const Footer = () => {
 						<MDBCol md="4" lg="3" xl="3" className="mx-auto mb-4">
 							<h6 className="text-uppercase fw-bold mb-3">
 								<i className="fa fa-gem" />
-								Peter Peck Photography
+								<span className="ms-2">Peter Peck Photography</span>
 							</h6>
 							<p className="no-indentation">Please reach out to me if you have any requests or inquiries!</p>
 							<p className="no-indentation">Be sure to check out and follow me on social media!</p>

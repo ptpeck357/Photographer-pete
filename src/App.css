@@ -133,14 +133,6 @@ input[type="button"].down, .button.down, button.down {
 	margin-bottom: 2em;
 }
 
-button:hover {
-	background-color: rgba(229, 230, 231, 0.375);
-}
-
-.button:active, button:active {
-	background-color: rgba(229, 230, 231, 0.375);
-}
-
 .button.style2:hover, button.style2:hover {
 	background-color: rgba(229, 230, 231, 0.375);
 }

@@ -4,7 +4,7 @@ import { importAll, shuffleArray } from '../helpers/functions';
 const headerData = {
 	bgImageProp: BackgroundImage,
 	titleProp: 'Featured Portfolio',
-	dateProp: '2017 - Present',
+	dateProp: '2014 - Present',
 	descProp: '',
 	styleProp: 'featured-header-mobile'
 };

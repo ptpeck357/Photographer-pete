@@ -182,7 +182,7 @@ const AboutPage = () => {
 								Since I grew up in Montana, some of my hobbies include hunting, fishing, archery, and shooting firearms. Fun fact: A tradition at a ranch I worked at as a teenager was to ride the calf after you're done branding it. After my friend pressured me into riding a 4-month-old calf, I decided to hop on. Spoiler alert, I broke my wrist from getting bucked off. That's when I knew bull riding wasn't in my career path.
 							</p>
 							<p>
-								Every day I thank my Lord and Savior for giving me the talents and gifts that I have. It's nothing I did to deserve or to earn His grace. I am blessed to have been adopted into a Christian family here in America. This is a story for another time, me being adopted didn't JUST happen by luck or coincidence, but by God's timing and planning. A testimony of God's unfailing Grace and a reminder not to take this life for granted regardless how hard it gets.
+								Every day I thank my Lord and Savior for giving me the talents and gifts that I have. It's nothing I did to deserve or to earn His grace. I am blessed to have been adopted into a Christian family here in America. This is a story for another time, me being adopted didn't JUST happen by luck or coincidence, but by God's timing and planning. A testimony of God's unfailing love and a reminder not to take this life for granted regardless of the challenges it may bring.
 							</p>
 							<p>
 								To end, I want to say that I am thankful for my parents always being there and for supporting, encouraging, and pushing me to succeed in life.
@@ -210,9 +210,9 @@ const AboutPage = () => {
 						<MDBCol sm="6" lg="3">
 							<span className="unorder-list">
 								<li className="software-info-list">Volleyball</li>
-								<li className="software-info-list">Disc golf</li>
 								<li className="software-info-list">Ping pong</li>
 								<li className="software-info-list">Billards</li>
+								<li className="software-info-list">Disc golf</li>
 								<li className="software-info-list">Martial arts</li>
 								<li className="camera-info-list">Playing the piano</li>
 							</span>

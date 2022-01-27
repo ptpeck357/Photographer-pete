@@ -39,7 +39,6 @@ const Footer = () => {
 							</h6>
 							<p className="no-indentation">Please reach out to me if you have any requests or inquiries!</p>
 							<p className="no-indentation">Be sure to check out and follow me on social media!</p>
-							<p className="no-indentation">Links are right above this!</p>
 						</MDBCol>
 						<MDBCol md="4" lg="2" xl="2" className="mx-auto mb-4">
 							<h6 className="text-uppercase fw-bold mb-3">
@@ -48,9 +47,9 @@ const Footer = () => {
 							<p className="no-indentation">
 								Portraits
 								<br /><br />
-								Landscape/Nightscape
+								Landscape
 								<br /><br />
-								Aerial/Drone
+								Aerial
 							</p>
 						</MDBCol>
 						<MDBCol id="contact" md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">

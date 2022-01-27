@@ -114,7 +114,6 @@ const AboutPage = () => {
 								Since I was about 8 years old, I dreamed of becoming an engineer. I've always loved brain teasers, math, and using my hands as well as my imagination to build things. This is how I came to know that engineering was for me. The thing I appreciate about software engineering is the creativity, the flexibility in traveling, always learning new ideas and technologies, and the complex challenges it brings.
 							</p>
 							<br />
-							<br />
 							<p className="no-indentation">
 								"It's not a bug, it's a feature!"
 								<br />
@@ -180,10 +179,13 @@ const AboutPage = () => {
 								Outside of work and photography, I love learning new things and going out of my comfort zone, which caused me to have a lot of different hobbies and interests. I enjoy anything that involves the outdoors and people. Surprise, surprise.
 							</p>
 							<p>
-								Since I grew up in Montana, some of my hobbies include hunting, fishing, archery, and shooting firearms. Fun fact: A tradition at a ranch I worked at as a teenager was to ride the calf after you're done branding it. After my friend pressured me into riding a six-month-old calf, I decided to hop on. Spoiler alert, I broke my wrist from getting bucked off. That's when I knew bull riding wasn't in my career path.
+								Since I grew up in Montana, some of my hobbies include hunting, fishing, archery, and shooting firearms. Fun fact: A tradition at a ranch I worked at as a teenager was to ride the calf after you're done branding it. After my friend pressured me into riding a 4-month-old calf, I decided to hop on. Spoiler alert, I broke my wrist from getting bucked off. That's when I knew bull riding wasn't in my career path.
 							</p>
 							<p>
-								Every day I thank my Lord and Savior for giving me the talents and gifts that I have. It's nothing I did to deserve or to earn His grace. I am blessed to have been adopted into a Christian family here in America. This is a story for another time, me being adopted didn't JUST happen by luck or coincidence, but by God's timing and planning. To end, I want to say that I am thankful for my parents always being there and for supporting, encouraging, and pushing me to succeed in life.
+								Every day I thank my Lord and Savior for giving me the talents and gifts that I have. It's nothing I did to deserve or to earn His grace. I am blessed to have been adopted into a Christian family here in America. This is a story for another time, me being adopted didn't JUST happen by luck or coincidence, but by God's timing and planning. A testimony of God's unfailing Grace and a reminder not to take this life for granted regardless how hard it gets.
+							</p>
+							<p>
+								To end, I want to say that I am thankful for my parents always being there and for supporting, encouraging, and pushing me to succeed in life.
 							</p>
 							<p className="no-indentation">
 								"For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast."

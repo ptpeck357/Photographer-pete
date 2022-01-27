@@ -26,7 +26,7 @@ const Mask = styled.div`
 
 const AboutPage = () => {
 	window.scroll({
-		top: 0,
+		top: 150,
 		behavior: 'smooth'
 	});
 

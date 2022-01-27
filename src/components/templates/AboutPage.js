@@ -56,7 +56,7 @@ const AboutPage = () => {
 						</MDBCol>
 						<MDBCol lg="7">
 							<div className="mb-2 p-0 text-dark">
-								<h4 className="smaller-text">
+								<h4>
 									<li className="mr-2 fa fa-camera-retro" />
 									<span className="ms-2">Photographer</span>
 								</h4>
@@ -72,7 +72,7 @@ const AboutPage = () => {
 							</p>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="ps-0 pt-4 smaller-text">
+					<MDBRow className="ps-0 pt-4 mb-4">
 						<MDBCol lg="3">
 							<h6 className="tech-info text-dark">My Camera Gear</h6>
 							<span className="unorder-list">
@@ -102,7 +102,7 @@ const AboutPage = () => {
 					<MDBRow className="mt-5">
 						<MDBCol lg="7">
 							<div className="mb-2 p-0 text-dark">
-								<h4 className="smaller-text">
+								<h4>
 									<i className="mr-2 fas fa-laptop-code" />
 									<span className="ms-2">Software Engineer</span>
 								</h4>
@@ -136,7 +136,7 @@ const AboutPage = () => {
 							</div>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="pt-4 smaller-text">
+					<MDBRow className="pt-4">
 						<MDBCol lg="5" offsetLg="7">
 							<h4 className="tech-info text-dark">Skills</h4>
 							<span className="unorder-list">
@@ -170,7 +170,7 @@ const AboutPage = () => {
 						</MDBCol>
 						<MDBCol lg="8" className="mt-1">
 							<div className="mb-2 p-0 text-dark">
-								<h4 className="smaller-text">
+								<h4>
 									<i className="mr-2 fas fa-mountain" />
 									<span className="ms-2">Life</span>
 								</h4>
@@ -194,7 +194,7 @@ const AboutPage = () => {
 							</p>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="ps-0 pt-1 smaller-text pb-4">
+					<MDBRow className="ps-0 pt-1 pb-4">
 						<h6 className="tech-info text-dark">Hobbies</h6>
 						<MDBCol sm="6" lg="3">
 							<span className="unorder-list">

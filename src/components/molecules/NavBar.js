@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { MDBNavbarNav } from 'mdb-react-ui-kit';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import NavBarLink from '../atoms/NavBarLink';
 import NavBarItem from '../atoms/NavBarItem';
 

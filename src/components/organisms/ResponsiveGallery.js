@@ -22,7 +22,7 @@ const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 	useEffect(() => {
 		if(!showFilterProp){
 			window.scroll({
-				top: 500,
+				top: 350,
 				behavior: 'smooth'
 			});
 			setImageArray(imageArrayProp);

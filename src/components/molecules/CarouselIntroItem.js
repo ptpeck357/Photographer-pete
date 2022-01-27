@@ -26,11 +26,8 @@ const CarouselIntroItem = ({ view, active }) => {
 												<NavBarLink link="/projects">
 													<MDBBtn type="button" className="m-1 bg-white" color="white" onClick={() => trackGA('Home_Page_All_Projects')}>All Projects</MDBBtn>
 												</NavBarLink>
-												<AnchorLink href="#headerbox">
-													<MDBBtn type="button" className="m-1" color="danger" onClick={() => trackGA('Portfolio_Anchor')}>Portfolio</MDBBtn>
-												</AnchorLink>
 												<NavBarLink link="/about">
-													<MDBBtn type="button" className="m-1 text-white" outline color="black" onClick={() => trackGA('About_Me')}>About Me</MDBBtn>
+													<MDBBtn type="button" className="m-1" color="danger" onClick={() => trackGA('About_Me')}>About Me</MDBBtn>
 												</NavBarLink>
 												<AnchorLink href="#footer_anchor">
 													<MDBBtn type="button" className="m-1 text-white" outline color="white" onClick={() => trackGA('Contact_Anchor')}>Contact</MDBBtn>

@@ -38,8 +38,8 @@ const Footer = () => {
 								Peter Peck Photography
 							</h6>
 							<p className="no-indentation">Please reach out to me if you have any requests or inquiries!</p>
-							<p className="no-indentation">Be sure to check out and follow me on social media! Links right above this!</p>
-							<p className="no-indentation">Links to my socia media are right above this!</p>
+							<p className="no-indentation">Be sure to check out and follow me on social media!</p>
+							<p className="no-indentation">Links are right above this!</p>
 						</MDBCol>
 						<MDBCol md="4" lg="2" xl="2" className="mx-auto mb-4">
 							<h6 className="text-uppercase fw-bold mb-3">

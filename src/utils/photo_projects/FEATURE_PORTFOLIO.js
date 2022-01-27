@@ -122,6 +122,8 @@ for(var jj = 1; jj <= WashingtonObjLenth; jj++){
 
 imageArray = [...shuffleArray(featureArray)];
 
+const featureIdaho = [51];
+
 const idaho = importAll(require.context('../../images/feature/idaho/landscape', false, /\.(jpg)$/));
 const idahoObjLenth = Object.keys(idaho).length;
 for(var gj = 1; gj <= idahoObjLenth; gj++){
@@ -132,6 +134,10 @@ for(var gj = 1; gj <= idahoObjLenth; gj++){
 		height: 2,
 		width: 3
 	}
+	if(featureIdaho.includes(gj)){
+		idahoObj['category'].push('*');
+	}
+
 	featureArray.push(idahoObj);
 }
 

@@ -7,7 +7,7 @@
 }
 
 .unorder-list {
-	line-height: 120%;
+	line-height: 140%;
 }
 
 .container .mb-intro {
@@ -101,40 +101,47 @@ p, h3 {
 	height: 103vh;
 }
 
-.button, buttonMore {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-	-moz-transition: background-color 0.2s ease-in-out;
-	-webkit-transition: background-color 0.2s ease-in-out;
-	-ms-transition: background-color 0.2s ease-in-out;
-	transition: background-color 0.2s ease-in-out;
-	border: 0;
-	border-radius: 3.5em;
-	color: #ffffff;
-	cursor: pointer;
-	display: inline-block;
-	height: 3.5em;
-	line-height: 3.5em;
-	outline: 0;
-	padding: 0 2em 0 2em;
-	position: relative;
-	text-align: center;
-	text-decoration: none;
+.arrow,
+.arrow:before {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+}
+.arrow {
+	width: 40px;
+	height: 40px;
+	bottom: 7em;
+	margin: -20px 0 0 -20px;
+	transform: rotate(45deg);
+	border-left: none;
+	border-top: none;
+	border-right: 2px black solid;
+	border-bottom: 2px black solid;
 }
 
-input[type="button"].down, .button.down, button.down {
-	height: 5em;
-	margin: 0 auto;
-	background-image: url("./images/arrow-down-solid.svg");
-	background-position: center center;
-	background-repeat: no-repeat;
-	margin-bottom: 2em;
+.arrow:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	margin: -10px 0 0 -10px;
+	border-left: none;
+	border-top: none;
+	border-right: 1px black solid;
+	border-bottom: 1px black solid;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: arrow;
 }
 
-.button.style2:hover, button.style2:hover {
-	background-color: rgba(229, 230, 231, 0.375);
+@keyframes arrow {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-10px, -10px);
+	}
 }
 
 /* ===========================

@@ -150,7 +150,7 @@ const AboutPage = () => {
 								<li className="languages-info-list">Github/Gitlab</li>
 								<li className="languages-info-list">CI/CD</li>
 								<li className="languages-info-list">Agile/Scrum Methodologies</li>
-								<li className="languages-info-list">Visual Studio Codes</li>
+								<li className="languages-info-list">Visual Studio Code</li>
 							</span>
 						</MDBCol>
 					</MDBRow>
@@ -212,7 +212,7 @@ const AboutPage = () => {
 								<li className="software-info-list">Volleyball</li>
 								<li className="software-info-list">Disc golf</li>
 								<li className="software-info-list">Ping pong</li>
-								<li className="software-info-list">Billard</li>
+								<li className="software-info-list">Billards</li>
 								<li className="software-info-list">Martial arts</li>
 								<li className="camera-info-list">Playing the piano</li>
 							</span>

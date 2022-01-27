@@ -9885,11 +9885,6 @@ react-motion@^0.5.0:
     prop-types "^15.5.8"
     raf "^3.1.0"
 
-react-motions@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/react-motions/-/react-motions-0.3.0.tgz#743972376ca598fede9d3553dbddb17d637e562f"
-  integrity sha512-2JvQ2DhIqy7mngmnM+lK6zD9Qqmb1gJIJjBLkDLGHA84Ww/h9DeXsYcAl7xNxwj3yVWA7L34G1QZCjQ7Uok/rw==
-
 react-numeric-input@2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/react-numeric-input/-/react-numeric-input-2.2.3.tgz#4bf5918c3eafed851a80df1eb992d941002bb552"

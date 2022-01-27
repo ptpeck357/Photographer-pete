@@ -1,5 +1,6 @@
 import { MDBCarousel, MDBCarouselInner } from 'mdb-react-ui-kit';
 import CarouselIntroItem from '../molecules/CarouselIntroItem'
+import CarouselCaption from '../molecules/CarouselCaption';
 
 const CarouselIntro = () => {
 	return (
@@ -17,6 +18,7 @@ const CarouselIntro = () => {
 					<CarouselIntroItem view="4" />
 				</MDBCarouselInner>
 			</MDBCarousel>
+			<CarouselCaption />
 		</div>
 	);
 };

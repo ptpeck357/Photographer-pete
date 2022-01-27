@@ -7,7 +7,6 @@ const CarouselCaption = () => {
 		<div className="carousel-caption">
 			<FadeIn delay={2000}>
 				<AnchorLink
-					id="buttonDown"
 					className="arrow"
 					href='#headerbox'
 					onClick={

@@ -4,7 +4,6 @@ import FadeIn from 'react-fade-in';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { trackGA } from './../../utils/helpers/functions'
 import NavBarLink from '../atoms/NavBarLink';
-import CarouselCaption from './CarouselCaption';
 
 const CarouselIntroItem = ({ view, active }) => {
 	return (
@@ -41,7 +40,6 @@ const CarouselIntroItem = ({ view, active }) => {
 					</div>
 				</div>
 			</div>
-			<CarouselCaption />
 		</MDBCarouselItem>
 	);
 }

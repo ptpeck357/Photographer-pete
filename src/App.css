@@ -71,6 +71,10 @@ p, h3 {
 	Carousel Intro CSS
 ==============================*/
 
+.carousel-caption {
+ 	z-index: 99999;
+}
+
 #carouselIntro .view1 {
 	background-image: url('./images/backgrounds/carousel-1.jpg');
 	background-repeat: no-repeat;
@@ -94,7 +98,7 @@ p, h3 {
 	height: 103vh;
 }
 #carouselIntro .view4 {
-	background-image:  url('./images/backgrounds/carousel-4.jpg');
+	background-image: url('./images/backgrounds/carousel-4.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -110,13 +114,13 @@ p, h3 {
 .arrow {
 	width: 40px;
 	height: 40px;
-	bottom: 5em;
+	bottom: 0.3em;
 	margin: -20px 0 0 -20px;
 	transform: rotate(45deg);
 	border-left: none;
 	border-top: none;
-	border-right: 3px black solid;
-	border-bottom: 3px black solid;
+	border-right: 2.5px whitesmoke solid;
+	border-bottom: 2.5px whitesmoke solid;
 }
 .arrow:before {
 	content: "";
@@ -126,8 +130,8 @@ p, h3 {
 	margin: -10px 0 0 -10px;
 	border-left: none;
 	border-top: none;
-	border-right: 2px black solid;
-	border-bottom: 2px black solid;
+	border-right: 2.5px whitesmoke solid;
+	border-bottom: 2.5px whitesmoke solid;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	animation-name: arrow;

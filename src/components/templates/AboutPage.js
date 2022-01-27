@@ -9,7 +9,6 @@ import EverydayLifePic from '../../images/me/every_day_life.jpg';
 
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('UA-132438285-1');
 ReactGA.pageview(window.location.href);
 
 const StyledHr = styled.hr`
@@ -72,7 +71,7 @@ const AboutPage = () => {
 							</p>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="ps-0 pt-4 mb-4">
+					<MDBRow className="ps-0 pt-4 mb-3">
 						<MDBCol lg="3">
 							<h6 className="tech-info text-dark">My Camera Gear</h6>
 							<span className="unorder-list">
@@ -126,7 +125,7 @@ const AboutPage = () => {
 							</p>
 						</MDBCol>
 						<MDBCol lg="4">
-							<div className="rounded z-depth-4 mb-lg-0 mb-4">
+							<div className="rounded z-depth-4 mb-lg-0 mb-3">
 								<MDBRipple className="hover-overlay" rippleColor="white">
 									<img className="img-fluid shadow-3-strong" src={LinkedinPic} alt="Software Engineering" />
 									<div role='button'>
@@ -136,7 +135,7 @@ const AboutPage = () => {
 							</div>
 						</MDBCol>
 					</MDBRow>
-					<MDBRow className="pt-4">
+					<MDBRow className="pt-4 mb-2">
 						<MDBCol lg="5" offsetLg="7">
 							<h4 className="tech-info text-dark">Skills</h4>
 							<span className="unorder-list">
@@ -157,9 +156,9 @@ const AboutPage = () => {
 					<br/>
 					<StyledHr />
 					{/* Everyday Life Section */}
-					<MDBRow className="mt-5 mb-4">
+					<MDBRow className="mt-5 mb-3">
 						<MDBCol lg="4">
-							<div className="rounded z-depth-4 mb-lg-0 mb-4 ">
+							<div className="rounded z-depth-4 mb-lg-0 mb-3">
 								<MDBRipple className="hover-overlay" rippleColor="white">
 									<img className="img-fluid shadow-3-strong" src={EverydayLifePic} alt="Life" />
 									<div role='button'>
@@ -218,7 +217,8 @@ const AboutPage = () => {
 							</span>
 						</MDBCol>
 					</MDBRow>
-					<StyledHr />
+					<StyledHr className="mt-3" />
+					<br />
 				</MDBContainer>
 			</ScrollAnimation>
 		</>

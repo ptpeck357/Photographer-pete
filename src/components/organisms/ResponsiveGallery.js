@@ -56,7 +56,7 @@ const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 	};
 
 	const renderFilter = () => {
-		const cursorStyle = { cursor: 'pointer' };
+		const cursorStyle = { cursor: 'pointer', color: '#262626' };
 
 		return (
 			<Tabs id="Tab" defaultTab="one" className="GalleryContainer">

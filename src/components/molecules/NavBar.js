@@ -23,14 +23,6 @@ const NavBar = ({ classes }) => {
 					All Projects
 				</NavBarLink>
 			</NavBarItem>
-			<NavBarItem classes="text-center mx-2 mx-lg-1  text-muted">
-				<AnchorLink href="#headerbox">
-					<div className='text-muted'>
-						<i className="fa fa-address-card" />
-					</div>
-					<span className="text-muted">Portfolio</span>
-				</AnchorLink>
-			</NavBarItem>
 			<NavBarItem classes="text-center mx-2 mx-lg-1">
 				<NavBarLink classes="nav-bar-link no-underline" link="/about">
 					<div>

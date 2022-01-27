@@ -183,7 +183,7 @@ const AboutPage = () => {
 								Since I grew up in Montana, some of my hobbies include hunting, fishing, archery, and shooting firearms. Fun fact: A tradition at a ranch I worked at as a teenager was to ride the calf after you're done branding it. After my friend pressured me into riding a six-month-old calf, I decided to hop on. Spoiler alert, I broke my wrist from getting bucked off. That's when I knew bull riding wasn't in my career path.
 							</p>
 							<p>
-								Every day I thank my Lord and Savior for giving me the talents and gifts that I have. It's nothing I did to deserve or to earn His grace. I am to have been adopted into a Christian family here in America. This is a story for another time, me being adopted didn't JUST happen by luck or coincidence, but by God's timing and planning. To end, I want to say that I am thankful for my parents always being there and for supporting, encouraging, and pushing me to succeed in life.
+								Every day I thank my Lord and Savior for giving me the talents and gifts that I have. It's nothing I did to deserve or to earn His grace. I am blessed to have been adopted into a Christian family here in America. This is a story for another time, me being adopted didn't JUST happen by luck or coincidence, but by God's timing and planning. To end, I want to say that I am thankful for my parents always being there and for supporting, encouraging, and pushing me to succeed in life.
 							</p>
 							<p className="no-indentation">
 								"For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast."

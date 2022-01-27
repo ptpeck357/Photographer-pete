@@ -110,15 +110,14 @@ p, h3 {
 .arrow {
 	width: 40px;
 	height: 40px;
-	bottom: 7em;
+	bottom: 5em;
 	margin: -20px 0 0 -20px;
 	transform: rotate(45deg);
 	border-left: none;
 	border-top: none;
-	border-right: 2px black solid;
-	border-bottom: 2px black solid;
+	border-right: 3px black solid;
+	border-bottom: 3px black solid;
 }
-
 .arrow:before {
 	content: "";
 	width: 20px;
@@ -127,19 +126,18 @@ p, h3 {
 	margin: -10px 0 0 -10px;
 	border-left: none;
 	border-top: none;
-	border-right: 1px black solid;
-	border-bottom: 1px black solid;
+	border-right: 2px black solid;
+	border-bottom: 2px black solid;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	animation-name: arrow;
 }
-
 @keyframes arrow {
 	0% {
 		opacity: 1;
 	}
 	100% {
-		opacity: 0;
+		opacity: 10;
 		transform: translate(-10px, -10px);
 	}
 }

@@ -114,21 +114,21 @@ imageArray.push.apply(imageArray, graduationSessions);
 
 const Engagement = importAll(require.context('../../images/allprojects/thumbnails/engagement', false, /\.(jpg)$/));
 
-const engagmentSessions = [
+const engagementSessions = [
 	{
-		title: 'Jacob and Raquel\'s Engagment',
+		title: 'Jacob and Raquel\'s Engagement',
 		date: 'August 2020',
-		coverImage: Engagement['jacob_engagment.jpg'].default,
-		link: '/jacob_raquel_engagment',
-		category: 'engagment',
+		coverImage: Engagement['jacob_engagement.jpg'].default,
+		link: '/jacob_raquel_engagement',
+		category: 'engagement',
 		bannerStyle: 'light'
 	},
 	{
-		title: 'Makiah and Rachel\'s Engagment',
+		title: 'Makiah and Rachel\'s Engagement',
 		date: 'November 2020',
 		coverImage: Engagement['makiah.jpg'].default,
 		link: '/makiah_rachel',
-		category: 'engagment',
+		category: 'engagement',
 		bannerStyle: 'dark'
 	},
 	{
@@ -136,28 +136,28 @@ const engagmentSessions = [
 		date: 'December 2020',
 		coverImage: Engagement['jacob_wedding.jpg'].default,
 		link: '/jacob_raquel_wedding',
-		category: 'engagment',
+		category: 'engagement',
 		bannerStyle: 'light'
 	},
 	{
-		title: 'Nick and Audrey\'s Engagment',
+		title: 'Nick and Audrey\'s Engagement',
 		date: 'January 2021',
 		coverImage: Engagement['nick.jpg'].default,
 		link: '/nick_audrey',
-		category: 'engagment',
+		category: 'engagement',
 		bannerStyle: 'dark'
 	},
 	{
-		title: 'Jared and Hallie\'s Engagment',
+		title: 'Jared and Hallie\'s Engagement',
 		date: 'Feburary 2021',
 		coverImage: Engagement['jared.jpg'].default,
 		link: '/jared_hallie',
-		category: 'engagment',
+		category: 'engagement',
 		bannerStyle: 'light'
 	}
 ];
 
-imageArray.push.apply(imageArray, engagmentSessions);
+imageArray.push.apply(imageArray, engagementSessions);
 
 const Travel = importAll(require.context('../../images/allprojects/thumbnails/travel', false, /\.(jpg)$/));
 

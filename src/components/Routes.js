@@ -61,7 +61,7 @@ const Routes = () => {
 
 			{/* Engagement/wedding */}
 			<Route
-				exact path="jacob_raquel_engagment"
+				exact path="jacob_raquel_engagement"
 				element={
 					<ProjectContainer
 						showFilterProp={false}

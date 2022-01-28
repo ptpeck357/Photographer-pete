@@ -10,23 +10,46 @@ const ProjectHeader = ({ bgImageProp, titleProp, dateProp, descProp, styleProp }
 	const [title, setTitle] = useState();
 	const [date, setDate] = useState();
 	const [desc, setDesc] = useState();
-	const [style, setStyle] = useState();
+	const [styleClass, setStyleClass] = useState();
+	const [offset, setOffset] = useState(0);
+
+	useEffect(() => {
+		function handleScroll() {
+			setOffset(window.pageYOffset);
+		}
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, [offset]);
 
 	useEffect(() => {
 		setBgImage(bgImageProp);
 		setTitle(titleProp);
 		setDate(dateProp);
 		setDesc(descProp);
-		setStyle(styleProp);
+		setStyleClass(styleProp);
 	}, [bgImageProp, titleProp, dateProp, descProp, styleProp]);
 
 	return (
 		<div>
 			<ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={true}>
-				<Parallax bgImage={bgImage} strength={1000} className={"parallax-mobile-view " + style}>
-					<div className="headerbg">
-					</div>
-				</Parallax>
+				<div className={"hero parallax-mobile-view " + styleClass}>
+					<img
+						src={bgImage}
+						alt="test"
+						className="parallax"
+						// style={{
+						// 	transform: `translateY(${offset * 0.5}px)`
+						// }}
+					/>
+					{/* <div className="text-wrapper"> */}
+						<div className="headerbg">
+						</div>
+					{/* </div> */}
+				</div>
 			</ScrollAnimation>
 			<MDBCard id="headerbox" className="rounded z-depth-2">
 				<div className="text-center Card">

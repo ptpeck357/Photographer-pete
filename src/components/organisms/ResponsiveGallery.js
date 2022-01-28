@@ -100,7 +100,7 @@ const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 					<Tab style={cursorStyle} tabFor="five" onClick={() => filterImage('people')}>People</Tab>
 					<Tab style={cursorStyle} tabFor="six" onClick={() => filterImage('washington')}>Washington</Tab>
 					<Tab tabFor="seven">
-						<Link rel="prefetch" className="text-dark" to="/projects">All Projects</Link>
+						<Link rel="prefetch" to="/projects">More</Link>
 					</Tab>
 				</TabList>
 			</Tabs>

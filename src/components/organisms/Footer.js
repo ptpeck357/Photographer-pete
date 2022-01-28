@@ -49,11 +49,13 @@ const Footer = () => {
 								<ActionLink href="https://www.instagram.com/portrait.pete/" classes=" " target="_blank">
 									Portraits
 								</ActionLink>
-								<br /><br />
+							</p>
+							<p className="no-indentation">
 								<ActionLink href="https://www.instagram.com/clicky_pete/" classes=" " target="_blank">
 									Landscape
 								</ActionLink>
-								<br /><br />
+							</p>
+							<p className="no-indentation">
 								<ActionLink href="https://www.instagram.com/pete_the_repeat_" classes=" " target="_blank">
 									Aerial
 								</ActionLink>

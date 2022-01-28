@@ -38,7 +38,7 @@ const AboutPage = () => {
 						<br />
 						I'm a photographer and a software engineer.
 						I was born in Cambodia and was adopted at the age of one. I've spent most of my
-						growing up days on a small ranch in Montana. I love to travel, play frisbee and spikeball, meet new people, and explore the outdoors... to be continued!
+						growing up days on a small ranch in Montana. I love to travel, meet new people, and explore the outdoors.
 					</p>
 					<StyledHr />
 					{/* Photographer Section */}
@@ -89,7 +89,6 @@ const AboutPage = () => {
 							<span className="unorder-list">
 								<li className="software-info-list">Adobe Lightroom Classic</li>
 								<li className="software-info-list">Adobe Photoshop</li>
-								<li className="software-info-list">Adobe Photoshop Express</li>
 								<li className="software-info-list">Adobe Bridge</li>
 								<li className="software-info-list">Adobe Premiere Rush</li>
 								<li className="software-info-list">Davinci Resolve 17</li>
@@ -110,7 +109,7 @@ const AboutPage = () => {
 								I currently work as a Software Engineer, specializing in Full-Stack Web Development with three years of professional experience in the industry. I currently work at {<ActionLink href="https://www.economicmodeling.com/" classes="blue" target="_blank">Emsi Burning Glass</ActionLink>} located in Moscow, Idaho.
 							</p>
 							<p>
-								Since I was about 8 years old, I dreamed of becoming an engineer. I've always loved brain teasers, math, and using my hands as well as my imagination to build things. This is how I came to know that engineering was for me. The thing I appreciate about software engineering is the creativity, the flexibility in traveling, always learning new ideas and technologies, and the complex challenges it brings.
+								Since I was about 8 years old, I dreamed of becoming an engineer. I've always loved brain teasers, math, and using my hands as well as my imagination to build things. The thing I appreciate about software engineering is the creativity, the flexibility in traveling, always learning new ideas and technologies, and the complex challenges it brings.
 							</p>
 							<br />
 							<p className="no-indentation">
@@ -147,9 +146,7 @@ const AboutPage = () => {
 								<li className="languages-info-list">PHP</li>
 								<li className="languages-info-list">SQL/NoSQL</li>
 								<li className="languages-info-list">Github/Gitlab</li>
-								<li className="languages-info-list">CI/CD</li>
 								<li className="languages-info-list">Agile/Scrum Methodologies</li>
-								<li className="languages-info-list">Visual Studio Code</li>
 							</span>
 						</MDBCol>
 					</MDBRow>
@@ -177,11 +174,11 @@ const AboutPage = () => {
 							<p>
 								Outside of work and photography, I love learning new things and going out of my comfort zone, which caused me to have a lot of different hobbies and interests. I enjoy anything that involves the outdoors and people. Surprise, surprise.
 							</p>
-							<p>
+							{/* <p>
 								Since I grew up in Montana, some of my hobbies include hunting, fishing, archery, and shooting firearms. Fun fact: A tradition at a ranch I worked at as a teenager was to ride the calf after you're done branding it. After my friend pressured me into riding a 4-month-old calf, I decided to hop on. Spoiler alert, I broke my wrist from getting bucked off. That's when I knew bull riding wasn't in my career path.
-							</p>
+							</p> */}
 							<p>
-								Every day I thank my Lord and Savior for giving me the talents and gifts that I have. It's nothing I did to deserve or to earn His grace. I am blessed to have been adopted into a Christian family here in America. This is a story for another time, me being adopted didn't JUST happen by luck or coincidence, but by God's timing and planning. A testimony of God's unfailing love and a reminder not to take this life for granted regardless of the challenges it may bring.
+								Every day I thank my Lord and Savior for giving me the talents and gifts that I have. It's nothing I did to deserve or to earn His grace. I am blessed to have been adopted into a Christian family here in America. This is a story for another time, me being adopted didn't JUST happen by luck or coincidence, but by God's timing and planning.
 							</p>
 							<p>
 								To end, I want to say that I am thankful for my parents always being there and for supporting, encouraging, and pushing me to succeed in life.
@@ -197,20 +194,17 @@ const AboutPage = () => {
 						<h6 className="tech-info text-dark">Hobbies</h6>
 						<MDBCol sm="6" lg="3">
 							<span className="unorder-list">
-								<li className="camera-info-list">Hunting</li>
-								<li className="camera-info-list">Fishing</li>
+								<li className="camera-info-list">Hunting/fishing</li>
 								<li className="camera-info-list">Camping</li>
 								<li className="camera-info-list">Dirtbiking</li>
 								<li className="camera-info-list">Skiing</li>
 								<li className="software-info-list">Ultimate frisbee</li>
-								<li className="software-info-list">Spikeball</li>
 							</span>
 						</MDBCol>
 						<MDBCol sm="6" lg="3">
 							<span className="unorder-list">
+								<li className="software-info-list">Spikeball</li>
 								<li className="software-info-list">Volleyball</li>
-								<li className="software-info-list">Ping pong</li>
-								<li className="software-info-list">Billards</li>
 								<li className="software-info-list">Disc golf</li>
 								<li className="software-info-list">Martial arts</li>
 								<li className="camera-info-list">Playing the piano</li>

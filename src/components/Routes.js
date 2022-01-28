@@ -24,6 +24,7 @@ import YUEN from '../utils/photo_projects/photo_shoots/YUEN';
 import WORDEN from '../utils/photo_projects/photo_shoots/WORDEN';
 
 import CAMBODIA from '../utils/photo_projects/travel/CAMBODIA';
+import UTAH from '../utils/photo_projects/travel/UTAH';
 import ISRAEL from '../utils/photo_projects/travel/ISRAEL';
 import BANFF from '../utils/photo_projects/travel/BANFF';
 import CHICAGO from '../utils/photo_projects/travel/CHICAGO';
@@ -249,6 +250,17 @@ const Routes = () => {
 						showFilterProp={false}
 						imageArrayProp={CAMBODIA.imageArray}
 						headerInfoProp={CAMBODIA.projectHeader}
+						renderTypeProp="gallery"
+					/>
+				}
+			/>
+			<Route
+				exact path="utah"
+				element={
+					<ProjectContainer
+						showFilterProp={false}
+						imageArrayProp={UTAH.imageArray}
+						headerInfoProp={UTAH.projectHeader}
 						renderTypeProp="gallery"
 					/>
 				}

@@ -168,6 +168,14 @@ const travel = [
 		coverImage: Travel['cambodia.jpg'].default,
 		link: '/cambodia',
 		category: 'travel',
+		bannerStyle: 'light'
+	},
+	{
+		title: 'Moab/Canyonlands',
+		date: 'July 2016',
+		coverImage: Travel['utah.jpg'].default,
+		link: '/utah',
+		category: 'travel',
 		bannerStyle: 'dark'
 	},
 	{

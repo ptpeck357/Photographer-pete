@@ -64,7 +64,7 @@ const AboutPage = () => {
 								What kind of photography do I do? Well, I do all types, varying from landscape, portraits, engagement, and graduation sessions to aerial footage! I also dabble in videography and Davinci Resolve for post-processing.
 							</p>
 							<p>
-								I got into photography when I was 12 years old. For my 11th birthday, I received a digital Kodak camera which then sat in my dresser... A year later, around June 2010, I decided to put my camera to use and start snapping landscape photos because how can you not when you're in Montana?
+								I got into photography when I was 12 years old. For my 11th birthday, I received a digital Kodak camera which then sat in my dresser... A year later, around June 2010, I decided to put my camera to use and start snapping landscape photos because how can you not when you grew up in Montana?
 							</p>
 							<p>
 								Over the years since then, I've expanded out in my photography niches. Even though I've been doing photography for 12 plus years, there's always something new and exciting to learn; whether it's new editing tricks or different techniques while I'm out in the field! Yeeet
@@ -107,7 +107,7 @@ const AboutPage = () => {
 								</h4>
 							</div>
 							<p>
-								I currently work as a Software Engineer, specializing in Full-Stack Web Development with three years of professional experience in the industry. I currently work at {<ActionLink href="https://www.economicmodeling.com/" classes="blue" target="_blank">Emsi Burning Glass</ActionLink>} located here in Moscow, Idaho.
+								I currently work as a Software Engineer, specializing in Full-Stack Web Development with three years of professional experience in the industry. I currently work at {<ActionLink href="https://www.economicmodeling.com/" classes="blue" target="_blank">Emsi Burning Glass</ActionLink>} located in Moscow, Idaho.
 							</p>
 							<p>
 								Since I was about 8 years old, I dreamed of becoming an engineer. I've always loved brain teasers, math, and using my hands as well as my imagination to build things. This is how I came to know that engineering was for me. The thing I appreciate about software engineering is the creativity, the flexibility in traveling, always learning new ideas and technologies, and the complex challenges it brings.

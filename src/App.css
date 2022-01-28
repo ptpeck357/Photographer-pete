@@ -74,7 +74,6 @@ p, h3 {
 .carousel-caption {
  	z-index: 99999;
 }
-
 #carouselIntro .view1 {
 	background-image: url('./images/backgrounds/carousel-1.jpg');
 	background-repeat: no-repeat;
@@ -82,7 +81,6 @@ p, h3 {
 	background-position: center center;
 	height: 103vh;
 }
-
 #carouselIntro .view2 {
 	background-image: url('./images/backgrounds/carousel-2.jpg');
 	background-repeat: no-repeat;
@@ -691,10 +689,10 @@ p, h3 {
 	}
 	/* Parallax Header Image  */
 	.headerbg {
-		height: 500px;
+		height: 450px;
 	}
 	.parallax-mobile-view img {
-		top: -30em !important;
+		top: -10em !important;
 		height: 80em !important;
 	}
 	.container .intro-box {

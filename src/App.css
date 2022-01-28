@@ -74,7 +74,6 @@ p, h3 {
 .carousel-caption {
  	z-index: 99999;
 }
-
 #carouselIntro .view1 {
 	background-image: url('./images/backgrounds/carousel-1.jpg');
 	background-repeat: no-repeat;
@@ -82,7 +81,6 @@ p, h3 {
 	background-position: center center;
 	height: 103vh;
 }
-
 #carouselIntro .view2 {
 	background-image: url('./images/backgrounds/carousel-2.jpg');
 	background-repeat: no-repeat;
@@ -154,20 +152,16 @@ p, h3 {
 	background-color: rgba(255, 255, 255, .7);
 
 }
-
 #headerbox .Card {
 	padding: 1.25rem;
 	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
 }
-
 .headerbg {
 	height: 500px;
 }
-
 .headerTitle {
 	letter-spacing: 2px;
 }
-
 .padding-top-3 {
 	padding-top: 0.5em;
 }
@@ -667,7 +661,7 @@ p, h3 {
 	}
 	/* Parallax Header Image  */
 	.headerbg {
-		height: 550px;
+		height: 450px;
 	}
 	.parallax-mobile-view img {
 		top: -10em !important;

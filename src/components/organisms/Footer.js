@@ -2,6 +2,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import styled from 'styled-components';
 import SocialMediaLinks from '../molecules/SocialMediaLinks';
 import ContactInfo from '../molecules/ContactInfo';
+import ActionLink from '../atoms/ActionLink';
 
 const CompanyNameDiv = styled.div`
 	text-align: center;
@@ -45,11 +46,17 @@ const Footer = () => {
 								Services
 							</h6>
 							<p className="no-indentation">
-								Portraits
+								<ActionLink href="https://www.instagram.com/portrait.pete/" classes=" " target="_blank">
+									Portraits
+								</ActionLink>
 								<br /><br />
-								Landscape
+								<ActionLink href="https://www.instagram.com/clicky_pete/" classes=" " target="_blank">
+									Landscape
+								</ActionLink>
 								<br /><br />
-								Aerial
+								<ActionLink href="https://www.instagram.com/pete_the_repeat_" classes=" " target="_blank">
+									Aerial
+								</ActionLink>
 							</p>
 						</MDBCol>
 						<MDBCol id="contact" md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">

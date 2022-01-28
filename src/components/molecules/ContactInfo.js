@@ -10,7 +10,7 @@ const ContactInfo = () => {
 			</p>
 			<p className="no-indentation">
 				<i className="fa fa-envelope me-3" />
-				<ActionLink href={`mailto:${CONTACT_INFO.email}`} classes=' '>
+				<ActionLink href={`mailto:${CONTACT_INFO.email}`} classes=" " target="_blank">
 					{CONTACT_INFO.email}
 				</ActionLink>
 			</p>

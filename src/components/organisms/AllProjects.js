@@ -71,7 +71,7 @@ const AllProjects = ({ imageArrayProp }) => {
 			<Tabs id="Tab" defaultTab={tabIndex} className="GalleryContainer">
 				<TabList className="TabList" style={{ border: 'none', margin: '3em 0 2em 0em' }}>
 					<Tab style={cursorStyle} tabFor="one" onClick={() => handleTabClick('graduation', 'one')}>Graduation</Tab>
-					<Tab style={cursorStyle} tabFor="two" onClick={() => handleTabClick('engagment', 'two')}>Engagments/Wedding</Tab>
+					<Tab style={cursorStyle} tabFor="two" onClick={() => handleTabClick('engagement', 'two')}>Engagements/Wedding</Tab>
 					<Tab style={cursorStyle} tabFor="three" onClick={() => handleTabClick('people', 'three')}>Photo shoots</Tab>
 					<Tab style={cursorStyle} tabFor="four" onClick={() => handleTabClick('travel', 'four')}>Travel</Tab>
 					<Tab tabFor="five">

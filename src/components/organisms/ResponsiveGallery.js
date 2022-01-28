@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from 'react-images';
@@ -6,13 +7,16 @@ import { Tabs, Tab, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 
 import { shuffleArray } from '../../utils/helpers/functions';
-import { Link } from 'react-router-dom';
+import useWindowDimensions from '../../utils/helpers/useWindowDimensionsHook';
 
 const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 	const [imageArray, setImageArray] = useState([]);
 	const [showFilter, setShowFilter] = useState();
 	const [currentImage, setCurrentImage] = useState(0);
 	const [viewerIsOpen, setViewerIsOpen] = useState(false);
+
+	const [columnCount, setColumnCount] = useState(3);
+	const { height, width } = useWindowDimensions();
 
 	const openLightbox = useCallback((event, { photo, index }) => {
 		setCurrentImage(index);
@@ -34,6 +38,34 @@ const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 		setShowFilter(showFilterProp);
 		// eslint-disable-next-line
 	}, [imageArrayProp, showFilterProp]);
+
+	useEffect(() => {
+		// extra small screen size
+		if(0 < width && width < 420){
+			setColumnCount(2)
+		}
+		// small screen size
+		else if(420 < width && width < 600){
+			setColumnCount(3)
+		}
+		// medium screen size
+		else if(600 < width && width < 768){
+			setColumnCount(3)
+		}
+		// large screen size
+		else if (768 < width && width < 992){
+			setColumnCount(3)
+		}
+		// extra large screen size
+		else if(992 < width && width < 1200){
+			setColumnCount(4)
+		}
+		// yuge screen size
+		else if(1200 < width){
+			setColumnCount(5)
+		}
+
+	}, [height, width]);
 
 	const closeLightbox = () => {
 		setCurrentImage(0);
@@ -78,7 +110,7 @@ const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 	return (
 		<div className="content page-section spad text-center App">
 			{showFilter && renderFilter()}
-			<Gallery photos={imageArray} onClick={openLightbox} direction={"column"} lazyload={true} />
+			<Gallery photos={imageArray} onClick={openLightbox} direction={"column"} columns={columnCount} lazyload={true} />
 			<ModalGateway>
 				{viewerIsOpen ? (
 					<Modal onClose={closeLightbox}>

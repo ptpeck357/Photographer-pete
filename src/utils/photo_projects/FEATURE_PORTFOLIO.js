@@ -31,7 +31,7 @@ for(var i = 1; i <= LandscapeObjLenth; i++) {
 	featureArray.push(landscapeObj);
 }
 
-const featurePeople = [5, 10, 13, 15, 16, 18, 19, 22, 23];
+const featurePeople = [5, 10, 6, 13, 15, 16, 18, 19, 22, 23];
 
 const People = importAll(require.context('../../images/feature/people', false, /\.(jpg)$/));
 const peopleObjLenth = Object.keys(People).length;
@@ -63,7 +63,7 @@ for (var k = 1; k <= NightSkyObjLenth; k++) {
 	featureArray.push(nightskyObj);
 }
 
-const featurePortrait = [1, 2, 3, 13, 18, 19, 20, 21];
+const featurePortrait = [1, 2, 3, 9, 13, 18, 19, 20, 21];
 
 const Portrait = importAll(require.context('../../images/feature/portrait', false, /\.(jpg)$/));
 const PortraitObjLenth = Object.keys(Portrait).length;
@@ -82,7 +82,7 @@ for(var j = 1; j <= PortraitObjLenth; j++){
 	featureArray.push(portraitObj);
 }
 
-const featureMontana = [6, 12, 18];
+const featureMontana = [6, 12, 18, 29, 30, 36];
 
 const Montana = importAll(require.context('../../images/feature/montana', false, /\.(jpg)$/));
 const MontanaObjLenth = Object.keys(Montana).length;
@@ -122,7 +122,7 @@ for(var jj = 1; jj <= WashingtonObjLenth; jj++){
 
 imageArray = [...shuffleArray(featureArray)];
 
-const featureIdaho = [51];
+const featureIdaho = [3, 13, 16, 33, 21, 47, 51];
 
 const idaho = importAll(require.context('../../images/feature/idaho/landscape', false, /\.(jpg)$/));
 const idahoObjLenth = Object.keys(idaho).length;

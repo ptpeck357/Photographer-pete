@@ -113,7 +113,7 @@ const AboutPage = () => {
 							</p>
 							<br />
 							<p className="no-indentation">
-								"It's not a bug, it's a feature!"
+								"It's not a bug, it's an undocumented feature!"
 								<br />
 								- anonymous
 							</p>
@@ -140,10 +140,10 @@ const AboutPage = () => {
 							<span className="unorder-list">
 								<li className="languages-info-list">Javascript/jQuery</li>
 								<li className="languages-info-list">Node.js/Express.js</li>
+								<li className="languages-info-list">PHP</li>
 								<li className="languages-info-list">React.js</li>
 								<li className="languages-info-list">HTML/CSS/SASS</li>
 								<li className="languages-info-list">Git</li>
-								<li className="languages-info-list">PHP</li>
 								<li className="languages-info-list">SQL/NoSQL</li>
 								<li className="languages-info-list">Github/Gitlab</li>
 								<li className="languages-info-list">Agile/Scrum Methodologies</li>
@@ -194,20 +194,17 @@ const AboutPage = () => {
 						<h6 className="tech-info text-dark">Hobbies</h6>
 						<MDBCol sm="6" lg="3">
 							<span className="unorder-list">
-								<li className="camera-info-list">Hunting/fishing</li>
-								<li className="camera-info-list">Camping</li>
-								<li className="camera-info-list">Dirtbiking</li>
-								<li className="camera-info-list">Skiing</li>
-								<li className="software-info-list">Ultimate frisbee</li>
+								<li className="camera-info-list">Hunting/fishing/archery</li>
+								<li className="camera-info-list">Camping/hiking</li>
+								<li className="camera-info-list">Dirtbiking/skiing</li>
+								<li className="software-info-list">Ultimate frisbee/disc golf</li>
 							</span>
 						</MDBCol>
 						<MDBCol sm="6" lg="3">
 							<span className="unorder-list">
-								<li className="software-info-list">Spikeball</li>
-								<li className="software-info-list">Volleyball</li>
-								<li className="software-info-list">Disc golf</li>
+								<li className="software-info-list">Volleyball/spikeball</li>
+								<li className="camera-info-list">Piano/guitar</li>
 								<li className="software-info-list">Martial arts</li>
-								<li className="camera-info-list">Playing the piano</li>
 							</span>
 						</MDBCol>
 					</MDBRow>

@@ -75,7 +75,7 @@ const AllProjects = ({ imageArrayProp }) => {
 					<Tab style={cursorStyle} tabFor="three" onClick={() => handleTabClick('people', 'three')}>Photo shoots</Tab>
 					<Tab style={cursorStyle} tabFor="four" onClick={() => handleTabClick('travel', 'four')}>Travel</Tab>
 					<Tab tabFor="five">
-						<Link rel="prefetch" className="text-dark" to="/home">Back to Home Page</Link>
+						<Link rel="prefetch" to="/home">Back to Home Page</Link>
 					</Tab>
 				</TabList>
 			</Tabs>

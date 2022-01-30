@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { MDBNavbarNav } from 'mdb-react-ui-kit';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import NavBarLink from '../atoms/NavBarLink';
 import NavBarItem from '../atoms/NavBarItem';
 
@@ -13,6 +14,14 @@ const NavBar = ({ classes }) => {
 					</div>
 					Home
 				</NavBarLink>
+			</NavBarItem>
+			<NavBarItem classes="text-center mx-2 mx-lg-1  text-muted">
+				<AnchorLink classes="nav-bar-link" href="#headerbox">
+					<div className='text-muted'>
+						<i className="fa fa-address-card" />
+					</div>
+					<span className="text-muted">Portfolio</span>
+				</AnchorLink>
 			</NavBarItem>
 			<NavBarItem classes="text-center mx-2 mx-lg-1">
 				<NavBarLink classes="nav-bar-link no-underline" link="/projects">

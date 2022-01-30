@@ -22,15 +22,18 @@ const CarouselIntroItem = ({ view, active }) => {
 													<h3 className="display-5 intro-subtitle text-light">Photography | Travel</h3>
 												</div>
 												<hr className="hr-light" />
+												<AnchorLink href="#headerbox">
+													<MDBBtn type="button" className="m-1" color="white" onClick={() => trackGA('Portfolio_Anchor')}>Portfolio</MDBBtn>
+												</AnchorLink>
 												<NavBarLink link="/projects">
-													<MDBBtn type="button" className="m-1" color="white" onClick={() => trackGA('Home_Page_All_Projects')}>All Projects</MDBBtn>
-												</NavBarLink>
-												<NavBarLink link="/about">
-													<MDBBtn type="button" className="m-1" color="danger" onClick={() => trackGA('About_Me')}>About Me</MDBBtn>
+													<MDBBtn type="button" className="m-1" color="danger" onClick={() => trackGA('Home_Page_All_Projects')}>All Projects</MDBBtn>
 												</NavBarLink>
 												<AnchorLink href="#footer_anchor">
-													<MDBBtn type="button" className="m-1" color="white" onClick={() => trackGA('Contact_Anchor')}>Contact</MDBBtn>
+													<MDBBtn type="button" className="m-1 bg-dark" onClick={() => trackGA('Contact_Anchor')}>Contact</MDBBtn>
 												</AnchorLink>
+												<NavBarLink link="/about">
+													<MDBBtn type="button" className="m-1 btn-info" onClick={() => trackGA('About_Me')}>About Me</MDBBtn>
+												</NavBarLink>
 											</MDBCol>
 										</MDBCol>
 									</MDBContainer>

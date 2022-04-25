@@ -7,7 +7,7 @@ import { Tabs, Tab, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 
 import { shuffleArray } from '../../utils/helpers/functions';
-import useWindowDimensions from '../../utils/helpers/useWindowDimensionsHook';
+import useWindowDimensions from '../hooks/useWindowDimensionsHook';
 
 const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 	const [imageArray, setImageArray] = useState([]);
@@ -44,16 +44,7 @@ const ResponsiveGallery = ({ imageArrayProp, showFilterProp }) => {
 		if(0 < width && width < 420){
 			setColumnCount(2)
 		}
-		// small screen size
-		else if(420 < width && width < 600){
-			setColumnCount(3)
-		}
-		// medium screen size
-		else if(600 < width && width < 768){
-			setColumnCount(3)
-		}
-		// large screen size
-		else if (768 < width && width < 992){
+		else if (420 < width && width < 992){
 			setColumnCount(3)
 		}
 		// extra large screen size

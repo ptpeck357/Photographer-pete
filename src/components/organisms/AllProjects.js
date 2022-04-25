@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import PropTypes from 'prop-types';
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
-import ProjectTemplate from '../molecules/ProjectTemplate';
 import ReactGA from 'react-ga';
-import { Tabs, Tab, TabList } from 'react-web-tabs'
-;
+import { Tabs, Tab, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
-import { Link } from 'react-router-dom';
+
+import ProjectTemplate from '../molecules/ProjectTemplate';
 
 const AllProjects = ({ imageArrayProp }) => {
 	const [imageArray, setImageArray] = useState(imageArrayProp);
@@ -64,30 +65,24 @@ const AllProjects = ({ imageArrayProp }) => {
 		sessionStorage.setItem('filter', filter);
 	}
 
-	const renderFilter = () => {
-		const cursorStyle = { cursor: 'pointer', color: '#262626' };
-
-		return (
-			<Tabs id="Tab" defaultTab={tabIndex} className="GalleryContainer">
-				<TabList className="TabList" style={{ border: 'none', margin: '3em 0 2em 0em' }}>
-					<Tab style={cursorStyle} tabFor="one" onClick={() => handleTabClick('graduation', 'one')}>Graduation</Tab>
-					<Tab style={cursorStyle} tabFor="two" onClick={() => handleTabClick('engagement', 'two')}>Engagements/Wedding</Tab>
-					<Tab style={cursorStyle} tabFor="three" onClick={() => handleTabClick('people', 'three')}>Photo shoots</Tab>
-					<Tab style={cursorStyle} tabFor="four" onClick={() => handleTabClick('travel', 'four')}>Travel</Tab>
-					<Tab tabFor="five">
-						<Link rel="prefetch" to="/home">Back to Home Page</Link>
-					</Tab>
-				</TabList>
-			</Tabs>
-		);
-	}
+	const cursorStyle = { cursor: 'pointer', color: '#262626' };
 
 	return (
 		<div>
 			<section className="project-margins text-center">
 				<MDBRow>
 					<MDBCol>
-						{renderFilter()}
+						<Tabs id="Tab" defaultTab={tabIndex} className="GalleryContainer">
+							<TabList className="TabList" style={{ border: 'none', margin: '3em 0 2em 0em' }}>
+								<Tab style={cursorStyle} tabFor="one" onClick={() => handleTabClick('graduation', 'one')}>Graduation</Tab>
+								<Tab style={cursorStyle} tabFor="two" onClick={() => handleTabClick('engagement', 'two')}>Engagements/Wedding</Tab>
+								<Tab style={cursorStyle} tabFor="three" onClick={() => handleTabClick('people', 'three')}>Photo shoots</Tab>
+								<Tab style={cursorStyle} tabFor="four" onClick={() => handleTabClick('travel', 'four')}>Travel</Tab>
+								<Tab tabFor="five">
+									<Link rel="prefetch" to="/home">Back to Home Page</Link>
+								</Tab>
+							</TabList>
+						</Tabs>
 					</MDBCol>
 				</MDBRow>
 				<MDBRow>

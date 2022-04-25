@@ -1,23 +1,25 @@
 import React, { useState, useEffect } from 'react';
+import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 
 import PropTypes from 'prop-types';
-import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import ReactGA from 'react-ga';
+
 import { Tabs, Tab, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 
 import ProjectTemplate from '../molecules/ProjectTemplate';
+import { useLocalStorageState } from '../hooks/useLocalStorageState';
 
 const AllProjects = ({ imageArrayProp }) => {
 	const [imageArray, setImageArray] = useState(imageArrayProp);
-	// eslint-disable-next-line
-	const [imageArrayCopy, setImageArrayCopy] = useState(imageArrayProp);
-	const [tabIndex, setTabIndex] = useState('');
+	const imageArrayCopy = [...imageArrayProp];
+
+	const [filter, setFilter] = useLocalStorageState('filter', 'graduation');
+	const [tabIndex, setTabIndex] = useLocalStorageState('tabIndex', 'one');
 
 	useEffect(() => {
-		filterProjects(sessionStorage.getItem('filter') || 'graduation');
-		setTabIndex(sessionStorage.getItem('tabIndex') || 'one');
+		filterProjects(filter);
 
 		window.scroll({
 			top: 350,
@@ -59,10 +61,8 @@ const AllProjects = ({ imageArrayProp }) => {
 	const handleTabClick = (filter, index) => {
 		filterProjects(filter);
 
+		setFilter(filter);
 		setTabIndex(index);
-
-		sessionStorage.setItem('tabIndex', index);
-		sessionStorage.setItem('filter', filter);
 	}
 
 	const cursorStyle = { cursor: 'pointer', color: '#262626' };
